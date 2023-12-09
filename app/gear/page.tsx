@@ -1,7 +1,7 @@
 import React from 'react'
 
-const AboutPage = () => {
+const GearPage = () => {
   return <div></div>
 }
 
-export default AboutPage
+export default GearPage
