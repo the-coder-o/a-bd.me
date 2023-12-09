@@ -32,8 +32,8 @@ export default function Home() {
         </div>
         <div>
           <p className={'max-w-lg'}>
-            Hi, I'm Abdul Basit, a fullStack engineer who loves building cool things with code. In addition to coding, I also make YouTube videos, where I focus on tech, creative vlogs, and personal
-            development.
+            Hi, I&apos;m Abdul Basit, a fullStack engineer who loves building cool things with code. In addition to coding, I also make YouTube videos, where I focus on tech, creative vlogs, and
+            personal development.
           </p>
         </div>
         <div className={'group flex gap-10 max-md:flex-col max-md:gap-2'}>
