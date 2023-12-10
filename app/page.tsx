@@ -14,7 +14,7 @@ export default function Home() {
         <div className={'flex gap-6 max-md:flex-col '}>
           <Avatar className={'w-[85px] h-[85px]'}>
             <AvatarImage src="https://github.com/shadcn.png" />
-            <AvatarFallback>CN</AvatarFallback>
+            <AvatarFallback>Ab</AvatarFallback>
           </Avatar>
           <div className={'space-y-2 group'}>
             <Link href={'/'} className={'flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:text-white group-hover:opacity-60'}>
