@@ -85,3 +85,7 @@
   max-width: 700px;
   margin: 0 auto;
 }
+
+.border-styles {
+  border: 1px solid #3a3a3a !important;
+}

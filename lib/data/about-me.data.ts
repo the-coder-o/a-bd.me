@@ -1,27 +1,19 @@
 export const AboutMeData = [
   {
     title: 'About',
-    description: "Hello world, I'm Brian Ruiz!",
-  },
-  {
-    description: 'I have a passion for design and am always looking for ways to incorporate it into my engineering work.',
-  },
-  {
-    description:
+    description1: "Hello world, I'm Abdul Basit!",
+    description2: 'I have a passion for design and am always looking for ways to incorporate it into my engineering work.',
+    description3:
       'fullSatck developer who loves building cool things with code. In addition to coding, I also make more interesting fullSatck applications, where I focus on tech, creative vlogs, and personal development.',
-  },
-  {
-    description: "When I'm not at my desk I am probably lifting weights, playing a lot of video games, or at a coffee shop :)",
+    description4: "When I'm not at my desk I am probably lifting weights, playing a lot of video games, or at a coffee shop :)",
   },
 ]
 
 export const LocationData = [
   {
     title: 'Location',
-    description: 'I am an Uzbek programmer',
-  },
-  {
-    description: 'I live at the address: Sharafa street, 37, Uchtepa district, Tashkent, Republic of Uzbekistan.',
+    description1: 'I am an Uzbek programmer',
+    description2: 'I live at the address: Sharafa street, 37, Uchtepa district, Tashkent, Republic of Uzbekistan.',
   },
 ]
 
