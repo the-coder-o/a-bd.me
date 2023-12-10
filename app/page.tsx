@@ -52,25 +52,25 @@ export default function Home() {
           <div>
             <p className={'text-[#646464] dark:text-[#b4b4b4]'}>Latest Posts</p>
           </div>
-          <div>
-            <a href={'/'} className={'py-3 flex gap-[60px] max-md:flex-row max-md:justify-between max-md:gap-2'}>
+          <div className={'group'}>
+            <a href={'/'} className={'py-3 flex gap-[60px] max-md:flex-row max-md:justify-between max-md:gap-2 transition hover:!opacity-100 group-hover:opacity-50'}>
               <div className={'flex gap-[60px] max-md:flex max-md:flex-col max-md:gap-2'}>
                 <span className={'text-[#646464] dark:text-[#b4b4b4]'}>Mar 05, 2023</span>
-                <p className={'font-medium dark:text-[#fff] transition hover:!text-[#b4b4b5]'}>My Desk Setup for 2023</p>
+                <p className={'font-medium dark:text-[#fff] transition'}>My Desk Setup for 2023</p>
               </div>
               <img src="https://www.b-r.io/_next/image?url=%2Fprojects%2Fhines%2Fcover.png&w=3840&q=75" width={96} height={96} alt="my" className={'rounded-lg hidden max-md:block'} />
             </a>
-            <a href={'/'} className={'py-3 flex gap-[60px] max-md:flex-row max-md:justify-between max-md:gap-2'}>
+            <a href={'/'} className={'py-3 flex gap-[60px] max-md:flex-row max-md:justify-between max-md:gap-2 transition hover:!opacity-100 group-hover:opacity-50'}>
               <div className={'flex gap-[60px] max-md:flex max-md:flex-col max-md:gap-2'}>
                 <span className={'text-[#646464] dark:text-[#b4b4b4]'}>Mar 05, 2023</span>
-                <p className={'font-medium dark:text-[#fff] transition hover:!text-[#b4b4b5]'}>My Desk Setup for 2023</p>
+                <p className={'font-medium dark:text-[#fff] transition'}>My Desk Setup for 2023</p>
               </div>
               <img src="https://www.b-r.io/_next/image?url=%2Fprojects%2Fhines%2Fcover.png&w=3840&q=75" width={96} height={96} alt="my" className={'rounded-lg hidden max-md:block'} />
             </a>
-            <a href={'/'} className={'py-3 flex gap-[60px] max-md:flex-row max-md:justify-between max-md:gap-2'}>
+            <a href={'/'} className={'py-3 flex gap-[60px] max-md:flex-row max-md:justify-between max-md:gap-2 transition hover:!opacity-100 group-hover:opacity-50'}>
               <div className={'flex gap-[60px] max-md:flex max-md:flex-col max-md:gap-2'}>
                 <span className={'text-[#646464] dark:text-[#b4b4b4]'}>Mar 05, 2023</span>
-                <p className={'font-medium dark:text-[#fff] transition hover:!text-[#b4b4b5]'}>My Desk Setup for 2023</p>
+                <p className={'font-medium dark:text-[#fff] transition'}>My Desk Setup for 2023</p>
               </div>
               <img src="https://www.b-r.io/_next/image?url=%2Fprojects%2Fhines%2Fcover.png&w=3840&q=75" width={96} height={96} alt="my" className={'rounded-lg hidden max-md:block'} />
             </a>

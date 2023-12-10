@@ -26,27 +26,22 @@ export const ContactData = [
 
 export const WorkData = [
   {
-    title: 'Work',
-    description:
-      "I started my career in 2021 which I will always be appreciative of. Then I worked at a few small local companies. Now I'm a full stack engineer currently working at IT park, one of the largest private real estate investors in the world.",
-  },
-  {
     img: 'https://i.ibb.co/XYGKKbs/251952487-188222743490507-7899200387022051448-n.jpg',
-    title: 'FullStack',
+    workTitle: 'FullStack',
     year: '2022-2022',
     companyName: 'Astrum It Academy',
     url: 'https://astrum.uz/uz',
   },
   {
     img: 'https://i.ibb.co/3BxqDFG/channels4-profile.jpg',
-    title: 'FullStack',
+    workTitle: 'FullStack',
     year: '2022-2023',
     companyName: 'Najot Talim It Academy',
     url: 'https://najottalim.uz/',
   },
   {
     img: 'https://i.ibb.co/XLkNvmK/k-BYm-FMOh-400x400.jpg',
-    title: 'Frontend',
+    workTitle: 'Frontend',
     year: '2023',
     companyName: 'It Park of Uzbekistan',
     url: 'https://it-park.uz/',
