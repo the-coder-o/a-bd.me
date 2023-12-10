@@ -3,7 +3,7 @@
 import Link from 'next/link'
 
 import { cn } from '@/lib/utils'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 
 import { HeaderData } from '@/lib/data/header.data'
 
@@ -13,6 +13,12 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 export const Header = () => {
   const Logo: string = '<Ab/>'
   const pathName = usePathname()
+
+  const router = useRouter()
+
+  const handlePushPath = () => {
+    router.push('/about')
+  }
 
   return (
     <header className={'container'}>
@@ -41,7 +47,7 @@ export const Header = () => {
             <DropdownMenu>
               <DropdownMenuTrigger className={'text-[#646464] dark:text-[#b4b4b4] relative'}>Menu +</DropdownMenuTrigger>
               <DropdownMenuContent className={'absolute left-[-100px]'}>
-                <DropdownMenuItem>About</DropdownMenuItem>
+                <DropdownMenuItem onClick={handlePushPath}>About</DropdownMenuItem>
                 <DropdownMenuItem>Blog</DropdownMenuItem>
                 <DropdownMenuItem>Gear</DropdownMenuItem>
                 <DropdownMenuItem>Projects</DropdownMenuItem>
