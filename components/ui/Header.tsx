@@ -16,8 +16,11 @@ export const Header = () => {
 
   const router = useRouter()
 
-  const handlePushPath = () => {
+  const handlePushToAbout = () => {
     router.push('/about')
+  }
+  const handlePushToGear = () => {
+    router.push('/gear')
   }
 
   return (
@@ -48,9 +51,9 @@ export const Header = () => {
               <DropdownMenu>
                 <DropdownMenuTrigger className={'text-[#646464] dark:text-[#b4b4b4] relative'}>Menu +</DropdownMenuTrigger>
                 <DropdownMenuContent className={'absolute left-[-100px]'}>
-                  <DropdownMenuItem onClick={handlePushPath}>About</DropdownMenuItem>
+                  <DropdownMenuItem onClick={handlePushToAbout}>About</DropdownMenuItem>
                   <DropdownMenuItem>Blog</DropdownMenuItem>
-                  <DropdownMenuItem>Gear</DropdownMenuItem>
+                  <DropdownMenuItem onClick={handlePushToGear}>Gear</DropdownMenuItem>
                   <DropdownMenuItem>Projects</DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
