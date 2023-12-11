@@ -106,7 +106,7 @@ const AboutPage = () => {
                 </p>
                 <div className="flex flex-col gap-8 max-md:flex-col group">
                   {WorkData.map((work) => (
-                    <a className="flex items-center gap-3 transition hover:!opacity-100 group-hover:opacity-50" href={work?.url}>
+                    <a href={work?.url} target={'_blank'} className="flex items-center gap-3 transition hover:!opacity-100 group-hover:opacity-50">
                       <img className="rounded-full !w-[50px] !h-[50px]" src={work?.img} alt={work?.workTitle} />
                       <div className="w-full flex flex-col">
                         <div className="flex items-center justify-between">

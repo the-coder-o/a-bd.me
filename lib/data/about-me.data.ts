@@ -30,7 +30,7 @@ export const WorkData = [
     workTitle: 'FullStack',
     year: '2022-2022',
     companyName: 'Astrum It Academy',
-    url: 'https://astrum.uz/uz',
+    url: 'https://astrum.uz/eng',
   },
   {
     img: 'https://i.ibb.co/3BxqDFG/channels4-profile.jpg',
