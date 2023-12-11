@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 export default function Home() {
   return (
-    <main className={'container'}>
+    <main className={'container pb-28'}>
       <div className={'pt-[5rem] flex flex-col gap-8'}>
         <div>
           <h1 className={'font-bold text-3xl'}>Abdul Basit</h1>

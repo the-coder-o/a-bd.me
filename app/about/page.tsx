@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const AboutPage = () => {
   return (
-    <div className={'pt-[5rem]'}>
+    <div className={'pt-[5rem] pb-28'}>
       <div className={'container'}>
         <div className="flex flex-col">
           <h3 className="text-3xl font-bold tracking-tight">About Me</h3>
