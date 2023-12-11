@@ -45,8 +45,8 @@ export const ContactLinkData = [
     icon: 'fa-brands fa-telegram',
   },
   {
-    title: 'Email',
-    url: '',
-    icon: '',
+    title: 'Twitter',
+    url: 'https://twitter.com/ImHackerMrx',
+    icon: 'fa-brands fa-twitter',
   },
 ]
