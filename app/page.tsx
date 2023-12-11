@@ -22,7 +22,7 @@ export default function Home() {
         </div>
         <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 3 * 0.1 }} className={'flex gap-6 max-md:flex-col '}>
           <Avatar className={'w-[85px] h-[85px]'}>
-            <AvatarImage src="https://github.com/shadcn.png" />
+            <AvatarImage src="https://i.ibb.co/84ZQKWM/person3.jpg" />
             <AvatarFallback>Ab</AvatarFallback>
           </Avatar>
           <div className={'space-y-2 group'}>
