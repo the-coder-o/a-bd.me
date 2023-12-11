@@ -41,15 +41,86 @@ export const GearHomeDeskSetupData = [
   {
     url: 'https://www.amazon.com/Keychron-Profile-Wireless-Mechanical-Keyboard/dp/B08LSJ4RHH?th=1',
     img: 'https://i.ibb.co/4gJSmJz/asus2-removebg-preview.png',
-    title: 'Keychron K3 Version 2',
+    title: 'Keychron K3 Version',
     description:
       'Keychron K3 Version 2, 84 Keys Ultra-Slim Wireless Bluetooth/USB Wired Mechanical Keyboard with White LED Backlit, Low-Profile Gateron Mechanical Brown Switch Compatible with Mac Windows',
   },
   {
     url: 'https://hyperx.com/collections/gaming-monitors/products/hyperx-armada-27-gaming-monitor?variant=42751899435165',
     img: 'https://i.ibb.co/3SjkjjY/asus6-removebg-preview.png',
-    title: 'HyperX Armada 27 QHD',
+    title: 'HyperX Armada 27',
     description:
       'All-in-One package: Desk mount included,27-inch diagonal QHD (2560x1440) IPS widescreen gaming monitor,Higher resolution for immersive gaming,Sharper image quality for a mesmerizing experience',
+  },
+]
+
+export const GearsAppsData = [
+  {
+    url: 'https://taxi.yandex.uz/ru_uz/',
+    img: 'https://i.ibb.co/0nFcGLm/yandex.png',
+    title: 'Yandex Taxi',
+    description:
+      'Yandex. Taxi is a ride-hailing service that matches riders with drivers at low fares without the need to call an operator. You can request a ride on our site or app for iOS (including Apple Watch) and Android.',
+  },
+  {
+    url: 'https://code.visualstudio.com/learn#:~:text=Visual%20Studio%20Code%20is%20a,%2B%2B%2C%20JavaScript%2C%20and%20more.',
+    img: 'https://i.ibb.co/pJBM5LN/vscode-removebg-preview.png',
+    title: 'Visual Studio Code',
+    description:
+      'Visual Studio Code is a free coding editor that helps you start coding quickly. Use it to code in any programming language, without switching editors. Visual Studio Code has support for many languages, including Python, Java, C++, JavaScript, and more.',
+  },
+  {
+    url: 'https://www.jetbrains.com/help/webstorm/getting-started-with-webstorm.html',
+    img: 'https://i.ibb.co/x16SkWM/webstorm.png',
+    title: 'WebStorm ',
+    description:
+      'WebStorm is an integrated development environment (IDE) by JetBrains. It includes everything you need for JavaScript and TypeScript development and lets you get straight to coding. WebStorm also makes it easy to tackle the most challenging tasks.',
+  },
+  {
+    url: 'https://www.jetbrains.com/help/pycharm/quick-start-guide.html',
+    img: 'https://i.ibb.co/N691qff/pycharm.png',
+    title: 'PyCharm',
+    description:
+      'PyCharm is a dedicated Python Integrated Development Environment (IDE) providing a wide range of essential tools for Python developers, tightly integrated to create a convenient environment for productive Python, web, and data science development',
+  },
+  {
+    url: 'https://github.com/',
+    img: 'https://i.ibb.co/HptNgCd/github.png',
+    title: 'GitHub',
+    description:
+      'GitHub is a web-based version control and collaboration platform for software developers. Microsoft, the biggest single contributor to GitHub, acquired the platform for $7.5 billion in 2018. GitHub, which is delivered through a software as a service (SaaS) business model, was started in 2008. It was founded on Git, an open source code management system created by Linus Torvalds to make software builds faster.',
+  },
+  {
+    url: 'https://vercel.com/dashboard',
+    img: 'https://i.ibb.co/cJWHRPr/vercel.png',
+    title: 'Vercel',
+    description:
+      "Vercel Inc., formerly ZEIT, is an American cloud platform as a service company. The company maintains the Next. js web development framework. Vercel's architecture is built around composable architecture, and deployments are handled through Git repositories.",
+  },
+  {
+    url: 'https://www.netlify.com/',
+    img: 'https://i.ibb.co/j5W3svp/netlify.png',
+    title: 'Netlify',
+    description: 'Netlify is the modern development platform for Enterprises to realize the speed, agility and performance of a scalable, composable web architecture.',
+  },
+  {
+    url: 'https://about.gitlab.com/',
+    img: 'https://i.ibb.co/MhGCZ98/gitlab.png',
+    title: 'GitLab',
+    description: 'Our mission is to make it so that everyone can contribute. When everyone can contribute, users become contributors and we greatly increase the rate of innovation.',
+  },
+  {
+    url: 'https://www.google.com/earth/about/',
+    img: 'https://i.ibb.co/tQSRyw9/google.png',
+    title: 'Google Earth',
+    description:
+      'Google Earth is a computer program that renders a 3D representation of Earth based primarily on satellite imagery. The program maps the Earth by superimposing satellite images, aerial photography, and GIS data onto a 3D globe, allowing users to see cities and landscapes from various angles.',
+  },
+  {
+    url: 'https://play.google.com/store/apps/details?id=org.telegram.messenger&hl=ru&pli=1',
+    img: 'https://i.ibb.co/60hmy3Y/telegram.webp',
+    title: 'Telegram',
+    description:
+      'Telegram Messenger, commonly known as Telegram, is an encrypted, cloud-based, cross-platform instant messaging (IM) service. It was originally launched for iOS on 14 August 2013 and Android in October 2013. It allows users to exchange messages, share media and files, live location, hold private and group voice or video calls, as well as public livestreams. It is available for Android, iOS, Windows, macOS, Linux, and web browsers. Telegram provides end-to-end encryption in voice and video calls,[6] and in optional private chats, which Telegram calls Secret Chats.',
   },
 ]
