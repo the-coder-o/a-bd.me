@@ -123,4 +123,11 @@ export const GearsAppsData = [
     description:
       'Telegram Messenger, commonly known as Telegram, is an encrypted, cloud-based, cross-platform instant messaging (IM) service. It was originally launched for iOS on 14 August 2013 and Android in October 2013. It allows users to exchange messages, share media and files, live location, hold private and group voice or video calls, as well as public livestreams. It is available for Android, iOS, Windows, macOS, Linux, and web browsers. Telegram provides end-to-end encryption in voice and video calls,[6] and in optional private chats, which Telegram calls Secret Chats.',
   },
+  {
+    url: 'https://play.google.com/store/apps/details?id=ru.foodfox.client&hl=en_US',
+    img: 'https://i.ibb.co/G2K8zbF/yandexfood.png',
+    title: 'Yandex Food',
+    description:
+      'In Yandex Eats, you can order a cooked pizza or ingredients for it. Enter the delivery address — we will find the nearest store or restaurant to you and deliver the order as quickly as possible. On average food is delivered in 32 minutes after placing an order — even faster than you would get ready to go shopping.',
+  },
 ]
