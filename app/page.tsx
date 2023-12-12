@@ -51,10 +51,10 @@ export default function Home() {
             <ArrowUpRight size={19} />
             Email me
           </a>
-          <a href="/" className={'flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:text-white group-hover:opacity-60'}>
+          <Link href={'/link'} className={'flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:text-white group-hover:opacity-60'}>
             <ArrowUpRight size={19} />
             More ways to connect
-          </a>
+          </Link>
         </motion.div>
       </div>
       <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 6 * 0.1 }} className={'pt-[65px]'}>
@@ -62,7 +62,7 @@ export default function Home() {
           <div>
             <p className={'text-[#646464] dark:text-[#b4b4b4]'}>Latest Posts</p>
           </div>
-            <div className={'group'}>
+          <div className={'group'}>
             <a href={'/'} className={'py-3 flex gap-[60px] max-md:flex-row max-md:justify-between max-md:gap-2 transition hover:!opacity-100 group-hover:opacity-50'}>
               <div className={'flex gap-[60px] max-md:flex max-md:flex-col max-md:gap-2'}>
                 <span className={'text-[#646464] dark:text-[#b4b4b4]'}>Mar 05, 2023</span>
