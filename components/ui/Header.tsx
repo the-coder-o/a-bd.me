@@ -23,6 +23,10 @@ export const Header = () => {
     router.push('/gear')
   }
 
+  const handlePushToProject = () => {
+    router.push('/project')
+  }
+
   return (
     <header className={'container'}>
       <div>
@@ -54,7 +58,7 @@ export const Header = () => {
                   <DropdownMenuItem onClick={handlePushToAbout}>About</DropdownMenuItem>
                   <DropdownMenuItem>Blog</DropdownMenuItem>
                   <DropdownMenuItem onClick={handlePushToGear}>Gear</DropdownMenuItem>
-                  <DropdownMenuItem>Projects</DropdownMenuItem>
+                  <DropdownMenuItem onClick={handlePushToProject}>Projects</DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>
