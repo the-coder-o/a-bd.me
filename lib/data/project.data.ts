@@ -28,4 +28,20 @@ export const ProjectData = [
     images: [],
     tags: ['React', 'NextJs 14', 'TypeScript', 'Prisma', 'Clerk', 'Joi', 'Yup', 'Radix', 'Zustand', 'Zod', 'Uploadthing', 'TailwindCss', 'Socket.io', 'Shadcn.ui'],
   },
+  {
+    slug: 'green-renovation-toolkit',
+    year: '2023',
+    demoUrl: '',
+    title: 'Green Renovation Toolkit',
+    homeImg: 'https://i.ibb.co/C0y6rxQ/Screenshot-2023-12-12-190513.png',
+    description: 'Tis is project about green renavation toolkit. I did this project with my team.',
+    images: [
+      'https://i.ibb.co/C0y6rxQ/Screenshot-2023-12-12-190513.png',
+      'https://i.ibb.co/MDXvcX4/Screenshot-2023-12-12-190524.png',
+      'https://i.ibb.co/5jXpt1C/Screenshot-2023-12-12-190548.png',
+      'https://i.ibb.co/XFz5PLK/Screenshot-2023-12-12-190615.png',
+      'https://i.ibb.co/KXgbKDS/Screenshot-2023-12-12-190812.png',
+    ],
+    tags: ['React', 'React vite', 'TypeScript', 'Formik', 'i18next', 'Redux', 'Sass', 'Swiper', 'Classnames'],
+  },
 ]
