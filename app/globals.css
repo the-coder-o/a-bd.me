@@ -86,6 +86,14 @@
   margin: 0 auto;
 }
 
+.container-for-image {
+  width: 100%;
+  max-width: 800px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
 .border-styles {
   border: 1px solid #3a3a3a !important;
 }
