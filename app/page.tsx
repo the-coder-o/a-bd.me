@@ -62,7 +62,7 @@ export default function Home() {
           <div>
             <p className={'text-[#646464] dark:text-[#b4b4b4]'}>Latest Posts</p>
           </div>
-          <div className={'group'}>
+            <div className={'group'}>
             <a href={'/'} className={'py-3 flex gap-[60px] max-md:flex-row max-md:justify-between max-md:gap-2 transition hover:!opacity-100 group-hover:opacity-50'}>
               <div className={'flex gap-[60px] max-md:flex max-md:flex-col max-md:gap-2'}>
                 <span className={'text-[#646464] dark:text-[#b4b4b4]'}>Mar 05, 2023</span>

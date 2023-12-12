@@ -1,0 +1,30 @@
+export const ProjectData = [
+  {
+    slug: 'online-movie-store',
+    year: '2022',
+    demoUrl: 'https://online-movis-store.vercel.app/',
+    title: 'Online Movie Store',
+    homeImg: 'https://i.ibb.co/0DRPh9q/Screenshot-2023-12-12-105140.png',
+    description: 'In this online movie store you can watch many films, TV series and other things. To watch movies, you can buy movies on the site.',
+    images: [
+      'https://i.ibb.co/0DRPh9q/Screenshot-2023-12-12-105140.png',
+      'https://i.ibb.co/PgdpyXk/Screenshot-2023-12-12-104924.png',
+      'https://i.ibb.co/F8Sm6bb/Screenshot-2023-12-12-104950.png',
+      'https://i.ibb.co/T48gpkN/Screenshot-2023-12-12-105005.png',
+      'https://i.ibb.co/q0sp38f/Screenshot-2023-12-12-105046.png',
+      'https://i.ibb.co/2Y0L5m5/Screenshot-2023-12-12-105154.png',
+      'https://i.ibb.co/qYdjTZ6/Screenshot-2023-12-12-105227.png',
+    ],
+    tags: ['React', 'NextJs 13', 'TypeScript', 'TailwindCss', 'Firebase', 'Formik', 'Joi', 'Yup', 'Momentjs', 'Zustand'],
+  },
+  {
+    slug: 'discord-app',
+    year: '2023',
+    demoUrl: '',
+    title: 'Discord App',
+    homeImg: 'https://i.ibb.co/PDCSYNr/Screenshot-2023-12-12-111733.png',
+    description: 'In this online movie store you can watch many films, TV series and other things. To watch movies, you can buy movies on the site.',
+    images: [],
+    tags: ['React', 'NextJs 14', 'TypeScript', 'Prisma', 'Clerk', 'Joi', 'Yup', 'Radix', 'Zustand', 'Zod', 'Uploadthing', 'TailwindCss', 'Socket.io', 'Shadcn.ui'],
+  },
+]

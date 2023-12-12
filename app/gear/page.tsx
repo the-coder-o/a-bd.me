@@ -1,5 +1,7 @@
 'use client'
 
+import Image from 'next/image'
+
 import { motion } from 'framer-motion'
 
 import { GearAppleData, GearHomeDeskSetupData, GearsAppsData } from '@/lib/data/gears.data'
@@ -36,7 +38,7 @@ const GearPage = () => {
                   target={'_blank'}
                   className={'flex items-center justify-center rounded-xl w-[5rem] h-[4rem] min-w-[4rem] overflow-hidden aspect-square relative dark:bg-[#fff] bg-[#e8e8e8]'}
                 >
-                  <img src={apple?.img} alt="" className={apple?.title} />
+                  <Image fill src={apple?.img} alt="" className={apple?.title} />
                 </a>
                 <div className={'grow flex justify-between gap-2 items-center'}>
                   <div className={'space-y-1'}>
@@ -63,7 +65,7 @@ const GearPage = () => {
                   target={'_blank'}
                   className={'flex items-center justify-center rounded-xl w-[5rem] h-[4rem] min-w-[4rem] overflow-hidden aspect-square relative dark:bg-[#fff] bg-[#e8e8e8]'}
                 >
-                  <img src={deskSetup?.img} alt="" className={deskSetup?.title} />
+                  <Image fill src={deskSetup?.img} alt="" className={deskSetup?.title} />
                 </a>
                 <div className={'grow flex justify-between gap-2 items-center'}>
                   <div className={'space-y-1'}>
@@ -90,7 +92,7 @@ const GearPage = () => {
                   target={'_blank'}
                   className={'flex items-center justify-center rounded-xl w-[5rem] h-[4rem] min-w-[4rem] overflow-hidden aspect-square relative dark:bg-[#fff] bg-[#e8e8e8]'}
                 >
-                  <img src={apps?.img} alt="" className={apps?.title} />
+                  <Image fill src={apps?.img} alt="" className={apps?.title} />
                 </a>
                 <div className={'grow flex justify-between gap-2 items-center'}>
                   <div className={'space-y-1'}>
