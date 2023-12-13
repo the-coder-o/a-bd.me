@@ -131,3 +131,39 @@ export const GearsAppsData = [
       'In Yandex Eats, you can order a cooked pizza or ingredients for it. Enter the delivery address — we will find the nearest store or restaurant to you and deliver the order as quickly as possible. On average food is delivered in 32 minutes after placing an order — even faster than you would get ready to go shopping.',
   },
 ]
+
+export const GearWebsiteData = [
+  {
+    url: 'https://aliexpress.ru/?gatewayAdapt=glo2rus',
+    img: 'https://i.ibb.co/68JKqh2/alixpress.png',
+    title: 'AliExpress',
+    description: ' AliExpress is a global marketplace targeting consumers around the world and enabling them to buy directly from manufacturers and distributors in China and around the world',
+  },
+  {
+    url: 'https://www.amazon.com/',
+    img: 'https://i.ibb.co/M5tDjzT/amazon.png',
+    title: 'Amazon',
+    description: 'Amazon’s Christmas ad featuring a cover of The Beatles’ “In My Life” is a love letter to deep friendships and the joyful memories we share',
+  },
+  {
+    url: 'https://stackoverflow.com/',
+    img: 'https://i.ibb.co/7rv8YyM/stackoverflow.png',
+    title: 'Stack Overflow',
+    description:
+      'Stack Overflow is a question-and-answer website for computer programmers. It is the flagship site of the Stack Exchange Network. It was created in 2008 by Jeff Atwood and Joel Spolsky. It features questions and answers on certain computer programming topics.',
+  },
+  {
+    url: 'https://medium.com/',
+    img: 'https://i.ibb.co/xCCcSpx/medium.png',
+    title: 'Medium',
+    description:
+      "Medium is a social publishing platform that is open to all and home to a diverse array of stories, ideas, and perspectives. Anyone can write for the platform, so it's great for beginners. Popular topics on Medium range from mental health to social media, from world affairs and trending news to productivity hacks.",
+  },
+  {
+    url: 'https://www.alibaba.com/',
+    img: 'https://i.ibb.co/dDQXMtk/alibaba.png',
+    title: 'Alibaba',
+    description:
+      'Alibaba Group Holding Limited, or Alibaba (Chinese: 阿里巴巴), is a Chinese multinational technology company specializing in e-commerce, retail, Internet, and technology. Founded on 28 June 1999[1] in Hangzhou, Zhejiang, the company provides consumer-to-consumer (C2C), business-to-consumer (B2C),',
+  },
+]

@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 import { motion } from 'framer-motion'
 
-import { GearAppleData, GearHomeDeskSetupData, GearsAppsData } from '@/lib/data/gears.data'
+import { GearAppleData, GearHomeDeskSetupData, GearsAppsData, GearWebsiteData } from '@/lib/data/gears.data'
 
 // export const metadata: Metadata = {
 //   title: 'Gear | Abdul Basit',
@@ -21,7 +21,7 @@ const GearPage = () => {
               Gear
             </motion.h3>
             <motion.p initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 2 * 0.1 }} className="dark:text-[#b4b4b4] text-[#646464]">
-              My toolbox.
+              My toolbox, and i recommend you.
             </motion.p>
           </div>
           <motion.p initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 3 * 0.1 }} className={'max-w-lg'}>
@@ -33,12 +33,8 @@ const GearPage = () => {
           <div className={'grid md:grid-cols-2 gap-x-6 gap-y-8 group'}>
             {GearAppleData?.map((apple) => (
               <div className={'flex gap-4 items-center transition hover:!opacity-100 group-hover:opacity-50'}>
-                <a
-                  href={apple?.url}
-                  target={'_blank'}
-                  className={'flex items-center justify-center rounded-xl w-[5rem] h-[4rem] min-w-[4rem] overflow-hidden aspect-square relative dark:bg-[#fff] bg-[#e8e8e8]'}
-                >
-                  <Image fill src={apple?.img} alt="" className={apple?.title} />
+                <a href={apple?.url} target={'_blank'} className={'flex items-center justify-center rounded-xl min-w-[4rem] overflow-hidden aspect-square relative dark:bg-[#fff] bg-[#e8e8e8]'}>
+                  <Image fill src={apple?.img} alt={apple?.title} />
                 </a>
                 <div className={'grow flex justify-between gap-2 items-center'}>
                   <div className={'space-y-1'}>
@@ -60,12 +56,8 @@ const GearPage = () => {
           <div className={'grid md:grid-cols-2 gap-x-6 gap-y-8 group'}>
             {GearHomeDeskSetupData?.map((deskSetup) => (
               <div className={'flex gap-4 items-center transition hover:!opacity-100 group-hover:opacity-50'}>
-                <a
-                  href={deskSetup?.url}
-                  target={'_blank'}
-                  className={'flex items-center justify-center rounded-xl w-[5rem] h-[4rem] min-w-[4rem] overflow-hidden aspect-square relative dark:bg-[#fff] bg-[#e8e8e8]'}
-                >
-                  <Image fill src={deskSetup?.img} alt="" className={deskSetup?.title} />
+                <a href={deskSetup?.url} target={'_blank'} className={'flex items-center justify-center rounded-xl min-w-[4rem] overflow-hidden aspect-square relative dark:bg-[#fff] bg-[#e8e8e8]'}>
+                  <Image fill src={deskSetup?.img} alt={deskSetup?.title} />
                 </a>
                 <div className={'grow flex justify-between gap-2 items-center'}>
                   <div className={'space-y-1'}>
@@ -87,12 +79,8 @@ const GearPage = () => {
           <div className={'grid md:grid-cols-2 gap-x-6 gap-y-8 group'}>
             {GearsAppsData?.map((apps) => (
               <div className={'flex gap-4 items-center transition hover:!opacity-100 group-hover:opacity-50'}>
-                <a
-                  href={apps?.url}
-                  target={'_blank'}
-                  className={'flex items-center justify-center rounded-xl w-[5rem] h-[4rem] min-w-[4rem] overflow-hidden aspect-square relative dark:bg-[#fff] bg-[#e8e8e8]'}
-                >
-                  <Image fill src={apps?.img} alt="" className={apps?.title} />
+                <a href={apps?.url} target={'_blank'} className={'flex items-center justify-center rounded-xl min-w-[4rem] overflow-hidden aspect-square relative dark:bg-[#fff] bg-[#e8e8e8]'}>
+                  <Image fill src={apps?.img} alt={apps?.title} />
                 </a>
                 <div className={'grow flex justify-between gap-2 items-center'}>
                   <div className={'space-y-1'}>
@@ -101,6 +89,29 @@ const GearPage = () => {
                   </div>
                   <div>
                     <a href={apps?.url} target={'_blank'} className={'ml-auto text-sm rounded-full px-4 py-1 dark:bg-secondary h-fit bg-[#e8e8e8]'}>
+                      Get
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+        <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 7 * 0.1 }} className={'flex flex-col gap-8'}>
+          <h2 className={'text-[#646464] dark:text-[#b4b4b4]'}>Websites</h2>
+          <div className={'grid md:grid-cols-2 gap-x-6 gap-y-8 group'}>
+            {GearWebsiteData?.map((website) => (
+              <div className={'flex gap-4 items-center transition hover:!opacity-100 group-hover:opacity-50'}>
+                <a href={website?.url} target={'_blank'} className={'flex items-center justify-center rounded-xl min-w-[4rem] overflow-hidden aspect-square relative dark:bg-[#fff] bg-[#e8e8e8]'}>
+                  <Image fill src={website?.img} alt={website?.title} />
+                </a>
+                <div className={'grow flex justify-between gap-2 items-center'}>
+                  <div className={'space-y-1'}>
+                    <h3 className={'text-primary line-clamp-2 leading-tight font-medium'}>{website?.title}</h3>
+                    <p className={'line-clamp-3 leading-tight text-sm text-[#646464] dark:text-[#b4b4b4]'}>{website?.description}</p>
+                  </div>
+                  <div>
+                    <a href={website?.url} target={'_blank'} className={'ml-auto text-sm rounded-full px-4 py-1 dark:bg-secondary h-fit bg-[#e8e8e8]'}>
                       Get
                     </a>
                   </div>
