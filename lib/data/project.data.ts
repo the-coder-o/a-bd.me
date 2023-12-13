@@ -25,7 +25,17 @@ export const ProjectData = [
     title: 'Discord App',
     homeImg: 'https://i.ibb.co/PDCSYNr/Screenshot-2023-12-12-111733.png',
     description: 'In this online movie store you can watch many films, TV series and other things. To watch movies, you can buy movies on the site.',
-    images: [],
+    images: [
+      'https://i.ibb.co/kyBX5jx/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-37-11.png',
+      'https://i.ibb.co/FH7qZ09/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-37-20.png',
+      'https://i.ibb.co/kSkw2ft/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-37-39.png',
+      'https://i.ibb.co/6gV2mfR/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-37-51.png',
+      'https://i.ibb.co/HnwF8CV/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-37-58.png',
+      'https://i.ibb.co/X5Bhtph/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-38-09.png',
+      'https://i.ibb.co/GH5jwYj/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-38-18.png',
+      'https://i.ibb.co/52S4TpM/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-38-31.png',
+      'https://i.ibb.co/MZTL5VB/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-38-49.png',
+    ],
     tags: ['React', 'NextJs 14', 'TypeScript', 'Prisma', 'Clerk', 'Joi', 'Yup', 'Radix', 'Zustand', 'Zod', 'Uploadthing', 'TailwindCss', 'Socket.io', 'Shadcn.ui'],
   },
   {
