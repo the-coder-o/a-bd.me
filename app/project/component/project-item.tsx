@@ -8,7 +8,7 @@ const ProjectItem = () => {
     <>
       {ProjectData?.map((project) => (
         <div className={'py-6 flex flex-col md:flex-row gap-4 md:gap-6 transition-opacity first:pt-0 last:pb-0 hover:!opacity-100 group-hover:opacity-50'}>
-          <Link href={'/project/' + project?.slug} className={'w-full md:w-2/5 aspect-video bg-[#222222] rounded-lg border border-secondary overflow-clip select-none'}>
+          <Link href={'/project/' + project?.slug} className={'w-full md:w-2/5 aspect-video dark:bg-[#222222] bg-[#6e6e6e] rounded-lg border border-secondary overflow-clip select-none'}>
             <div className={'relative w-full h-full overflow-hidden'}>
               <div className={'transition-opacity opacity-0 inset-0 z-50 pointer-events-none'}></div>
               <Image fill src={project?.homeImg} alt={project?.title} className={'w-full p-2 !h-[120%] !flex !items-center !justify-center !rounded-xl'} />
