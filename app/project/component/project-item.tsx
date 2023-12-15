@@ -11,7 +11,7 @@ const ProjectItem = () => {
           <Link href={'/project/' + project?.slug} className={'w-full md:w-2/5 aspect-video bg-[#222222] rounded-lg border border-secondary overflow-clip select-none'}>
             <div className={'relative w-full h-full overflow-hidden'}>
               <div className={'transition-opacity opacity-0 inset-0 z-50 pointer-events-none'}></div>
-              <Image fill src={project?.homeImg} alt={project?.title} className={'w-full p-2 !h-[120%] !flex !items-center !justify-center'} />
+              <Image fill src={project?.homeImg} alt={project?.title} className={'w-full p-2 !h-[120%] !flex !items-center !justify-center !rounded-xl'} />
             </div>
           </Link>
           <div className={'w-full md:w-3/5 space-y-2'}>
@@ -21,7 +21,7 @@ const ProjectItem = () => {
               </a>
               <p className={'text-primary font-medium dark:text-[#b4b4b4]'}> · {project?.year}</p>
             </div>
-            <p className={'text-[17px] text-[#6e6e6e]'}>{project?.description}</p>
+            <p className={'text-[17px] text-[#6e6e6e] line-clamp-4 leading-tight'}>{project?.description}</p>
           </div>
         </div>
       ))}

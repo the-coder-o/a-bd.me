@@ -5,7 +5,7 @@ export const ContactLinkData = [
     icon: 'fa-solid fa-envelope',
   },
   {
-    title: 'GiTHub',
+    title: 'GitHub',
     url: 'https://github.com/Hacker00002',
     icon: 'fa-brands fa-github',
   },

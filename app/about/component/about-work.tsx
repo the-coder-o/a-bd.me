@@ -8,7 +8,7 @@ const AboutWork = () => {
         <p className={'w-full'}>1.2+ years of professional development experience.</p>
         <p className={'w-full'}>
           I started my career in 2021 which I will always be appreciative of. Then I worked at a few small local companies. Now I'm a full stack engineer currently working at IT park, one of the
-          largest private real estate investors in the world.
+          largest private real estate investors in the Uzbekistan.
         </p>
         <div className="flex flex-col gap-8 max-md:flex-col group">
           {WorkData.map((work) => (

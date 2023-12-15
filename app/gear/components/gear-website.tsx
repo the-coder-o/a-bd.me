@@ -15,7 +15,7 @@ const GearWebsite = () => {
             <div className={'grow flex justify-between gap-2 items-center'}>
               <div className={'space-y-1'}>
                 <h3 className={'text-primary line-clamp-2 leading-tight font-medium'}>{website?.title}</h3>
-                <p className={'line-clamp-3 leading-tight text-sm text-[#646464] dark:text-[#b4b4b4]'}>{website?.description}</p>
+                <p className={'line-clamp-2 leading-tight text-sm text-[#646464] dark:text-[#b4b4b4]'}>{website?.description}</p>
               </div>
               <div>
                 <a href={website?.url} target={'_blank'} className={'ml-auto text-sm rounded-full px-4 py-1 dark:bg-secondary h-fit bg-[#e8e8e8]'}>

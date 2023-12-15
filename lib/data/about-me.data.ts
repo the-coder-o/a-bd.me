@@ -26,11 +26,11 @@ export const ContactData = [
 
 export const WorkData = [
   {
-    img: 'https://i.ibb.co/XYGKKbs/251952487-188222743490507-7899200387022051448-n.jpg',
-    workTitle: 'FullStack',
-    year: '2022-2022',
-    companyName: 'Astrum It Academy',
-    url: 'https://astrum.uz/eng',
+    img: 'https://i.ibb.co/XLkNvmK/k-BYm-FMOh-400x400.jpg',
+    workTitle: 'Frontend',
+    year: '2023-',
+    companyName: 'It Park of Uzbekistan',
+    url: 'https://it-park.uz/',
   },
   {
     img: 'https://i.ibb.co/3BxqDFG/channels4-profile.jpg',
@@ -40,10 +40,53 @@ export const WorkData = [
     url: 'https://najottalim.uz/',
   },
   {
-    img: 'https://i.ibb.co/XLkNvmK/k-BYm-FMOh-400x400.jpg',
-    workTitle: 'Frontend',
-    year: '2023',
-    companyName: 'It Park of Uzbekistan',
-    url: 'https://it-park.uz/',
+    img: 'https://i.ibb.co/XYGKKbs/251952487-188222743490507-7899200387022051448-n.jpg',
+    workTitle: 'FullStack',
+    year: '2022-2022',
+    companyName: 'Astrum It Academy',
+    url: 'https://astrum.uz/eng',
+  },
+]
+
+export const SkillData = [
+  {
+    img: 'https://i.ibb.co/9bz79qY/next-removebg-preview.png',
+    skillTitle: 'Next.js',
+    url: '',
+  },
+  {
+    img: '',
+    skillTitle: 'React.Js',
+    url: '',
+  },
+  {
+    img: 'https://i.ibb.co/9bz79qY/next-removebg-preview.png',
+    skillTitle: 'Tailwind.css',
+    url: '',
+  },
+  {
+    img: 'https://i.ibb.co/4jQWzpK/nodejs-removebg-preview.png',
+    skillTitle: 'Node.Js',
+    url: '',
+  },
+  {
+    img: 'https://i.ibb.co/9bz79qY/next-removebg-preview.png',
+    skillTitle: 'Express.js',
+    url: '',
+  },
+  {
+    img: 'https://i.ibb.co/4jQWzpK/nodejs-removebg-preview.png',
+    skillTitle: 'Nest.Js',
+    url: '',
+  },
+  {
+    img: 'https://i.ibb.co/4jQWzpK/nodejs-removebg-preview.png',
+    skillTitle: 'Sql',
+    url: '',
+  },
+  {
+    img: 'https://i.ibb.co/4YFzNs3/github-removebg-preview.png',
+    skillTitle: 'GitHub',
+    url: '',
   },
 ]

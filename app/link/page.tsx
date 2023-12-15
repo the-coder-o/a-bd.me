@@ -25,7 +25,7 @@ const LinkPage = () => {
             transition={{ duration: 0.5, delay: 3 * 0.1 }}
             className="max-w-sm dark:text-[#b4b4b4] text-[#646464] mx-auto text-center"
           >
-            FullStack developer who loves building cool things with code. In addition to coding, I also make YouTube videos. Find me elsewhere {''}
+            FullStack developer who loves building cool things with code. In addition to coding, Find me elsewhere {''}
             <a target={'_blank'} href="https://t.me/imAnonymous0o0" className={'underline hover:text-white'}>
               @imAnonymous0o0
             </a>
