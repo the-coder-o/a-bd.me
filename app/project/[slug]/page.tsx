@@ -41,9 +41,10 @@ const ProjectRoute = () => {
           </motion.p>
         </div>
         <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 4 * 0.1 }} className={'container-for-image flex flex-col justify-center'}>
-          {project?.images?.map((image) => (
+          {project?.images?.map((item: { image: string; description: string }) => (
             <div>
-              <img src={image} alt={project?.title} className={'!w-[100%] my-8 max-md:my-4 rounded-lg'} />
+              <img src={item?.image} alt={project?.title} className={'!w-[100%] my-8 max-md:my-4 rounded-lg'} />
+              <p className={'mx-auto my-2 max-w-md text-center text-xs font-medium leading-tight text-tertiary text-[#6e6e6e]'}>{item?.description}</p>
             </div>
           ))}
         </motion.div>
