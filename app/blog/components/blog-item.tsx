@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { BlogData } from '@/lib/data/blog.data'
+import { BlogData } from '@/content/blog.data'
 
 const BlogItem = () => {
   return (

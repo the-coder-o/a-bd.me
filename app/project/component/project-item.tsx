@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import Halo from '@/components/ui/Halo'
 
-import { ProjectData } from '@/lib/data/project.data'
+import { ProjectData } from '@/content/project.data'
 
 const ProjectItem = () => {
   return (

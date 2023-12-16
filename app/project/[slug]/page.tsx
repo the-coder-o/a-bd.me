@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import { motion } from 'framer-motion'
-import { ProjectData } from '@/lib/data/project.data'
+import { ProjectData } from '@/content/project.data'
 
 const ProjectRoute = () => {
   const pathname = usePathname()

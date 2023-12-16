@@ -4,10 +4,10 @@ import Halo from '@/components/ui/Halo'
 
 import { motion } from 'framer-motion'
 
-import { BlogData } from '@/lib/data/blog.data'
+import { BlogData } from '@/content/blog.data'
 
 import BlogItem from '@/app/blog/components/blog-item'
-import SignUpFrom from '@/app/blog/components/SignUpFrom'
+import SignUpFrom from '@/app/blog/components/ui/SignUpFrom'
 
 const BlogPage = () => {
   return (
