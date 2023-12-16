@@ -24,7 +24,7 @@ const BlogPage = () => {
         <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 3 * 0.1 }} className={'group relative'}>
           <BlogItem />
         </motion.div>
-        <Halo strength={5}>
+        <Halo strength={6}>
           <SignUpFrom />
         </Halo>
       </div>
