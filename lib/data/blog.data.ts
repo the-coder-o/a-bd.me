@@ -1,8 +1,9 @@
 export const BlogData = [
   {
+    slug: 'tailwind-over-everything',
     blog_title: 'Tailwind over everything. Mocking the iOS Weather app UI',
     blog_description: 'This is why I will use Tailwind CSS for almost every project moving forward.',
-    blog_publish_date: '',
+    blog_publish_date: 'Dec 16, 2023',
     blog_main_image_url: 'https://www.b-r.io/_next/image?url=%2Fblog%2Ftailwind%2Fimage.png&w=750&q=100',
     blog_main_description:
       "Tailwind CSS is a utility-first CSS framework that has taken the web development world by storm. It has quickly become a go-to choice for developers who want to streamline their CSS workflow and build websites faster. If you're not already familiar with Tailwind, you may be wondering what all the fuss is about. In this blog, we'll explore some of the key benefits of using Tailwind CSS as well as some of the drawbacks of more traditional approaches to CSS development. By the end of this post, you'll have a better understanding of how Tailwind can make your development process more efficient and effective, and why it's quickly becoming a must-have tool for web developers of all levels.",
