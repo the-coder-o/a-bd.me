@@ -86,4 +86,67 @@ export const BlogData = [
     ],
     blog_tags: ['Styling', 'Css', 'TailwindCss'],
   },
+  {
+    slug: 'itpark-my-new-work-place',
+    blog_title: 'It-Park of Uzbekistan, My new work place.',
+    blog_description: 'I joined the It park company 2 months ago, and now we are doing various projects together with our team',
+    blog_publish_date: 'Dec 17, 2023',
+    blog_main_image_url: 'https://i.ibb.co/VvMzGpd/1.jpg',
+    blog_main_description:
+      'IT Park is a complex of facilities, buildings and structures designed to ensure the startup and market access, an extraterritorial free economic zone for IT companies, including integration with scientific and educational organizations.',
+    blogs: [
+      {
+        blog_title: 'IT Park Today',
+        blog_description:
+          'On July 24, 2019 the first IT Park in the Republic of Uzbekistan opened its doors in Tashkent. In a given short amount of time, IT Park has already brought its first fruits in the form of 28 new startups, created dozens of projects in the field of information technology, as well as trainings, workshops and meetings to encourage the youth of our country, their interest in this area and develop computer literacy among the population.',
+        blog_list: [
+          'IT Park is a complex of facilities, buildings and structures designed to ensure the',
+          'startup and market access, an extraterritorial free economic zone for IT',
+          'companies, including integration with scientific and educational organizations.',
+        ],
+        blog_video_url: [
+          {
+            url_video: 'https://youtu.be/zgFs5IZTHyA',
+            video_title: 'How is compensation for international IT certifications?',
+            video_description:
+              'IT Park helped students get internships and covered 70% of their educational expenses. Students covered the rest of their tuition through an international certificate program.',
+          },
+        ],
+        blog_alert:
+          'We are looking for startup projects in the field of IT, aimed at the global market. If you meet the criteria described above, then join us for a three-month program to gain the skills necessary for entrepreneurs to create and manage their company.',
+      },
+      {
+        blog_title: 'Do you want to become a resident?',
+        blog_description:
+          'Legal entities registered on the territory of the Republic of Uzbekistan can become the resident of IT Park. The status gives an opportunity to be exempted from paying taxes, as well as receive a number of benefits.',
+        blog_paragraph: [
+          '1 On November 20, 2019 President Republic of Uzbekistan Shavkat Mirziyoyev visited IT Park and laid the first symbolic stone for the construction of a new stage. “The stability of our economy, high-quality and efficient operation in all sectors, the convenience of life of the population depend on information technologies. Therefore, it is necessary to create more extensive opportunities for this sphere, the necessary infrastructure, to encourage specialists, to educate capable youth”, said Shavkat Mirziyoyev.',
+          '2 During the first visit of the President of the Republic of Uzbekistan Shavkat Mirziyoyev to the Republic of India, which was held from September 30 to October 2, 2018, Uzbek and Indian Parties agreed to expand cooperation in the field of IT. The Uzbek side, together with the information and technology companies of India, expressed interest in creating an Information Technology Park in Uzbekistan on basis of their best practices in software development and accelerating startups. Thus, it can be noted that IT Park was created on the initiative of the President of the Republic of Uzbekistan to improve the startup ecosystem and startup projects and their implementation in our country.',
+        ],
+        blog_images: ['https://i.ibb.co/VvMzGpd/1.jpg', 'https://i.ibb.co/NtjRBjX/7.jpg', 'https://i.ibb.co/K5P43SQ/3.jpg', 'https://i.ibb.co/Wz343NF/6.jpg'],
+      },
+      {
+        blog_title: 'The American publication Stock Investor highlights the attractiveness of the IT market in Uzbekistan for foreign investors',
+        blog_description:
+          'The American publication Stock Investor published an article on the rapid development of the IT sector in Central Asia, specifically in Uzbekistan.  The article underscores that Uzbekistan, among the five Central Asian republics, is drawing investor attention with its ambition to become a global player in the field of information technology. The swift economic growth in the region, especially in Kazakhstan and Uzbekistan, presents investment prospects in the IT sector. According to World Bank projections, the regional GDP may strengthen by 4.8% by the end of 2023, maintaining an average of 4.7% in the next couple of years.',
+      },
+      {
+        blog_title: 'Create your future with IT Park University',
+        blog_description:
+          'The founders of the first new format university in Uzbekistan are EPAM Systems, one of the world leaders in software development, and IT Park. Bachelor students learn the basics of computer science and acquire critical teamwork and project execution skills. The study program covers all major topics in software engineering, focusing on real-life competencies and hands-on experience that are essential for a successful career in IT. The duration of the bachelor program is 3 years. In the process, students improve their knowledge of the English language, as the learning takes place in English.',
+        blog_images: [
+          'https://itpu.uz/upload/landing/4e4/lm8l35gp470sj14b5v36pv65pejgjoji/1_44_@2x.jpg',
+          'https://i.ibb.co/4StR2L5/22.jpg',
+          'https://i.ibb.co/hWwJhpB/33.jpg',
+          'https://i.ibb.co/VqQKcdN/44.jpg',
+        ],
+        blog_paragraph: [
+          '1 IT Park of Uzbekistan is the leading center in the field of IT in the Republic of Uzbekistan, the first Information Technologies Park, which was created on the initiative of the President of Uzbekistan on January 10, 2019.',
+          '2 The main goal of the organization is to develop the IT-sector in Uzbekistan, create the necessary infrastructure, reform the system of training in IT-specialties, launch promising start-up projects, and support IT-companies.',
+          '3 To date, the organization has opened more than 200 IT-centers and is implementing the creation of more than 200 IT-schools throughout the country. The number of technopark resident companies is more than 500, and by the end of 2022, the number of branches and representative offices of the IT Park in the country and abroad will reach 14.',
+        ],
+      },
+    ],
+    blog_tags: ['New-Work', 'About', 'ItPark', 'It Park University'],
+  },
 ]

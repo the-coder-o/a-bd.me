@@ -27,6 +27,10 @@ export const Header = () => {
     router.push('/project')
   }
 
+  const handlePushToBlog = () => {
+    router.push('/blog')
+  }
+
   return (
     <header className={'container'}>
       <div>
@@ -56,7 +60,7 @@ export const Header = () => {
                 <DropdownMenuTrigger className={'text-[#646464] dark:text-[#b4b4b4] relative'}>Menu +</DropdownMenuTrigger>
                 <DropdownMenuContent className={'absolute left-[-100px]'}>
                   <DropdownMenuItem onClick={handlePushToAbout}>About</DropdownMenuItem>
-                  <DropdownMenuItem>Blog</DropdownMenuItem>
+                  <DropdownMenuItem onClick={handlePushToBlog}>Blog</DropdownMenuItem>
                   <DropdownMenuItem onClick={handlePushToGear}>Gear</DropdownMenuItem>
                   <DropdownMenuItem onClick={handlePushToProject}>Projects</DropdownMenuItem>
                 </DropdownMenuContent>

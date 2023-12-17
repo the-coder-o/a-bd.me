@@ -6,6 +6,7 @@ import { ArrowUpRight, Github, TrendingUp, Youtube } from 'lucide-react'
 import CountUp from 'react-countup'
 import { motion } from 'framer-motion'
 
+import BlogItem from '@/app/blog/components/blog-item'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 export default function Home() {
@@ -63,27 +64,7 @@ export default function Home() {
             <p className={'text-[#646464] dark:text-[#b4b4b4]'}>Latest Posts</p>
           </div>
           <div className={'group relative'}>
-            <a href={'/'} className={'py-3 flex gap-[60px] max-md:flex-row max-md:justify-between max-md:gap-2 transition hover:!opacity-100 group-hover:opacity-50'}>
-              <div className={'flex gap-[60px] max-md:flex max-md:flex-col max-md:gap-2'}>
-                <span className={'text-[#646464] dark:text-[#b4b4b4]'}>Mar 05, 2023</span>
-                <p className={'font-medium dark:text-[#fff] transition max-md:!line-clamp-1 max-md:leading-tight'}>Next.js upgrading from 13 to 14</p>
-              </div>
-              <img src="https://www.b-r.io/_next/image?url=%2Fprojects%2Fhines%2Fcover.png&w=3840&q=75" width={96} height={96} alt="my" className={'rounded-lg hidden max-md:block'} />
-            </a>
-            <a href={'/'} className={'py-3 flex gap-[60px] max-md:flex-row max-md:justify-between max-md:gap-2 transition hover:!opacity-100 group-hover:opacity-50'}>
-              <div className={'flex gap-[60px] max-md:flex max-md:flex-col max-md:gap-2'}>
-                <span className={'text-[#646464] dark:text-[#b4b4b4]'}>Mar 05, 2023</span>
-                <p className={'font-medium dark:text-[#fff] transition max-md:!line-clamp-1 max-md:leading-tight'}>Clerk | More than authentication. Complete user management</p>
-              </div>
-              <img src="https://www.b-r.io/_next/image?url=%2Fprojects%2Fhines%2Fcover.png&w=3840&q=75" width={96} height={96} alt="my" className={'rounded-lg hidden max-md:block'} />
-            </a>
-            <a href={'/'} className={'py-3 flex gap-[60px] max-md:flex-row max-md:justify-between max-md:gap-2 transition hover:!opacity-100 group-hover:opacity-50'}>
-              <div className={'flex gap-[60px] max-md:flex max-md:flex-col max-md:gap-2'}>
-                <span className={'text-[#646464] dark:text-[#b4b4b4]'}>Mar 05, 2023</span>
-                <p className={'font-medium dark:text-[#fff] transition max-md:!line-clamp-1 max-md:leading-tight'}>Discord clone app, with next.js,clerk,tailwind.css</p>
-              </div>
-              <img src="https://www.b-r.io/_next/image?url=%2Fprojects%2Fhines%2Fcover.png&w=3840&q=75" width={96} height={96} alt="my" className={'rounded-lg hidden max-md:block'} />
-            </a>
+            <BlogItem />
           </div>
           <div>
             <a href="/" className={'text-[#646464] dark:text-[#b4b4b4] underline transition hover:text-zinc-900 dark:hover:text-white'}>

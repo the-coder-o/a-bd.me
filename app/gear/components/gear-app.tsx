@@ -10,7 +10,7 @@ const GearApp = () => {
         {GearsAppsData?.map((apps) => (
           <div className={'flex gap-4 items-center transition hover:!opacity-100 group-hover:opacity-50'}>
             <a href={apps?.url} target={'_blank'} className={'flex items-center justify-center rounded-xl min-w-[4rem] overflow-hidden aspect-square relative dark:bg-[#fff] bg-[#e8e8e8]'}>
-              <Image fill src={apps?.img} alt={apps?.title} />
+              <Image width={40} height={40} src={apps?.img} alt={apps?.title} />
             </a>
             <div className={'grow flex justify-between gap-2 items-center'}>
               <div className={'space-y-1'}>

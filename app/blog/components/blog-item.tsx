@@ -13,7 +13,7 @@ const BlogItem = () => {
           </div>
           <img src={blog?.blog_main_image_url} width={100} height={100} alt="my" className={'rounded-lg hidden max-md:block'} />
         </Link>
-      ))}
+      )).reverse()}
     </>
   )
 }
