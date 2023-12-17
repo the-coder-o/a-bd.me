@@ -92,6 +92,43 @@ export const ProjectData = [
     tags: ['React', 'NextJs 14', 'TypeScript', 'Prisma', 'Clerk', 'Joi', 'Yup', 'Radix', 'Zustand', 'Zod', 'Uploadthing', 'TailwindCss', 'Socket.io', 'Shadcn.ui'],
   },
   {
+    slug: 'online-game-store-app',
+    year: '2021',
+    demoUrl: 'https://gameshops.netlify.app/',
+    title: 'Game Store App',
+    homeImg: 'https://i.ibb.co/LJXpB3Y/Download-Games-com-Google-Chrome-17-12-2023-22-30-03.png',
+    description:
+      'I did this project when i started first time. I used these project html,css and javascript. I spent this project creative design and creative slider. In this project you can see some games and you have ability download games',
+    images: [
+      {
+        image: 'https://i.ibb.co/LJXpB3Y/Download-Games-com-Google-Chrome-17-12-2023-22-30-03.png',
+        description: 'This is home page,you can see new news about store and you can see top games. and you can also download games.',
+      },
+      {
+        image: 'https://i.ibb.co/D12FCzJ/Download-Games-com-Google-Chrome-17-12-2023-22-30-14.png',
+        description: '',
+      },
+      {
+        image: 'https://i.ibb.co/QmT7rRr/Download-Games-com-Google-Chrome-17-12-2023-22-29-39.png',
+        description:
+          'This is single page of the games, you can watch about the game and you can see screenshots about the game and you can download for windows,ios and android. You can ride about the game.',
+      },
+      {
+        image: 'https://i.ibb.co/YNb5Gyp/Download-Games-com-Google-Chrome-17-12-2023-22-29-45.png',
+        description: '',
+      },
+      {
+        image: 'https://i.ibb.co/r7xwBzP/Download-Games-com-Google-Chrome-17-12-2023-22-30-27.png',
+        description: '',
+      },
+      {
+        image: 'https://i.ibb.co/BqF0nDk/Download-Games-com-Google-Chrome-17-12-2023-22-30-50.png',
+        description: '',
+      },
+    ],
+    tags: ['Html', 'Css', 'JavaScript', 'Swiper', 'BubbleJs'],
+  },
+  {
     slug: 'green-renovation-toolkit',
     year: '2023',
     demoUrl: '',
