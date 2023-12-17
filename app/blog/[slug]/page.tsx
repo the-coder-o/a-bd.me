@@ -65,10 +65,10 @@ const SingleBlogPage = () => {
                   ))}
                   <div className={cn('', blog?.blog_video_url ? 'block' : 'hidden')}>
                     {blog?.blog_video_url?.map((item: any) => (
-                      <Link href={item?.url_video} target={'_blank'} className={''}>
+                      <Link href={item?.url_video} target={'_blank'}>
                         <Halo strength={5} className={'flex bg-[#efefef] dark:bg-[#222222] rounded-md overflow-clip p-4 gap-4 md:gap-6 md:p-6 items-center my-8 no-underline border border-secondary'}>
                           <div className={'prose w-full max-w-[12rem]'}>
-                            <img width={600} height={400} src="https://it-park.uz/images/video-preview.png" alt="" className={'rounded-md'} />
+                            <img width={600} height={400} src={item?.url_image} alt={item?.blog_title} className={'rounded-md'} />
                           </div>
                           <div className="w-full flex flex-col gap-2 leading-tight">
                             <p className="m-0 text-sm font-medium text-[#8d8d8d] flex items-center gap-0.5">youtube.com</p>

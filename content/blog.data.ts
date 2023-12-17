@@ -106,6 +106,7 @@ export const BlogData = [
         ],
         blog_video_url: [
           {
+            url_image: 'https://www.spot.uz/media/img/2022/08/dK6J7q16617527520523_l.jpg',
             url_video: 'https://youtu.be/zgFs5IZTHyA',
             video_title: 'How is compensation for international IT certifications?',
             video_description:
@@ -144,6 +145,14 @@ export const BlogData = [
           '1 IT Park of Uzbekistan is the leading center in the field of IT in the Republic of Uzbekistan, the first Information Technologies Park, which was created on the initiative of the President of Uzbekistan on January 10, 2019.',
           '2 The main goal of the organization is to develop the IT-sector in Uzbekistan, create the necessary infrastructure, reform the system of training in IT-specialties, launch promising start-up projects, and support IT-companies.',
           '3 To date, the organization has opened more than 200 IT-centers and is implementing the creation of more than 200 IT-schools throughout the country. The number of technopark resident companies is more than 500, and by the end of 2022, the number of branches and representative offices of the IT Park in the country and abroad will reach 14.',
+        ],
+        blog_video_url: [
+          {
+            url_image: 'https://www.park.edu/wp-content/uploads/2022/02/park-logo-white-on-red.jpg',
+            url_video: 'https://youtu.be/4OfotY_jxXs',
+            video_title: 'It park University of Uzbekistan',
+            video_description: 'We invite applicants, their parents and everyone interested in IT education to our webinar "How to become a student of IT Park University".',
+          },
         ],
       },
     ],
