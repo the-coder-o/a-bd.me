@@ -2,7 +2,7 @@
 
 import { cn } from '@/lib/utils'
 
-import { AlertCircle } from 'lucide-react'
+import { AlertCircle, ThumbsDown, ThumbsUp } from 'lucide-react'
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -120,6 +120,13 @@ const SingleBlogPage = () => {
                 </div>
               </>
             ))}
+          </div>
+          <div className={'container flex items-center justify-between'}>
+            <p>Did you like this blog ?</p>
+            <div className={'flex items-center gap-3'}>
+              <ThumbsUp className={'cursor-pointer w-5'} />
+              <ThumbsDown className={'cursor-pointer w-5'} />
+            </div>
           </div>
         </div>
         <div className={'container flex flex-col gap-20'}>

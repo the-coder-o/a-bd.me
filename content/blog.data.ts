@@ -149,7 +149,24 @@ export const BlogData = [
           },
         ],
       },
+      {
+        blog_title: 'It Education',
+        blog_paragraph: [
+          '1 Frontend: frontend is an external  part of web applications (websites) with which the user can interact and contact directly.',
+          '2 Backend: backend is the internal part of the product, which is located on the server and is hidden from users. A variety of languages can be used for its development, for example, Python, PHP, Go, JavaScript, Java, C#.',
+          '3 Android: android is the creation of applications and support on the Android operating system. It works not only on smartphones, but also on tablets, smart watches, and Smart TVs. It depends on the developer how convenient and functional the application will be.',
+        ],
+        blog_video_url: [
+          {
+            url_image: 'https://it-park.uz/storage/images/news/normal/thCTxYemJmikUYL7ZIPZZMOpl6iNx0KqwjXWuIHH.jpg',
+            url_video: 'https://youtu.be/T1xG4xYh-u0',
+            video_title: 'It park it education',
+            video_description:
+              'IT Park is looking for talented managers and teachers for a Front end and Back end in IT Centers in all regions of the republic for its team. You can submit your resume regardless of the region of residence since we will find you a job in the nearest IT Center!',
+          },
+        ],
+      },
     ],
-    blog_tags: ['New-Work', 'About', 'ItPark', 'It Park University'],
+    blog_tags: ['New-Work', 'About', 'ItPark', 'It Park University', 'It Education'],
   },
 ]
