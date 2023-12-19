@@ -85,19 +85,19 @@ export const ProjectData = [
       },
       {
         image: 'https://i.ibb.co/6JwGzgL/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-17-55.png',
-        description: '',
+        description: 'This is a chatting group you can only chatting with members, you can send sms to others members and you can delete,change your message.',
       },
       {
         image: 'https://i.ibb.co/68RTTG3/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-18-00.png',
-        description: '',
+        description: 'You can send pdf files,png,jpg,svg and other image formats. You can which you sent delete.',
       },
       {
         image: 'https://i.ibb.co/fpKs6wx/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-19-26.png',
-        description: '',
+        description: 'You can chatting from others people from video chat group. You can on your camera or off it.',
       },
       {
         image: 'https://i.ibb.co/0h6jXvv/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-20-16.png',
-        description: '',
+        description: 'Only admins can change other users role ex: admin can delete user from your channel or kick user or change his role.',
       },
       {
         image: 'https://i.ibb.co/WgjRpvV/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-21-18.png',
@@ -109,7 +109,7 @@ export const ProjectData = [
       },
       {
         image: 'https://i.ibb.co/F825q4g/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-23-10.png',
-        description: '',
+        description: 'This is light mode style.',
       },
       {
         image: 'https://i.ibb.co/XYq0Qrx/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-23-27.png',
@@ -121,7 +121,7 @@ export const ProjectData = [
           'After authentication you get your account settings page. In this page you can change your email or delete email, You can see other providers and delete the providers. You can update your name,email and adding avatar.',
       },
     ],
-    tags: ['React', 'NextJs 14', 'TypeScript', 'Prisma', 'Clerk', 'Joi', 'Yup', 'Radix', 'Zustand', 'Zod', 'Uploadthing', 'TailwindCss', 'Socket.io', 'Shadcn.ui'],
+    tags: ['React', 'NextJs 14', 'TypeScript', 'Prisma', 'Clerk', 'Joi', 'Yup', 'Radix', 'Zustand', 'Zod', 'Uploadthing', 'TailwindCss', 'Socket.io', 'Shadcn.ui', 'LiveKit', 'Responsive'],
   },
   {
     slug: 'online-game-store-app',

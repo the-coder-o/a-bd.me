@@ -93,7 +93,7 @@ const SingleBlogPage = () => {
                         <div>
                           <div>
                             <figure className={'m-0 flex flex-col gap-2'}>
-                              <img src={image} alt={blog?.blog_title} className={'h-[210px] w-full'} />
+                              <img src={image} alt={blog?.blog_title} className={'w-full'} />
                             </figure>
                           </div>
                         </div>

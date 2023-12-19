@@ -135,12 +135,6 @@ export const BlogData = [
         blog_title: 'Create your future with IT Park University',
         blog_description:
           'The founders of the first new format university in Uzbekistan are EPAM Systems, one of the world leaders in software development, and IT Park. Bachelor students learn the basics of computer science and acquire critical teamwork and project execution skills. The study program covers all major topics in software engineering, focusing on real-life competencies and hands-on experience that are essential for a successful career in IT. The duration of the bachelor program is 3 years. In the process, students improve their knowledge of the English language, as the learning takes place in English.',
-        blog_images: [
-          'https://itpu.uz/upload/landing/4e4/lm8l35gp470sj14b5v36pv65pejgjoji/1_44_@2x.jpg',
-          'https://i.ibb.co/4StR2L5/22.jpg',
-          'https://i.ibb.co/hWwJhpB/33.jpg',
-          'https://i.ibb.co/VqQKcdN/44.jpg',
-        ],
         blog_paragraph: [
           '1 IT Park of Uzbekistan is the leading center in the field of IT in the Republic of Uzbekistan, the first Information Technologies Park, which was created on the initiative of the President of Uzbekistan on January 10, 2019.',
           '2 The main goal of the organization is to develop the IT-sector in Uzbekistan, create the necessary infrastructure, reform the system of training in IT-specialties, launch promising start-up projects, and support IT-companies.',

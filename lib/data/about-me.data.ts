@@ -46,47 +46,11 @@ export const WorkData = [
     companyName: 'Astrum It Academy',
     url: 'https://astrum.uz/eng',
   },
-]
-
-export const SkillData = [
   {
-    img: 'https://i.ibb.co/9bz79qY/next-removebg-preview.png',
-    skillTitle: 'Next.js',
-    url: '',
-  },
-  {
-    img: '',
-    skillTitle: 'React.Js',
-    url: '',
-  },
-  {
-    img: 'https://i.ibb.co/9bz79qY/next-removebg-preview.png',
-    skillTitle: 'Tailwind.css',
-    url: '',
-  },
-  {
-    img: 'https://i.ibb.co/4jQWzpK/nodejs-removebg-preview.png',
-    skillTitle: 'Node.Js',
-    url: '',
-  },
-  {
-    img: 'https://i.ibb.co/9bz79qY/next-removebg-preview.png',
-    skillTitle: 'Express.js',
-    url: '',
-  },
-  {
-    img: 'https://i.ibb.co/4jQWzpK/nodejs-removebg-preview.png',
-    skillTitle: 'Nest.Js',
-    url: '',
-  },
-  {
-    img: 'https://i.ibb.co/4jQWzpK/nodejs-removebg-preview.png',
-    skillTitle: 'Sql',
-    url: '',
-  },
-  {
-    img: 'https://i.ibb.co/4YFzNs3/github-removebg-preview.png',
-    skillTitle: 'GitHub',
-    url: '',
+    img: 'https://i.ibb.co/H2hHFG7/IMG-7155.jpg',
+    workTitle: 'Designer',
+    year: '2020-2021',
+    companyName: 'Designer from 3d Max and Architect',
+    url: 'https://astrum.uz/eng',
   },
 ]
