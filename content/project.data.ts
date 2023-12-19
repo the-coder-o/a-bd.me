@@ -84,6 +84,38 @@ export const ProjectData = [
         description: '',
       },
       {
+        image: 'https://i.ibb.co/6JwGzgL/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-17-55.png',
+        description: '',
+      },
+      {
+        image: 'https://i.ibb.co/68RTTG3/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-18-00.png',
+        description: '',
+      },
+      {
+        image: 'https://i.ibb.co/fpKs6wx/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-19-26.png',
+        description: '',
+      },
+      {
+        image: 'https://i.ibb.co/0h6jXvv/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-20-16.png',
+        description: '',
+      },
+      {
+        image: 'https://i.ibb.co/WgjRpvV/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-21-18.png',
+        description: '',
+      },
+      {
+        image: 'https://i.ibb.co/qCHZ64F/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-22-07.png',
+        description: '',
+      },
+      {
+        image: 'https://i.ibb.co/F825q4g/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-23-10.png',
+        description: '',
+      },
+      {
+        image: 'https://i.ibb.co/XYq0Qrx/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-23-27.png',
+        description: '',
+      },
+      {
         image: 'https://i.ibb.co/MZTL5VB/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-38-49.png',
         description:
           'After authentication you get your account settings page. In this page you can change your email or delete email, You can see other providers and delete the providers. You can update your name,email and adding avatar.',
