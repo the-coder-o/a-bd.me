@@ -49,7 +49,7 @@ export const ProjectData = [
     demoUrl: '',
     title: 'Discord App',
     homeImg: 'https://i.ibb.co/3zMMG0c/screen-shot-2022-06-17-at-2-15-36-pm-1655489847723.png',
-    description: 'Discord clone, in this app i use modern frameworks,packages and others.',
+    description: 'Discord clone, in this app i use modern frameworks,packages and others. this is project full mobile responsive.',
     images: [
       {
         image: 'https://i.ibb.co/kyBX5jx/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-37-11.png',
