@@ -179,6 +179,23 @@ export const BlogData = [
       'Discord is a platform for hosting real-time text, video, and voice chat. While other social platforms are oriented around one central community, Discord is divided into servers or many smaller communities. Servers can be public or private spaces.',
     blogs: [
       {
+        blog_title: 'Why i start this project?',
+        blog_description:
+          'The purpose of doing this project is that when I did this project I was afraid at the beginning, how do I start? which libraries to use, and I ended up taking a risk, and learned a lot of technology',
+        blog_paragraph: [
+          '1 My advice to you is to review what you already know before doing this project',
+          '2 Because if you start a chapter with your knowledge, you will have a lot of trouble',
+          '3 Before you start this project, you need to know the following libraries: React,Next,SocketIo,Uploadthing,Livekit,Shadcn/ui',
+        ],
+        blog_images: [
+          'https://i.ibb.co/68RTTG3/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-18-00.png',
+          'https://i.ibb.co/6JwGzgL/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-17-55.png',
+          'https://i.ibb.co/fpKs6wx/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-19-26.png',
+          'https://i.ibb.co/0h6jXvv/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-20-16.png',
+        ],
+      },
+
+      {
         blog_title: 'What is the discord ?',
         blog_description:
           'People use Discord every day to discuss a variety of topics, from art projects and traveling with family to homework and mental health support. It is home to a wide variety of communities, but most of them are small groups of active people who communicate with each other on an ongoing basis.',
@@ -194,22 +211,6 @@ export const BlogData = [
             video_title: 'Video about Discord App',
             video_description: 'Discord is a voice, video and text chat app that tens of millions of people aged 13 and over use to connect with friends and communities.',
           },
-        ],
-      },
-      {
-        blog_title: 'Why start this project?',
-        blog_description:
-          'The purpose of doing this project is that when I did this project I was afraid at the beginning, how do I start? which libraries to use, and I ended up taking a risk, and learned a lot of technology',
-        blog_paragraph: [
-          '1 My advice to you is to review what you already know before doing this project',
-          '2 Because if you start a chapter with your knowledge, you will have a lot of trouble',
-          '3 Before you start this project, you need to know the following libraries: React,Next,SocketIo,Uploadthing,Livekit,Shadcn/ui',
-        ],
-        blog_images: [
-          'https://i.ibb.co/68RTTG3/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-18-00.png',
-          'https://i.ibb.co/6JwGzgL/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-17-55.png',
-          'https://i.ibb.co/fpKs6wx/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-19-26.png',
-          'https://i.ibb.co/0h6jXvv/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-20-16.png',
         ],
       },
       {

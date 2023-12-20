@@ -139,7 +139,7 @@ const SingleBlogPage = () => {
           <Halo strength={5}>
             <SignUpFrom />
           </Halo>
-          <Link href={'/project'} className="underline-offset-4 text-primary underline">
+          <Link href={'/blog'} className="underline-offset-4 text-primary underline">
             ← All Blogs
           </Link>
         </div>

@@ -74,7 +74,7 @@ const SignUpFrom = () => {
             value={email}
             type="email"
             id="email"
-            className="block !w-full !rounded-md !text-[#eeeeee]  px-4 py-2 !border !border-primary !placeholder:!text-tertiary !outline-none-inset bg-[#fcfcfc] dark:!bg-[#111111]"
+            className="block !w-full !rounded-md !text-[#eeeeee]  px-4 py-2 !outline-none bg-[#fcfcfc] dark:!bg-[#111111]"
             placeholder="you@example.com"
           />
         </div>
