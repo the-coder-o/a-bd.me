@@ -11,7 +11,7 @@ import { ModeToggle } from '@/components/mode-toggle'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
 
 export const Header = () => {
-  const Logo: string = '<Ab/>'
+  const Logo: string = 'A'
   const pathName = usePathname()
 
   const router = useRouter()
@@ -36,8 +36,9 @@ export const Header = () => {
       <div>
         <div className={'flex items-center justify-between mt-3'}>
           <div>
-            <Link href={'/'} className={'font-bold text-[18px]'}>
+            <Link href={'/'} className={'font-bold text-[25px]'}>
               {Logo}
+              <span className={'text-lg'}>B</span>
             </Link>
           </div>
           <div className={'flex items-center gap-9 max-md:hidden'}>

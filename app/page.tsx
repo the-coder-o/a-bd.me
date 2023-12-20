@@ -67,9 +67,9 @@ export default function Home() {
             <BlogItem />
           </div>
           <div>
-            <a href="/" className={'text-[#646464] dark:text-[#b4b4b4] underline transition hover:text-zinc-900 dark:hover:text-white'}>
+            <Link href="/blog" className={'text-[#646464] dark:text-[#b4b4b4] underline transition hover:text-zinc-900 dark:hover:text-white'}>
               See All
-            </a>
+            </Link>
           </div>
         </div>
       </motion.div>
