@@ -38,7 +38,7 @@ export const Header = () => {
           <div>
             <Link href={'/'} className={'font-bold text-[25px]'}>
               {Logo}
-              <span className={'text-lg'}>B</span>
+              <span className={'text-lg'}>b</span>
             </Link>
           </div>
           <div className={'flex items-center gap-9 max-md:hidden'}>
