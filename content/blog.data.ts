@@ -88,7 +88,7 @@ export const BlogData = [
   },
   {
     slug: 'itpark-my-new-work-place',
-    blog_title: 'It-Park of Uzbekistan, My new work place.',
+    blog_title: '`It-Park of Uzbekistan, My new work place.',
     blog_description: 'I joined the It park company 2 months ago, and now we are doing various projects together with our team',
     blog_publish_date: 'Dec 17, 2023',
     blog_main_image_url: 'https://i.ibb.co/VvMzGpd/1.jpg',
@@ -168,5 +168,171 @@ export const BlogData = [
       },
     ],
     blog_tags: ['New-Work', 'About', 'ItPark', 'It Park University', 'It Education'],
+  },
+  {
+    slug: 'how-to-clone-discord-app',
+    blog_title: 'How to Clone Discord App with nextjs14',
+    blog_description: 'I did discord app with modern frameworks, in this project you can real time chatting, real time meeting from video,audio. After i tell you about what is the discord?.',
+    blog_publish_date: 'Dec 20, 2023',
+    blog_main_image_url: 'https://www.videogameschronicle.com/files/2021/05/discord-new-logo.jpg',
+    blog_main_description:
+      'Discord is a platform for hosting real-time text, video, and voice chat. While other social platforms are oriented around one central community, Discord is divided into servers or many smaller communities. Servers can be public or private spaces.',
+    blogs: [
+      {
+        blog_title: 'What is the discord ?',
+        blog_description:
+          'People use Discord every day to discuss a variety of topics, from art projects and traveling with family to homework and mental health support. It is home to a wide variety of communities, but most of them are small groups of active people who communicate with each other on an ongoing basis.',
+        blog_list: [
+          'Discord was publicly released in May 2015 under the domain name discordapp.com.[18] According to Citron, they made no specific moves to target any specific audience, but some gaming-related subreddits quickly began to replace their IRC links with Discord links.',
+          'In January 2016, Discord raised an additional $20 million in funding, including an investment from WarnerMedia (then TimeWarner).[21] In 2019, WarnerMedia Investment Group was shut down and acquired by AT&T, selling its equity.[22][23]',
+          'Microsoft announced in April 2018 that it would provide Discord support for Xbox Live users, allowing them to link their Discord and Xbox Live accounts so that they can connect with their Xbox Live friends list through Discord.[24]',
+        ],
+        blog_video_url: [
+          {
+            url_image: 'https://cdn.mos.cms.futurecdn.net/my8AUCgUhKERqBBwdPQuXG-1200-80.jpg',
+            url_video: 'https://youtu.be/TJ13BA3-NR4',
+            video_title: 'Video about Discord App',
+            video_description: 'Discord is a voice, video and text chat app that tens of millions of people aged 13 and over use to connect with friends and communities.',
+          },
+        ],
+      },
+      {
+        blog_title: 'Why start this project?',
+        blog_description:
+          'The purpose of doing this project is that when I did this project I was afraid at the beginning, how do I start? which libraries to use, and I ended up taking a risk, and learned a lot of technology',
+        blog_paragraph: [
+          '1 My advice to you is to review what you already know before doing this project',
+          '2 Because if you start a chapter with your knowledge, you will have a lot of trouble',
+          '3 Before you start this project, you need to know the following libraries: React,Next,SocketIo,Uploadthing,Livekit,Shadcn/ui',
+        ],
+        blog_images: [
+          'https://i.ibb.co/68RTTG3/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-18-00.png',
+          'https://i.ibb.co/6JwGzgL/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-17-55.png',
+          'https://i.ibb.co/fpKs6wx/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-19-26.png',
+          'https://i.ibb.co/0h6jXvv/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-20-16.png',
+        ],
+      },
+      {
+        blog_alert:
+          "To integrate Socket.io with a Next.js 14 application, you can follow these general steps. Note that specific details might change based on updates to Next.js or Socket.io, so it's always a good idea to refer to the official documentation for the most up-to-date information.",
+        blog_description: '1: Set up Socket.io server',
+        blog_paragraph: ["In your Next.js application, you can set up a Socket.io server using a custom server. Create a server.js file in your project's root:"],
+        blog_code_block:
+          '// server.js\n' +
+          "const express = require('express');\n" +
+          "const http = require('http');\n" +
+          "const { Server } = require('socket.io');\n" +
+          '\n' +
+          'const app = express();\n' +
+          'const server = http.createServer(app);\n' +
+          'const io = new Server(server);\n' +
+          '\n' +
+          "io.on('connection', (socket) => {\n" +
+          "  console.log('A user connected');\n" +
+          '\n' +
+          "  socket.on('disconnect', () => {\n" +
+          "    console.log('User disconnected');\n" +
+          '  });\n' +
+          '});\n' +
+          '\n' +
+          'server.listen(3001, () => {\n' +
+          "  console.log('Socket.io server listening on *:3001');\n" +
+          '});\n',
+      },
+      {
+        blog_description: '2: Modify your package.json file to start the custom server:',
+        blog_paragraph: [
+          "In your Next.js components or pages, you can connect to the Socket.io server using the socket.io-client library: Make sure to replace the 'http://localhost:3001' with the actual URL of your Socket.io server.",
+        ],
+        blog_code_block: '{\n' + '  "scripts": {\n' + '    "dev": "next dev",\n' + '    "start": "node server.js"\n' + '  }\n' + '}\n',
+      },
+      {
+        blog_description: '3: Connect from the Next.js client',
+        blog_paragraph: ['In your Next.js components or pages, you can connect to the Socket.io server using the socket.io-client library:\n' + '\n'],
+        blog_code_block:
+          '// pages/index.js\n' +
+          "import { useEffect } from 'react';\n" +
+          "import io from 'socket.io-client';\n" +
+          '\n' +
+          'const Home = () => {\n' +
+          '  useEffect(() => {\n' +
+          "    const socket = io('http://localhost:3001');\n" +
+          '\n' +
+          "    socket.on('connect', () => {\n" +
+          "      console.log('Connected to Socket.io server');\n" +
+          '    });\n' +
+          '\n' +
+          "    socket.on('disconnect', () => {\n" +
+          "      console.log('Disconnected from Socket.io server');\n" +
+          '    });\n' +
+          '\n' +
+          '    // Add your custom event handlers here\n' +
+          '\n' +
+          '    return () => {\n' +
+          '      socket.disconnect();\n' +
+          '    };\n' +
+          '  }, []);\n' +
+          '\n' +
+          '  return (\n' +
+          '    <div>\n' +
+          '      <h1>Next.js with Socket.io</h1>\n' +
+          '      {/* Your component content */}\n' +
+          '    </div>\n' +
+          '  );\n' +
+          '};\n' +
+          '\n' +
+          'export default Home;\n',
+      },
+      {
+        blog_description: '5. Use Socket.io in your application',
+        blog_paragraph: ['Now you can use the socket object in your components to emit and listen for events. For example:\n' + '\n'],
+        blog_code_block:
+          '// pages/index.js\n' +
+          '// ... (previous code)\n' +
+          '\n' +
+          'const Home = () => {\n' +
+          '  useEffect(() => {\n' +
+          "    const socket = io('http://localhost:3001');\n" +
+          '\n' +
+          "    socket.on('connect', () => {\n" +
+          "      console.log('Connected to Socket.io server');\n" +
+          '    });\n' +
+          '\n' +
+          "    socket.on('disconnect', () => {\n" +
+          "      console.log('Disconnected from Socket.io server');\n" +
+          '    });\n' +
+          '\n' +
+          "    socket.emit('message', 'Hello, Socket.io!');\n" +
+          '\n' +
+          "    socket.on('reply', (data) => {\n" +
+          "      console.log('Received reply:', data);\n" +
+          '    });\n' +
+          '\n' +
+          '    return () => {\n' +
+          '      socket.disconnect();\n' +
+          '    };\n' +
+          '  }, []);\n' +
+          '\n' +
+          '  return (\n' +
+          '    <div>\n' +
+          '      <h1>Next.js with Socket.io</h1>\n' +
+          '      {/* Your component content */}\n' +
+          '    </div>\n' +
+          '  );\n' +
+          '};\n' +
+          '\n' +
+          'export default Home;\n',
+        blog_video_url: [
+          {
+            url_image: 'https://miro.medium.com/v2/resize:fit:1358/1*2FjKmcVYWfTq27alEWlRkA.png',
+            url_video: 'https://youtu.be/B38biBZQJ3A',
+            video_title: 'Video about how to connect socket.io with nextjs ?',
+            video_description:
+              "This example demonstrates emitting a 'message' event from the client to the server and listening for a 'reply' event from the server. You can customize these events based on your application's requirements.",
+          },
+        ],
+      },
+    ],
+    blog_tags: ['Reactjs', 'Nextjs14', 'Prisma'],
   },
 ]

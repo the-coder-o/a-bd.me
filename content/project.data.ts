@@ -46,7 +46,7 @@ export const ProjectData = [
   {
     slug: 'discord-app',
     year: '2023',
-    demoUrl: '',
+    demoUrl: 'https://discord-production-985f.up.railway.app/',
     title: 'Discord App',
     homeImg: 'https://i.ibb.co/3zMMG0c/screen-shot-2022-06-17-at-2-15-36-pm-1655489847723.png',
     description: 'Discord clone, in this app i use modern frameworks,packages and others. this is project full mobile responsive.',

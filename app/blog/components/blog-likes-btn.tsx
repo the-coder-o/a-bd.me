@@ -38,7 +38,7 @@ const BlogLikesBtn = () => {
   }
 
   return (
-    <div className={'container flex items-center justify-between'}>
+    <div className={'container flex items-center justify-between pt-5'}>
       <p>Did you like this blog ?</p>
       <div className={'flex items-center gap-4'}>
         <div className={'flex gap-1 items-center'}>
