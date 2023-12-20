@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 
 import AboutMe from '@/app/about/component/about-me'
 import AboutWork from '@/app/about/component/about-work'
-import AboutSkills from '@/app/about/component/about-skills'
 import AboutImages from '@/app/about/component/about-images'
 import AboutContact from '@/app/about/component/about.contact'
 import AboutLocation from '@/app/about/component/about-location'
