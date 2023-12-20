@@ -1,7 +1,8 @@
 import axios from 'axios'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import CountUp from 'react-countup'
 
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
@@ -9,17 +10,31 @@ import { Button } from '@/components/ui/button'
 const SignUpFrom = () => {
   const [email, setEmail] = useState<string>('')
   const [success, setSuccess] = useState<boolean | undefined>()
+  const [subscribers, setSubscribers] = useState([{}])
 
   const onSubmit = async (e: any) => {
     e.preventDefault()
     try {
-      const data = await axios.post('/api/subscribe', { user_email: email }).then((res) => {
+      await axios.post('/api/subscribe', { user_email: email }).then((res) => {
         setSuccess(true)
       })
     } catch (error) {
       setSuccess(false)
     }
   }
+
+  useEffect(() => {
+    const getAllSubscribers = async () => {
+      try {
+        await axios.get('/api/subscribers').then((res: any) => {
+          setSubscribers(res.data)
+        })
+      } catch (error) {
+        setSuccess(false)
+      }
+    }
+    getAllSubscribers()
+  }, [])
 
   if (success === false) {
     return (
@@ -33,7 +48,9 @@ const SignUpFrom = () => {
     return (
       <div className="flex flex-col items-center justify-center gap-4 rounded-lg bg-tertiary p-8 text-center bg-[#efefef] dark:bg-[#222222]">
         <p className="font-medium text-primary">You&apos;re in!</p>
-        <p className="max-w-lg text-[#b4b4b4] dark:text-[#646464]">Thank you for subscribing to The Modern Blueprint! Good reads coming your way. Be on the lookout for the confirmation email.</p>
+        <p className="max-w-lg text-[#b4b4b4] dark:text-[#b4b4b4] text-[#646464]">
+          Thank you for subscribing to The Modern Blueprint! Good reads coming your way. Be on the lookout for the confirmation email.
+        </p>
       </div>
     )
   }
@@ -69,7 +86,9 @@ const SignUpFrom = () => {
           Sign up
         </Button>
       </form>
-      <p className="text-sm text-tertiary">Join the {email?.length} other readers.</p>
+      <p className="text-sm text-tertiary">
+        Join the <CountUp end={subscribers?.length} /> other readers.
+      </p>
     </motion.div>
   )
 }

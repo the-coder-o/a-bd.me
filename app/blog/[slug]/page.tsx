@@ -1,10 +1,10 @@
 'use client'
 
 import { cn } from '@/lib/utils'
-
-import { AlertCircle, ThumbsDown, ThumbsUp } from 'lucide-react'
+import { AlertCircle } from 'lucide-react'
 
 import Link from 'next/link'
+import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 
 import { motion } from 'framer-motion'
@@ -16,9 +16,11 @@ import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import Halo from '@/components/ui/Halo'
 import SignUpFrom from '@/app/blog/components/ui/SignUpFrom'
 import { Alert, AlertDescription } from '@/components/ui/alert'
+import BlogLikesBtn from '@/app/blog/components/blog-likes-btn'
 
 const SingleBlogPage = () => {
   const pathname = usePathname()
+  const [view, setView] = useState(0)
 
   const blog = BlogData.find((item) => item.slug === pathname.split('/')[2])
 
@@ -36,7 +38,9 @@ const SingleBlogPage = () => {
                 <img width={40} height={40} src={'https://i.ibb.co/7rGG5Vm/person2.jpg'} alt={blog?.blog_title} className={'rounded-full'} />
                 <div className={'leading-tight'}>
                   <p className={'font-medium text-primary'}>Abdul Basit</p>
-                  <p className={'text-[#646464] dark:text-[#b4b4b4]'}>{blog?.blog_publish_date} · 4294 views</p>
+                  <p className={'text-[#646464] dark:text-[#b4b4b4]'}>
+                    {blog?.blog_publish_date} · {view} views
+                  </p>
                 </div>
               </div>
             </div>
@@ -121,19 +125,7 @@ const SingleBlogPage = () => {
               </>
             ))}
           </div>
-          <div className={'container flex items-center justify-between'}>
-            <p>Did you like this blog ?</p>
-            <div className={'flex items-center gap-4'}>
-              <div className={'flex gap-1 items-center'}>
-                <ThumbsUp className={'cursor-pointer w-4'} />
-                <span className={'text-[12px]'}>15</span>
-              </div>
-              <div className={'flex gap-1 items-center'}>
-                <ThumbsDown className={'cursor-pointer w-4'} />
-                <span className={'text-[12px]'}>2</span>
-              </div>
-            </div>
-          </div>
+          <BlogLikesBtn />
         </div>
         <div className={'container flex flex-col gap-20'}>
           <div className={'flex flex-col gap-6'}>
