@@ -123,9 +123,15 @@ const SingleBlogPage = () => {
           </div>
           <div className={'container flex items-center justify-between'}>
             <p>Did you like this blog ?</p>
-            <div className={'flex items-center gap-3'}>
-              <ThumbsUp className={'cursor-pointer w-5'} />
-              <ThumbsDown className={'cursor-pointer w-5'} />
+            <div className={'flex items-center gap-4'}>
+              <div className={'flex gap-1 items-center'}>
+                <ThumbsUp className={'cursor-pointer w-4'} />
+                <span className={'text-[12px]'}>15</span>
+              </div>
+              <div className={'flex gap-1 items-center'}>
+                <ThumbsDown className={'cursor-pointer w-4'} />
+                <span className={'text-[12px]'}>2</span>
+              </div>
             </div>
           </div>
         </div>

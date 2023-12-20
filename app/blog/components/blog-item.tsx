@@ -5,6 +5,9 @@ import { BlogData } from '@/content/blog.data'
 const BlogItem = () => {
   return (
     <>
+      <div>
+        <h2 className={'rounded-lg text-[12px] font-bold'}>2023</h2>
+      </div>
       {BlogData.map((blog) => (
         <Link href={'/blog/' + blog?.slug} className={'py-3 flex gap-[60px] max-md:flex-row max-md:justify-between max-md:gap-2 transition hover:!opacity-100 group-hover:opacity-50'}>
           <div className={'flex gap-[60px] max-md:flex max-md:flex-col max-md:gap-2'}>

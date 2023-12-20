@@ -69,7 +69,7 @@ const SignUpFrom = () => {
           Sign up
         </Button>
       </form>
-      <p className="text-sm text-tertiary">Join the other readers.</p>
+      <p className="text-sm text-tertiary">Join the {email?.length} other readers.</p>
     </motion.div>
   )
 }
