@@ -52,6 +52,13 @@ export const GearHomeDeskSetupData = [
     description:
       'All-in-One package: Desk mount included,27-inch diagonal QHD (2560x1440) IPS widescreen gaming monitor,Higher resolution for immersive gaming,Sharper image quality for a mesmerizing experience',
   },
+  {
+    url: 'https://www.asus.com/laptops/for-creators/proart-studiobook/proart-studiobook-16-oled-h5600-amd-ryzen-5000-series/',
+    img: 'https://i.ibb.co/jTWMWyd/asus.png',
+    title: 'ProArt Studiobook 16 OLED',
+    description:
+      'With a certified color-accurate 16-inch 4K OLED HDR 16:10 display, up to a breathtakingly powerful AMD Ryzen ™ 9 5900HX processor, fast NVIDIA ® GeForce RTX ™ 3070 graphics, huge amounts of memory, advanced ultrafast storage, superb I/O connectivity, and ultra-precise fingertip control over your creative apps with the ...',
+  },
 ]
 
 export const GearsAppsData = [
@@ -165,5 +172,44 @@ export const GearWebsiteData = [
     title: 'Alibaba',
     description:
       'Alibaba Group Holding Limited, or Alibaba (Chinese: 阿里巴巴), is a Chinese multinational technology company specializing in e-commerce, retail, Internet, and technology. Founded on 28 June 1999[1] in Hangzhou, Zhejiang, the company provides consumer-to-consumer (C2C), business-to-consumer (B2C),',
+  },
+]
+
+export const GearCameraData = [
+  {
+    url: 'https://www.amazon.com/Nikon-FX-Format-Mirrorless-Camera-Body/dp/B07GPRSYG8?crid=3I2P81GEKJTDQ&keywords=nikon+z6+full+frame&qid=1665717376&sprefix=nikon+z6+full+fram,aps,120&sr=8-2&ufe=app_do:amzn1.fos.17f26c18-b61b-4ce9-8a28-de351f41cffb&linkCode=sl1&tag=br0b4-20&linkId=dff4fa95e760e2b77fcbe93b9da2a608&language=en_US&ref_=as_li_ss_tl',
+    img: 'https://www.b-r.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnikon.1a5b2fe3.png&w=1920&q=75',
+    title: 'Nikon Z6 Full Frame Mirrorless',
+    description: "Love the Z6 because it's great for photos and videos.",
+  },
+  {
+    url: 'https://www.amazon.com/NIKKOR-Z-28mm-f-2-8/dp/B09M62RJK2?crid=1JCXS7ZB7O0MZ&keywords=nikon+28mm+2.8+z&qid=1665717335&qu=eyJxc2MiOiIyLjM3IiwicXNhIjoiMS40MCIsInFzcCI6IjAuOTgifQ%3D%3D&sprefix=nikon+28mm+,aps,112&sr=8-2&ufe=app_do:amzn1.fos.c3015c4a-46bb-44b9-81a4-dc28e6d374b3&linkCode=sl1&tag=br0b4-20&linkId=a31e122a8f2906464ef4ed89700abc83&language=en_US&ref_=as_li_ss_tl',
+    img: 'https://www.b-r.io/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fkit%2Fproducts%2Fe4%2Fbb%2Fnikkor-z-28mm-f-2-8-e4bbd44f78ee3423c2db3a13f117e0e8.png%3Ftr%3Ddpr-1%2Ccm-pad_resize%2Cbg-FFFFFF%2Cq-80%2Cw-270%2Ch-270&w=1920&q=75',
+    title: 'Nikon Z 28mm f/2.8',
+    description: 'My main for walking around, with very useful aperture.',
+  },
+  {
+    url: 'https://www.amazon.com/gp/product/B07GQ6FR5F?ie=UTF8&psc=1&linkCode=sl1&tag=br0b4-20&linkId=a2ed0bdd5fc2b43bec985a816e6ab65e&language=en_US&ref_=as_li_ss_tl',
+    img: 'https://www.b-r.io/_next/image?url=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F61u8mYpACQL._AC_SL1500_.jpg&w=1920&q=75',
+    title: 'NIKON Z 50mm f/1.8',
+    description: 'One of my main sit down lenses, with awesome bokeh.',
+  },
+  {
+    url: 'https://www.amazon.com/GoPro-HERO10-Black-Waterproof-Stabilization/dp/B09QD75B95?crid=3JKRV2N80IV2T&keywords=gopro+hero+black&qid=1665716628&qu=eyJxc2MiOiI0LjQ2IiwicXNhIjoiNC4xMiIsInFzcCI6IjMuNTYifQ%3D%3D&sprefix=gopro+hero+black,aps,124&sr=8-3&ufe=app_do:amzn1.fos.c3015c4a-46bb-44b9-81a4-dc28e6d374b3&linkCode=sl1&tag=br0b4-20&linkId=88dfd40a73aef81c87604c29cd584b1f&language=en_US&ref_=as_li_ss_tl',
+    img: 'https://www.b-r.io/_next/image?url=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F61p2fYdYP%2BL._AC_SX679_.jpg&w=1920&q=75',
+    title: 'GoPro HERO10 Black action camera',
+    description: 'Awesome for action video, I use it for my POV shots.',
+  },
+  {
+    url: 'https://www.amazon.com/dp/B09KC62W7X?psc=1&linkCode=sl1&tag=br0b4-20&linkId=371058360394aefef98050edf0cf3a7a&language=en_US&ref_=as_li_ss_tl',
+    img: 'https://www.b-r.io/_next/image?url=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F81y-UqVnYAL._AC_SL1500_.jpg&w=1920&q=75',
+    title: 'Suptig Chest Mount for GoPro',
+    description: 'This is how I record my POV bike rides! :)',
+  },
+  {
+    url: 'https://www.amazon.com/gp/product/B083QYHX3K?ie=UTF8&psc=1&linkCode=sl1&tag=br0b4-20&linkId=ab4c1ded0676421287136337ac994c6d&language=en_US&ref_=as_li_ss_tl',
+    img: 'https://www.b-r.io/_next/image?url=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F61FTKuvhBeL._AC_SL1500_.jpg&w=1920&q=75',
+    title: 'ULANZI Camera Tripod',
+    description: 'Mini Flexible Tripod Stand, Universal use',
   },
 ]

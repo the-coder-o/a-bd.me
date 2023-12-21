@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils'
 import { Inter } from 'next/font/google'
 
 import { Header } from '@/components/ui/Header'
-import { ThemeProvider } from '@/components/provider/theme-provide'
+import { ThemeProvider } from '@/components/provider/theme-provider'
 
 const font = Inter({ subsets: ['latin'] })
 

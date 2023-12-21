@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 
 import GearApp from '@/app/gear/components/gear-app'
 import GearApple from '@/app/gear/components/gear-apple'
+import GearCamera from '@/app/gear/components/gear-camera'
 import GearWebsite from '@/app/gear/components/gear-website'
 import GearHomeDesk from '@/app/gear/components/gear-home-desk'
 
@@ -29,6 +30,9 @@ const GearPage = () => {
         </motion.div>
         <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 5 * 0.1 }} className={'flex flex-col gap-8'}>
           <GearHomeDesk />
+        </motion.div>
+        <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 7 * 0.1 }} className={'flex flex-col gap-8'}>
+          <GearCamera />
         </motion.div>
         <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 6 * 0.1 }} className={'flex flex-col gap-8'}>
           <GearApp />
