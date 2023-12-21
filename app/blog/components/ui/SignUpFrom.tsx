@@ -3,6 +3,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import CountUp from 'react-countup'
+import { toast } from 'sonner'
 
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
@@ -15,11 +16,14 @@ const SignUpFrom = () => {
   const onSubmit = async (e: any) => {
     e.preventDefault()
     try {
+      toast.loading('Loading...', { duration: 5000 })
       await axios.post('/api/subscribe', { user_email: email }).then((res) => {
         setSuccess(true)
       })
-    } catch (error) {
+      toast.success('Thank you for subscribed to my blog.', { duration: 5000 })
+    } catch (error: any) {
       setSuccess(false)
+      toast.error(error?.message, { duration: 5000 })
     }
   }
 

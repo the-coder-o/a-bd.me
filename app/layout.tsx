@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 
 import { cn } from '@/lib/utils'
 import { Inter } from 'next/font/google'
+import { Toaster } from 'sonner'
 
 import { Header } from '@/components/ui/Header'
 import { ThemeProvider } from '@/components/provider/theme-provider'
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} storageKey={'my-blog'}>
           <Header />
           {children}
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
