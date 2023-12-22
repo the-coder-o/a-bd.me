@@ -47,8 +47,8 @@ export const Header = () => {
                 key={index}
                 href={item.linkPath}
                 className={cn(
-                  'text-[#646464] hover:text-primary dark:text-[#b4b4b4] hover:text-zinc-900 dark:hover:text-white transition',
-                  item.linkPath === pathName && 'underline transition dark:text-white text-zinc-900',
+                  'text-[#646464] hover:text-primary dark:text-[#b4b4b4] hover:text-zinc-900 dark:hover:text-white transition-all',
+                  item.linkPath === pathName && 'transition-all dark:text-white text-zinc-900',
                 )}
               >
                 {item.linkTitle}

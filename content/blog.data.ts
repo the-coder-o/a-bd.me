@@ -88,7 +88,7 @@ export const BlogData = [
   },
   {
     slug: 'itpark-my-new-work-place',
-    blog_title: '`It-Park of Uzbekistan, My new work place.',
+    blog_title: 'It-Park of Uzbekistan, My new work place.',
     blog_description: 'I joined the It park company 2 months ago, and now we are doing various projects together with our team',
     blog_publish_date: 'Dec 17, 2023',
     blog_main_image_url: 'https://i.ibb.co/VvMzGpd/1.jpg',
@@ -170,8 +170,8 @@ export const BlogData = [
     blog_tags: ['New-Work', 'About', 'ItPark', 'It Park University', 'It Education'],
   },
   {
-    slug: 'how-to-clone-discord-app',
-    blog_title: 'How to Clone Discord App with nextjs14',
+    slug: 'how-to-create-discord-app',
+    blog_title: 'How to Create Discord App with nextjs14',
     blog_description: 'I did discord app with modern frameworks, in this project you can real time chatting, real time meeting from video,audio. After i tell you about what is the discord?.',
     blog_publish_date: 'Dec 20, 2023',
     blog_main_image_url: 'https://www.videogameschronicle.com/files/2021/05/discord-new-logo.jpg',
