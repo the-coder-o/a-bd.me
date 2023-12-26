@@ -10,7 +10,7 @@ import AboutLocation from '@/app/about/component/about-location'
 
 const AboutPage = () => {
   return (
-    <div className={'pt-[5rem] pb-28'}>
+    <div className={'pt-[9rem] pb-28'}>
       <div className={'container'}>
         <div className="flex flex-col">
           <motion.h3 initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.1 }} className="text-3xl font-bold tracking-tight">

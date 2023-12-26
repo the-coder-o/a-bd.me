@@ -25,7 +25,7 @@ const SingleBlogPage = () => {
   const blog = BlogData.find((item) => item.slug === pathname.split('/')[2])
 
   return (
-    <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.1 }} className={'pt-[5rem] pb-16'}>
+    <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.1 }} className={'pt-[9rem] pb-16'}>
       <div className={'flex flex-col gap-20'}>
         <div>
           <div className={'container flex animate-in flex-col gap-8'}>

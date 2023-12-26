@@ -13,7 +13,7 @@ const ProjectRoute = () => {
   const project = ProjectData.find((item) => item.slug === pathname.split('/')[2])
 
   return (
-    <div className={'pb-24 pt-[5rem]'}>
+    <div className={'pb-24 pt-[9rem]'}>
       <div className={'flex flex-col gap-14'}>
         <div className={'flex flex-col gap-3 container'}>
           <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.1 }} className={'flex gap-3'}>

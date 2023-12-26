@@ -7,7 +7,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 const LinkPage = () => {
   return (
-    <div className={'container pt-24 pb-24'}>
+    <div className={'container pt-[9rem] pb-24'}>
       <div className={'flex flex-col gap-10 max-md:gap-10'}>
         <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.1 }} className={'flex flex-col gap-8 items-center justify-center'}>
           <Avatar className={'w-[100px] h-[100px]'}>

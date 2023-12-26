@@ -12,7 +12,7 @@ const GearPage = () => {
   return (
     <div className={'container pb-28'}>
       <div className={'flex flex-col gap-16 md:gap-24'}>
-        <div className="flex gap-8 flex-col pt-[5rem]">
+        <div className="flex gap-8 flex-col pt-[9rem]">
           <div>
             <motion.h3 initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.1 }} className="text-3xl font-bold tracking-tight">
               Gear
