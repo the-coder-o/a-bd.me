@@ -40,28 +40,12 @@ export const ProjectData = [
         description: '',
       },
       {
-        image: 'https://i.ibb.co/HFLJH7z/Notion-Google-Chrome-27-12-2023-17-05-54.png',
-        description: 'This is a chatting group you can only chatting with members, you can send sms to others members and you can delete,change your message.',
-      },
-      {
         image: 'https://i.ibb.co/dBj1KS6/Notion-Google-Chrome-27-12-2023-17-06-25.png',
         description: 'You can send pdf files,png,jpg,svg and other image formats. You can which you sent delete.',
       },
       {
-        image: 'https://i.ibb.co/PwQRkRS/Notion-Google-Chrome-27-12-2023-17-06-45.png',
-        description: 'You can chatting from others people from video chat group. You can on your camera or off it.',
-      },
-      {
         image: 'https://i.ibb.co/26r6Q3F/Notion-Google-Chrome-27-12-2023-17-07-02.png',
         description: 'Only admins can change other users role ex: admin can delete user from your channel or kick user or change his role.',
-      },
-      {
-        image: 'https://i.ibb.co/qRK3sjZ/Notion-Google-Chrome-27-12-2023-17-07-14.png',
-        description: '',
-      },
-      {
-        image: 'https://i.ibb.co/rwJ3WmF/Notion-Google-Chrome-27-12-2023-17-09-12.png',
-        description: '',
       },
     ],
     tags: [
@@ -96,40 +80,16 @@ export const ProjectData = [
         description: 'You must create a new account from clerk authentication or sign-in with google,github,gitlab and others',
       },
       {
-        image: 'https://i.ibb.co/FH7qZ09/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-37-20.png',
-        description: '',
-      },
-      {
         image: 'https://i.ibb.co/kSkw2ft/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-37-39.png',
         description: 'After authentication you must customize your server after you can create channels,groups and others.',
-      },
-      {
-        image: 'https://i.ibb.co/6gV2mfR/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-37-51.png',
-        description: 'You can invite friends for this channel.',
-      },
-      {
-        image: 'https://i.ibb.co/HnwF8CV/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-37-58.png',
-        description: '',
       },
       {
         image: 'https://i.ibb.co/X5Bhtph/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-38-09.png',
         description: 'You can create some channels for-example text channels,video channels and voice channels.',
       },
       {
-        image: 'https://i.ibb.co/GH5jwYj/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-38-18.png',
-        description: '',
-      },
-      {
-        image: 'https://i.ibb.co/52S4TpM/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-38-31.png',
-        description: '',
-      },
-      {
         image: 'https://i.ibb.co/6JwGzgL/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-17-55.png',
         description: 'This is a chatting group you can only chatting with members, you can send sms to others members and you can delete,change your message.',
-      },
-      {
-        image: 'https://i.ibb.co/68RTTG3/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-18-00.png',
-        description: 'You can send pdf files,png,jpg,svg and other image formats. You can which you sent delete.',
       },
       {
         image: 'https://i.ibb.co/fpKs6wx/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-19-26.png',
@@ -140,20 +100,8 @@ export const ProjectData = [
         description: 'Only admins can change other users role ex: admin can delete user from your channel or kick user or change his role.',
       },
       {
-        image: 'https://i.ibb.co/WgjRpvV/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-21-18.png',
-        description: '',
-      },
-      {
-        image: 'https://i.ibb.co/qCHZ64F/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-22-07.png',
-        description: '',
-      },
-      {
         image: 'https://i.ibb.co/F825q4g/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-23-10.png',
         description: 'This is light mode style.',
-      },
-      {
-        image: 'https://i.ibb.co/XYq0Qrx/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-19-12-2023-12-23-27.png',
-        description: '',
       },
       {
         image: 'https://i.ibb.co/MZTL5VB/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-38-49.png',
@@ -243,32 +191,5 @@ export const ProjectData = [
       },
     ],
     tags: ['Html', 'Css', 'JavaScript', 'Swiper', 'BubbleJs'],
-  },
-  {
-    slug: 'green-renovation-toolkit',
-    year: '2023',
-    demoUrl: '',
-    title: 'Green Renovation Toolkit',
-    homeImg: 'https://i.ibb.co/1RjZtkD/Screenshot-2023-12-15-161922.png',
-    description: 'Tis is project about green renavation toolkit. I did this project with my team.',
-    images: [
-      {
-        image: 'https://i.ibb.co/C0y6rxQ/Screenshot-2023-12-12-190513.png',
-        description: '',
-      },
-      {
-        image: 'https://i.ibb.co/MDXvcX4/Screenshot-2023-12-12-190524.png',
-        description: '',
-      },
-      {
-        image: 'https://i.ibb.co/5jXpt1C/Screenshot-2023-12-12-190548.png',
-        description: '',
-      },
-      {
-        image: 'https://i.ibb.co/KXgbKDS/Screenshot-2023-12-12-190812.png',
-        description: '',
-      },
-    ],
-    tags: ['React', 'React vite', 'TypeScript', 'Formik', 'i18next', 'Redux', 'Sass', 'Swiper', 'Classnames'],
   },
 ]
