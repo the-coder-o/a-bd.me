@@ -1,47 +1,87 @@
 export const ProjectData = [
   {
-    slug: 'online-movie-store',
-    year: '2022',
-    demoUrl: 'https://online-movis-store.vercel.app/',
-    title: 'Online Movie Store',
-    homeImg: 'https://i.ibb.co/FwgKgCp/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-16-00-20.png',
-    description: 'This is online movies store. You must generate a new account from authentication and after you can see three subscription plans...',
+    slug: 'notion-app',
+    year: '2023',
+    demoUrl: 'https://notion-production.up.railway.app/',
+    title: 'Notion App',
+    homeImg: 'https://i.ibb.co/hRbbjK1/My-mothly-tracker-27-12-2023-17-10-57.png',
+    description: 'Discord clone, in this app i use modern frameworks,packages and others. this is project full mobile responsive.',
     images: [
       {
-        image: 'https://i.ibb.co/XWZHVPC/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-16-04-17.png',
-        description: 'You must generate or create a new account from firebase authentication',
+        image: 'https://i.ibb.co/zGgJGDp/Notion-Google-Chrome-27-12-2023-16-48-38.png',
+        description: 'You must create a new account from clerk authentication or sign-in with google,github,gitlab and others',
       },
       {
-        image: 'https://i.ibb.co/XVhkSvK/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-15-58-43.png',
-        description: 'After authentication you can subscribe from stripe authentication with bank cards or google pay and others...',
-      },
-      {
-        image: 'https://i.ibb.co/yFz9T39/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-15-58-57.png',
+        image: 'https://i.ibb.co/NVr7Jwm/Notion-Google-Chrome-27-12-2023-16-48-46.png',
         description: '',
       },
       {
-        image: 'https://i.ibb.co/FwgKgCp/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-16-00-20.png',
-        description: 'This is home page,in the home page you can see all of the movies,cartoons,serials and others...',
+        image: 'https://i.ibb.co/3zXyHG9/Notion-Google-Chrome-27-12-2023-16-49-01.png',
+        description: 'After authentication you must customize your server after you can create channels,groups and others.',
       },
       {
-        image: 'https://i.ibb.co/VqYD2W5/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-16-00-39.png',
-        description:
-          'You can click all of the cards and you can see single modal,you can watch trailer of the movies,if you liked this movie, you can save movie for your movies list,you can see description about movies...',
+        image: 'https://i.ibb.co/zNkFHxV/Notion-Google-Chrome-27-12-2023-16-53-36.png',
+        description: 'You can invite friends for this channel.',
       },
       {
-        image: 'https://i.ibb.co/CQN9L8Z/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-16-01-18.png',
+        image: 'https://i.ibb.co/XW9K0Jd/Notion-Google-Chrome-27-12-2023-16-54-07.png',
         description: '',
       },
       {
-        image: 'https://i.ibb.co/NnjnX0j/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-16-01-42.png',
-        description: 'This is your setting page. In this page you can change manage member plans or delete plans,you can delete your account.',
+        image: 'https://i.ibb.co/vzF074S/Notion-Google-Chrome-27-12-2023-16-54-20.png',
+        description: 'You can create some channels for-example text channels,video channels and voice channels.',
       },
       {
-        image: 'https://i.ibb.co/MGDms8b/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-16-02-07.png',
+        image: 'https://i.ibb.co/TthK46f/Notion-Google-Chrome-27-12-2023-16-54-39.png',
+        description: '',
+      },
+      {
+        image: 'https://i.ibb.co/VWq4HGD/Notion-Google-Chrome-27-12-2023-16-54-47.png',
+        description: '',
+      },
+      {
+        image: 'https://i.ibb.co/HFLJH7z/Notion-Google-Chrome-27-12-2023-17-05-54.png',
+        description: 'This is a chatting group you can only chatting with members, you can send sms to others members and you can delete,change your message.',
+      },
+      {
+        image: 'https://i.ibb.co/dBj1KS6/Notion-Google-Chrome-27-12-2023-17-06-25.png',
+        description: 'You can send pdf files,png,jpg,svg and other image formats. You can which you sent delete.',
+      },
+      {
+        image: 'https://i.ibb.co/PwQRkRS/Notion-Google-Chrome-27-12-2023-17-06-45.png',
+        description: 'You can chatting from others people from video chat group. You can on your camera or off it.',
+      },
+      {
+        image: 'https://i.ibb.co/26r6Q3F/Notion-Google-Chrome-27-12-2023-17-07-02.png',
+        description: 'Only admins can change other users role ex: admin can delete user from your channel or kick user or change his role.',
+      },
+      {
+        image: 'https://i.ibb.co/qRK3sjZ/Notion-Google-Chrome-27-12-2023-17-07-14.png',
+        description: '',
+      },
+      {
+        image: 'https://i.ibb.co/rwJ3WmF/Notion-Google-Chrome-27-12-2023-17-09-12.png',
         description: '',
       },
     ],
-    tags: ['React', 'NextJs 13', 'TypeScript', 'TailwindCss', 'Firebase', 'Formik', 'Joi', 'Yup', 'Momentjs', 'Zustand'],
+    tags: [
+      'React',
+      'NextJs 14',
+      'TypeScript',
+      'Convex',
+      'Clerk',
+      'Recover deleted files',
+      'Real-time database',
+      'Radix',
+      'Zustand',
+      'Zod',
+      'Stripe Integration',
+      'TailwindCss',
+      'Custom hooks',
+      'Shadcn.ui',
+      'LiveKit',
+      'Edge store',
+    ],
   },
   {
     slug: 'discord-app',
@@ -122,6 +162,50 @@ export const ProjectData = [
       },
     ],
     tags: ['React', 'NextJs 14', 'TypeScript', 'Prisma', 'Clerk', 'Joi', 'Yup', 'Radix', 'Zustand', 'Zod', 'Uploadthing', 'TailwindCss', 'Socket.io', 'Shadcn.ui', 'LiveKit', 'Responsive'],
+  },
+  {
+    slug: 'online-movie-store',
+    year: '2022',
+    demoUrl: 'https://online-movis-store.vercel.app/',
+    title: 'Online Movie Store',
+    homeImg: 'https://i.ibb.co/FwgKgCp/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-16-00-20.png',
+    description: 'This is online movies store. You must generate a new account from authentication and after you can see three subscription plans...',
+    images: [
+      {
+        image: 'https://i.ibb.co/XWZHVPC/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-16-04-17.png',
+        description: 'You must generate or create a new account from firebase authentication',
+      },
+      {
+        image: 'https://i.ibb.co/XVhkSvK/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-15-58-43.png',
+        description: 'After authentication you can subscribe from stripe authentication with bank cards or google pay and others...',
+      },
+      {
+        image: 'https://i.ibb.co/yFz9T39/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-15-58-57.png',
+        description: '',
+      },
+      {
+        image: 'https://i.ibb.co/FwgKgCp/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-16-00-20.png',
+        description: 'This is home page,in the home page you can see all of the movies,cartoons,serials and others...',
+      },
+      {
+        image: 'https://i.ibb.co/VqYD2W5/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-16-00-39.png',
+        description:
+          'You can click all of the cards and you can see single modal,you can watch trailer of the movies,if you liked this movie, you can save movie for your movies list,you can see description about movies...',
+      },
+      {
+        image: 'https://i.ibb.co/CQN9L8Z/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-16-01-18.png',
+        description: '',
+      },
+      {
+        image: 'https://i.ibb.co/NnjnX0j/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-16-01-42.png',
+        description: 'This is your setting page. In this page you can change manage member plans or delete plans,you can delete your account.',
+      },
+      {
+        image: 'https://i.ibb.co/MGDms8b/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-16-02-07.png',
+        description: '',
+      },
+    ],
+    tags: ['React', 'NextJs 13', 'TypeScript', 'TailwindCss', 'Firebase', 'Formik', 'Joi', 'Yup', 'Momentjs', 'Zustand'],
   },
   {
     slug: 'online-game-store-app',
