@@ -32,7 +32,10 @@ export const Header = () => {
   }
 
   return (
-    <header className={'dark:bg-[#111111] bg-[#ffffff] z-10'} style={{ position: 'fixed', width: '100%' }}>
+    <header
+      className={'z-[10000] sticky top-0  w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 dark:supports-[backdrop-filter]:bg-[#111111]/10'}
+      style={{ position: 'fixed', width: '100%' }}
+    >
       <div className={'container'}>
         <div>
           <div className={'flex items-center justify-between mt-3 mb-3'}>
