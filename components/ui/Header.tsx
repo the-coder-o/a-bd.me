@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { cn } from '@/lib/utils'
 import { usePathname, useRouter } from 'next/navigation'
@@ -10,8 +11,10 @@ import { HeaderData } from '@/lib/data/header.data'
 import { ModeToggle } from '@/components/mode-toggle'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
 
+import LogoDark from '@/public/logo/logo-dark.svg'
+import LogoLight from '@/public/logo/logo-light.svg'
+
 export const Header = () => {
-  const Logo: string = 'A'
   const pathName = usePathname()
 
   const router = useRouter()
@@ -41,18 +44,18 @@ export const Header = () => {
           <div className={'flex items-center justify-between mt-3 mb-3'}>
             <div>
               <Link href={'/'} className={'font-bold text-[25px]'}>
-                {Logo}
-                <span className={'text-lg'}>b</span>
+                <Image src={LogoDark} alt={LogoDark} width={1} height={1} className={'!w-[36px] dark:hidden'} />
+                <Image src={LogoLight} alt={LogoLight} width={1} height={1} className={'!w-[36px] dark:block'} />
               </Link>
             </div>
-            <div className={'flex items-center gap-9 max-md:hidden'}>
+            <div className={'flex items-center max-md:hidden'}>
               {HeaderData?.map((item: { linkTitle: string; linkPath: string }, index) => (
                 <Link
                   key={index}
                   href={item.linkPath}
                   className={cn(
-                    'text-[#646464] hover:text-primary dark:text-[#b4b4b4] hover:text-zinc-900 dark:hover:text-white transition-all',
-                    item.linkPath === pathName && 'transition-all dark:text-white text-zinc-900',
+                    'text-[#646464] hover:text-primary dark:text-[#b4b4b4] hover:text-zinc-900 dark:hover:text-white transition-all text-sm px-4 py-1.5 rounded-lg',
+                    item.linkPath === pathName && 'transition-all dark:text-white text-zinc-900 bg-[#ffffff1b]',
                   )}
                 >
                   {item.linkTitle}
