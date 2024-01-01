@@ -4,32 +4,33 @@ export const ProjectData = [
     year: '2023',
     demoUrl: 'https://notion-production.up.railway.app/',
     title: 'Notion App',
-    homeImg: 'https://i.ibb.co/hRbbjK1/My-mothly-tracker-27-12-2023-17-10-57.png',
-    description: 'Discord clone, in this app i use modern frameworks,packages and others. this is project full mobile responsive.',
+    homeImg:
+      'https://images.squarespace-cdn.com/content/v1/59aeaca4197aeadddeef26f8/1606476416593-RVIGE1AEK9S5FP188H2F/ke17ZwdGBToddI8pDm48kD6VllreI-Q4PQS6ETi0Y9R7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Ud53bNYmWJTuORL-WSd7CQuYiOlY2SahxcAWQU-SYM2MbSexTd1-frD7527z4SM9QQ/Notion+Tour+Marie+Poulin.png?format=1000w',
+    description: 'Used by more than 5k users, In this project i use modern web technologies, NextJs-14 and Stripe integration.',
     images: [
       {
         image: 'https://i.ibb.co/zGgJGDp/Notion-Google-Chrome-27-12-2023-16-48-38.png',
-        description: 'You must create a new account from clerk authentication or sign-in with google,github,gitlab and others',
+        description: 'This is the home page of Notion. You must creat a new account.',
       },
       {
         image: 'https://i.ibb.co/NVr7Jwm/Notion-Google-Chrome-27-12-2023-16-48-46.png',
-        description: '',
+        description: 'After created a new account you can see three subscription plans Free,Plus and Business, you can choose one of the three plans.',
       },
       {
         image: 'https://i.ibb.co/3zXyHG9/Notion-Google-Chrome-27-12-2023-16-49-01.png',
-        description: 'After authentication you must customize your server after you can create channels,groups and others.',
-      },
-      {
-        image: 'https://i.ibb.co/zNkFHxV/Notion-Google-Chrome-27-12-2023-16-53-36.png',
-        description: 'You can invite friends for this channel.',
-      },
-      {
-        image: 'https://i.ibb.co/XW9K0Jd/Notion-Google-Chrome-27-12-2023-16-54-07.png',
         description: '',
       },
       {
+        image: 'https://i.ibb.co/zNkFHxV/Notion-Google-Chrome-27-12-2023-16-53-36.png',
+        description: 'After chose one plan you can buy notion from Stripe authentication.',
+      },
+      {
+        image: 'https://i.ibb.co/XW9K0Jd/Notion-Google-Chrome-27-12-2023-16-54-07.png',
+        description: 'This is your document page of notion, you can create documents as much as you want. Even you can delete or update documents.',
+      },
+      {
         image: 'https://i.ibb.co/vzF074S/Notion-Google-Chrome-27-12-2023-16-54-20.png',
-        description: 'You can create some channels for-example text channels,video channels and voice channels.',
+        description: 'You can change style mode of the website dark mode or light mode,even you can change your subscription plan from stripe.',
       },
       {
         image: 'https://i.ibb.co/TthK46f/Notion-Google-Chrome-27-12-2023-16-54-39.png',
@@ -41,31 +42,14 @@ export const ProjectData = [
       },
       {
         image: 'https://i.ibb.co/dBj1KS6/Notion-Google-Chrome-27-12-2023-17-06-25.png',
-        description: 'You can send pdf files,png,jpg,svg and other image formats. You can which you sent delete.',
+        description: '',
       },
       {
         image: 'https://i.ibb.co/26r6Q3F/Notion-Google-Chrome-27-12-2023-17-07-02.png',
-        description: 'Only admins can change other users role ex: admin can delete user from your channel or kick user or change his role.',
+        description: 'You can also restore deleted documents.',
       },
     ],
-    tags: [
-      'React',
-      'NextJs 14',
-      'TypeScript',
-      'Convex',
-      'Clerk',
-      'Recover deleted files',
-      'Real-time database',
-      'Radix',
-      'Zustand',
-      'Zod',
-      'Stripe Integration',
-      'TailwindCss',
-      'Custom hooks',
-      'Shadcn.ui',
-      'LiveKit',
-      'Edge store',
-    ],
+    tags: ['NextJs 14', 'TypeScript', 'Convex', 'Clerk', 'Real-time database', 'Zustand', 'Stripe Integration', 'TailwindCss', 'Shadcn.ui', 'LiveKit', 'Edge store'],
   },
   {
     slug: 'discord-app',
@@ -109,7 +93,7 @@ export const ProjectData = [
           'After authentication you get your account settings page. In this page you can change your email or delete email, You can see other providers and delete the providers. You can update your name,email and adding avatar.',
       },
     ],
-    tags: ['React', 'NextJs 14', 'TypeScript', 'Prisma', 'Clerk', 'Joi', 'Yup', 'Radix', 'Zustand', 'Zod', 'Uploadthing', 'TailwindCss', 'Socket.io', 'Shadcn.ui', 'LiveKit', 'Responsive'],
+    tags: ['NextJs 14', 'TypeScript', 'Prisma', 'Clerk', 'Zustand', 'Uploadthing', 'TailwindCss', 'Socket.io', 'Shadcn.ui', 'LiveKit'],
   },
   {
     slug: 'online-movie-store',
@@ -153,43 +137,43 @@ export const ProjectData = [
         description: '',
       },
     ],
-    tags: ['React', 'NextJs 13', 'TypeScript', 'TailwindCss', 'Firebase', 'Formik', 'Joi', 'Yup', 'Momentjs', 'Zustand'],
+    tags: ['NextJs 13', 'TypeScript', 'TailwindCss', 'Firebase', 'Formik', 'Joi', 'Yup', 'Zustand'],
   },
-  {
-    slug: 'online-game-store-app',
-    year: '2021',
-    demoUrl: 'https://gameshops.netlify.app/',
-    title: 'Game Store App',
-    homeImg: 'https://i.ibb.co/LJXpB3Y/Download-Games-com-Google-Chrome-17-12-2023-22-30-03.png',
-    description:
-      'I did this project when i started first time. I used these project html,css and javascript. I spent this project creative design and creative slider. In this project you can see some games and you have ability download games',
-    images: [
-      {
-        image: 'https://i.ibb.co/LJXpB3Y/Download-Games-com-Google-Chrome-17-12-2023-22-30-03.png',
-        description: 'This is home page,you can see new news about store and you can see top games. and you can also download games.',
-      },
-      {
-        image: 'https://i.ibb.co/D12FCzJ/Download-Games-com-Google-Chrome-17-12-2023-22-30-14.png',
-        description: '',
-      },
-      {
-        image: 'https://i.ibb.co/QmT7rRr/Download-Games-com-Google-Chrome-17-12-2023-22-29-39.png',
-        description:
-          'This is single page of the games, you can watch about the game and you can see screenshots about the game and you can download for windows,ios and android. You can ride about the game.',
-      },
-      {
-        image: 'https://i.ibb.co/YNb5Gyp/Download-Games-com-Google-Chrome-17-12-2023-22-29-45.png',
-        description: '',
-      },
-      {
-        image: 'https://i.ibb.co/r7xwBzP/Download-Games-com-Google-Chrome-17-12-2023-22-30-27.png',
-        description: '',
-      },
-      {
-        image: 'https://i.ibb.co/BqF0nDk/Download-Games-com-Google-Chrome-17-12-2023-22-30-50.png',
-        description: '',
-      },
-    ],
-    tags: ['Html', 'Css', 'JavaScript', 'Swiper', 'BubbleJs'],
-  },
+  // {
+  //   slug: 'online-game-store-app',
+  //   year: '2021',
+  //   demoUrl: 'https://gameshops.netlify.app/',
+  //   title: 'Game Store App',
+  //   homeImg: 'https://i.ibb.co/LJXpB3Y/Download-Games-com-Google-Chrome-17-12-2023-22-30-03.png',
+  //   description:
+  //     'I did this project when i started first time. I used these project html,css and javascript. I spent this project creative design and creative slider. In this project you can see some games and you have ability download games',
+  //   images: [
+  //     {
+  //       image: 'https://i.ibb.co/LJXpB3Y/Download-Games-com-Google-Chrome-17-12-2023-22-30-03.png',
+  //       description: 'This is home page,you can see new news about store and you can see top games. and you can also download games.',
+  //     },
+  //     {
+  //       image: 'https://i.ibb.co/D12FCzJ/Download-Games-com-Google-Chrome-17-12-2023-22-30-14.png',
+  //       description: '',
+  //     },
+  //     {
+  //       image: 'https://i.ibb.co/QmT7rRr/Download-Games-com-Google-Chrome-17-12-2023-22-29-39.png',
+  //       description:
+  //         'This is single page of the games, you can watch about the game and you can see screenshots about the game and you can download for windows,ios and android. You can ride about the game.',
+  //     },
+  //     {
+  //       image: 'https://i.ibb.co/YNb5Gyp/Download-Games-com-Google-Chrome-17-12-2023-22-29-45.png',
+  //       description: '',
+  //     },
+  //     {
+  //       image: 'https://i.ibb.co/r7xwBzP/Download-Games-com-Google-Chrome-17-12-2023-22-30-27.png',
+  //       description: '',
+  //     },
+  //     {
+  //       image: 'https://i.ibb.co/BqF0nDk/Download-Games-com-Google-Chrome-17-12-2023-22-30-50.png',
+  //       description: '',
+  //     },
+  //   ],
+  //   tags: ['Html', 'Css', 'JavaScript', 'Swiper', 'BubbleJs'],
+  // },
 ]
