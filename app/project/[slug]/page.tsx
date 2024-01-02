@@ -11,10 +11,10 @@ import { cn } from '@/lib/utils'
 const ProjectRoute = () => {
   const pathname = usePathname()
 
-  const project = ProjectData.find((item) => item.slug === pathname.split('/')[2])
+  const project = ProjectData.find((item, index) => item.slug === pathname.split('/')[2])
 
   return (
-    <div className={'pb-24 pt-[9rem]'}>
+    <div key={project?.title} className={'pb-24 pt-[9rem] max-md:pt-[8rem]'}>
       <div className={'flex flex-col gap-14'}>
         <div className={'flex flex-col gap-3 container'}>
           <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.1 }} className={'flex gap-3'}>
@@ -44,7 +44,7 @@ const ProjectRoute = () => {
         <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 4 * 0.1 }} className={'container-for-image flex flex-col justify-center'}>
           {project?.images?.map((item: { image: string; description: string }) => (
             <div>
-              <div className={cn('dark:bg-[#222222] bg-[#efefef] border border-[#2a2a2a] rounded-lg', project?.slug == 'notion-app' ? 'p-5' : 'p-0')}>
+              <div className={cn('dark:bg-[#222222] bg-[#efefef] project-border rounded-lg')}>
                 <img src={item?.image} alt={project?.title} className={'!w-[100%] rounded-lg'} />
               </div>
               <p className={'mx-auto max-w-md text-center mb-5 mt-2 text-xs font-medium leading-tight text-tertiary text-[#6e6e6e]'}>{item?.description}</p>

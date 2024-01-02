@@ -7,8 +7,8 @@ const GearCamera = () => {
     <>
       <h2 className={'text-[#646464] dark:text-[#b4b4b4]'}>Camera Gear</h2>
       <div className={'grid md:grid-cols-2 gap-x-6 gap-y-8 group'}>
-        {GearCameraData?.map((camera) => (
-          <div className={'flex gap-4 items-center transition hover:!opacity-100 group-hover:opacity-50'}>
+        {GearCameraData?.map((camera, index) => (
+          <div key={index} className={'flex gap-4 items-center transition hover:!opacity-100 group-hover:opacity-50'}>
             <a href={camera?.url} target={'_blank'} className={'flex items-center justify-center rounded-xl min-w-[4rem] overflow-hidden aspect-square relative dark:bg-[#fff] bg-[#e8e8e8]'}>
               <Image width={50} height={50} src={camera?.img} alt={camera?.title} />
             </a>

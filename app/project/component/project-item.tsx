@@ -8,9 +8,9 @@ import { ProjectData } from '@/content/project.data'
 const ProjectItem = () => {
   return (
     <>
-      {ProjectData?.map((project) => (
-        <div className={'py-6 flex flex-col md:flex-row gap-4 md:gap-6 transition-opacity first:pt-0 last:pb-0 hover:!opacity-100 group-hover:opacity-50'}>
-          <Link href={'/project/' + project?.slug} className={'w-full md:w-2/5 aspect-video dark:bg-[#222222] bg-[#efefef] rounded-lg border border-secondary overflow-clip select-none'}>
+      {ProjectData?.map((project, index) => (
+        <div key={index} className={'py-6 flex flex-col md:flex-row gap-4 md:gap-6 transition-opacity first:pt-0 last:pb-0 hover:!opacity-100 group-hover:opacity-50'}>
+          <Link href={'/project/' + project?.slug} className={'w-full project-border md:w-2/5 aspect-video dark:bg-[#222222] bg-[#efefef] rounded-lg overflow-clip select-none'}>
             <Halo strength={10}>
               <div className={'relative w-full h-full overflow-hidden'}>
                 <div className={'transition-opacity opacity-0 inset-0 z-50 pointer-events-none'}></div>

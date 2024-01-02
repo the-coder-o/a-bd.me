@@ -45,7 +45,7 @@ export const Header = () => {
             <div>
               <Link href={'/'} className={'font-bold text-[25px]'}>
                 <Image src={LogoDark} alt={LogoDark} width={1} height={1} className={'!w-[36px] dark:hidden'} />
-                <Image src={LogoLight} alt={LogoLight} width={1} height={1} className={'!w-[36px] dark:block'} />
+                <Image src={LogoLight} alt={LogoLight} width={1} height={1} className={'!w-[36px] hidden dark:block'} />
               </Link>
             </div>
             <div className={'flex items-center max-md:hidden'}>
@@ -66,11 +66,43 @@ export const Header = () => {
               <div className={'max-md:block hidden'}>
                 <DropdownMenu>
                   <DropdownMenuTrigger className={'text-[#646464] dark:text-[#b4b4b4] relative'}>Menu +</DropdownMenuTrigger>
-                  <DropdownMenuContent className={'absolute left-[-100px]'}>
-                    <DropdownMenuItem onClick={handlePushToAbout}>About</DropdownMenuItem>
-                    <DropdownMenuItem onClick={handlePushToBlog}>Blog</DropdownMenuItem>
-                    <DropdownMenuItem onClick={handlePushToGear}>Gear</DropdownMenuItem>
-                    <DropdownMenuItem onClick={handlePushToProject}>Projects</DropdownMenuItem>
+                  <DropdownMenuContent className={'absolute left-[-100px] z-[99999999]'}>
+                    <DropdownMenuItem
+                      className={cn(
+                        'text-[#646464] hover:text-primary dark:text-[#b4b4b4] hover:text-zinc-900 dark:hover:text-white transition-all text-sm px-4 py-1.5 rounded-lg',
+                        '/about' === pathName && 'transition-all dark:text-white text-zinc-900 bg-[#ffffff1b]',
+                      )}
+                      onClick={handlePushToAbout}
+                    >
+                      About
+                    </DropdownMenuItem>
+                    <DropdownMenuItem
+                      className={cn(
+                        'text-[#646464] hover:text-primary dark:text-[#b4b4b4] hover:text-zinc-900 dark:hover:text-white transition-all text-sm px-4 py-1.5 rounded-lg',
+                        '/blog' === pathName && 'transition-all dark:text-white text-zinc-900 bg-[#ffffff1b]',
+                      )}
+                      onClick={handlePushToBlog}
+                    >
+                      Blog
+                    </DropdownMenuItem>
+                    <DropdownMenuItem
+                      className={cn(
+                        'text-[#646464] hover:text-primary dark:text-[#b4b4b4] hover:text-zinc-900 dark:hover:text-white transition-all text-sm px-4 py-1.5 rounded-lg',
+                        '/gear' === pathName && 'transition-all dark:text-white text-zinc-900 bg-[#ffffff1b]',
+                      )}
+                      onClick={handlePushToGear}
+                    >
+                      Gear
+                    </DropdownMenuItem>
+                    <DropdownMenuItem
+                      className={cn(
+                        'text-[#646464] hover:text-primary dark:text-[#b4b4b4] hover:text-zinc-900 dark:hover:text-white transition-all text-sm px-4 py-1.5 rounded-lg',
+                        '/project' === pathName && 'transition-all dark:text-white text-zinc-900 bg-[#ffffff1b]',
+                      )}
+                      onClick={handlePushToProject}
+                    >
+                      Projects
+                    </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
               </div>

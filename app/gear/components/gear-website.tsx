@@ -7,8 +7,8 @@ const GearWebsite = () => {
     <>
       <h2 className={'text-[#646464] dark:text-[#b4b4b4]'}>Websites</h2>
       <div className={'grid md:grid-cols-2 gap-x-6 gap-y-8 group'}>
-        {GearWebsiteData?.map((website) => (
-          <div className={'flex gap-4 items-center transition hover:!opacity-100 group-hover:opacity-50'}>
+        {GearWebsiteData?.map((website, index) => (
+          <div key={index} className={'flex gap-4 items-center transition hover:!opacity-100 group-hover:opacity-50'}>
             <a href={website?.url} target={'_blank'} className={'flex items-center justify-center rounded-xl min-w-[4rem] overflow-hidden aspect-square relative dark:bg-[#fff] bg-[#e8e8e8]'}>
               <Image width={40} height={40} src={website?.img} alt={website?.title} />
             </a>

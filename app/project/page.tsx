@@ -6,7 +6,7 @@ import ProjectItem from '@/app/project/component/project-item'
 const ProjectPage = () => {
   return (
     <div className={'container pb-24'}>
-      <div className={'pt-[9rem] flex flex-col gap-16 md:gap-24'}>
+      <div className={'pt-[9rem] max-md:pt-[8rem] flex flex-col gap-16 md:gap-24'}>
         <div>
           <motion.h1 initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.1 }} className={'font-bold text-3xl'}>
             Projects

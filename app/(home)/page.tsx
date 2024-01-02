@@ -12,7 +12,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 export default function Home() {
   return (
     <main className={'container pb-28'}>
-      <div className={'pt-[9rem] flex flex-col gap-8'}>
+      <div className={'pt-[9rem] max-md:pt-[8rem] flex flex-col gap-8'}>
         <div>
           <motion.h1 initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.1 }} className={'font-bold text-3xl'}>
             Abdul Basit
