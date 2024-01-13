@@ -47,7 +47,10 @@ export default function Home() {
             personal development.
           </p>
           <div className={'group flex gap-10 max-md:flex-col max-md:gap-2 mt-9'}>
-            <a href="/" className={'flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:text-white group-hover:opacity-60'}>
+            <a
+              href="mailto:abdulbositsharipovv@gmail.com"
+              className={'flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:text-white group-hover:opacity-60'}
+            >
               <ArrowUpRight size={19} />
               Email me
             </a>

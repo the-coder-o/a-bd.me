@@ -18,9 +18,9 @@ const LinkPage = () => {
         <div className="space-y-1 animate-in">
           <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.4, delay: 2 * 0.1 }}>
             <h1 className="text-2xl font-bold tracking-tight text-center">Abdul Basit</h1>
-            <p className="max-w-sm dark:text-[#b4b4b4] text-[#646464] mx-auto text-center">
+            <p className="max-w-[400px] dark:text-[#b4b4b4] text-[#646464] mx-auto text-center">
               FullStack developer who loves building cool things with code. In addition to coding, Find me elsewhere {''}
-              <a target={'_blank'} href="https://t.me/imAnonymous0o0" className={'underline hover:text-white'}>
+              <a target={'_blank'} href="https://t.me/imAnonymous0o0" className={'underline hover:opacity-75'}>
                 @imAnonymous0o0
               </a>
             </p>

@@ -27,13 +27,13 @@ const AboutPage = () => {
         </motion.div>
       </div>
       <div className={'container'}>
-        <div className={'flex flex-col gap-16 mt-20 max-md:gap-9'}>
+        <div className={'flex flex-col gap-[100px] mt-20 max-md:gap-9'}>
           <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.4, delay: 4 * 0.1 }} className="flex justify-between max-md:flex-col max-md:gap-2">
             <AboutMe />
           </motion.div>
-          <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.4, delay: 5 * 0.1 }} className="flex justify-between  max-md:flex-col max-md:gap-2">
-            <AboutLocation />
-          </motion.div>
+          {/*<motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.4, delay: 5 * 0.1 }} className="flex justify-between  max-md:flex-col max-md:gap-2">*/}
+          {/*  <AboutLocation />*/}
+          {/*</motion.div>*/}
           <div>
             <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.4, delay: 2 * 0.1 }} className="flex justify-between max-md:flex-col max-md:gap-2">
               <AboutContact />
