@@ -67,6 +67,9 @@ const SingleBlogPage = () => {
                       <p className={'text-[#6e6e6e] text-[.875rem] my-[17px]'}>{paragraph}</p>
                     </div>
                   ))}
+                  <div className={cn('mt-[10px] mb-[10px] flex flex-col !gap-5', blog?.blog_image ? 'block' : 'hidden')}>
+                    {blog?.blog_image?.map((images: string) => <img src={images} alt={images} className={'rounded-lg w-full mt-5'} />)}
+                  </div>
                   <div className={cn('', blog?.blog_video_url ? 'block' : 'hidden')}>
                     {blog?.blog_video_url?.map((item: any) => (
                       <Link href={item?.url_video} target={'_blank'}>
