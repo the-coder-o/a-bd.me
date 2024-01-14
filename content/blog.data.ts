@@ -389,7 +389,11 @@ export const BlogData = [
       {
         blog_title: 'Iyul oyi',
         blog_description:
-          'Mana endi haqeqiy backendga qadam qoydik 2 oy boshlandi server,api,nodejs qanday ishlashini bilib oldik. boshida qiynaldim, hamma kabi harakat qildim intildim niyyat qildim, maqsad qoydim va astalik bilan bu qiyinchiliklarni yengib otdim. Najot Talimda fullstack sohasi boyicha tadbir bolib otdi Googlda ishlidigan bitta undifined brat ozlari haqida gapirib berdila men esa juda ham hafa bolib ketdim negaki men biladigan bilimlar juda ham kam edi men oylardimki kop narsani bilaman deb.afsuski organadigan narsalarim judaham kop ekan, hayol surib otirardim qanidi shu oka kabi kotta kompaniyalarda ishlasam exxxx.😞 oylab kayfiyatim kotarilardi bazida yiglab yuborgan payitlarim ham bolgan chunki menham boshqa dasturchilar kabi o’z yolimni topib ketarkinman deb kelajagim haqida qay urar edim  bu oy men uchuin judaham esda qolarli boldi…… ',
+          'Mana endi haqeqiy backendga qadam qoydik 2 oy boshlandi server,api,nodejs qanday ishlashini bilib oldik. boshida qiynaldim, hamma kabi harakat qildim intildim niyyat qildim, maqsad qoydim va astalik bilan bu qiyinchiliklarni yengib otdim.',
+        blog_paragraph: [
+          'Najot Talimda fullstack sohasi boyicha tadbir bolib otdi Googlda ishlidigan bitta undifined brat ozlari haqida gapirib berdila men esa juda ham hafa bolib ketdim negaki men biladigan bilimlar juda ham kam edi men oylardimki kop narsani bilaman deb.',
+          'Afsuski organadigan narsalarim judaham kop ekan, hayol surib otirardim qanidi shu oka kabi kotta kompaniyalarda ishlasam exxxx.😞 oylab kayfiyatim kotarilardi bazida yiglab yuborgan payitlarim ham bolgan chunki menham boshqa dasturchilar kabi o’z yolimni topib ketarkinman deb kelajagim haqida qay urar edim  bu oy men uchuin judaham esda qolarli boldi…… ',
+        ],
       },
 
       {
@@ -409,7 +413,11 @@ export const BlogData = [
       {
         blog_title: 'Oktabr oyi',
         blog_description:
-          'Bu oy juda ham esta qolarli bolib otdi negaki backend kursini ohirgi oyi edi mem html ni qanchalik onson bolsin backend ham shu kabi onsoz bolib qoldi bunga yordam mening 2-ustozim baxtiyoraka hissa qoshdilar agar shu oyinga kirib ketmaganimda haliham backendni yahshi ozlashtira olmas edim qarang hamma narsaning hikmati bor shu oyinga rahmte bu bomagnida men hozir balki It tashlab yuborgan bolarmidiiim? lekin unday bolmadi shu uztozimga qancha yahshilik qilsamam juda ham kam…..🙂 Rahmat sizga ustoz ….. Bugun soat 09:00/28-oktabr bitiruv kechamiz edi hali ham ishonmasdim rostanam men fullsatck kursini tugatimi deb ozimga savol bera edim. va juda yahshi kayfiyat bilan bitirib ham oldik.🤩',
+          'Bu oy juda ham esta qolarli bolib otdi negaki backend kursini ohirgi oyi edi mem html ni qanchalik onson bolsin backend ham shu kabi onsoz bolib qoldi bunga yordam mening 2-ustozim baxtiyoraka hissa qoshdilar',
+        blog_paragraph: [
+          'Agar shu oyinga kirib ketmaganimda haliham backendni yahshi ozlashtira olmas edim qarang hamma narsaning hikmati bor shu oyinga rahmte bu bomagnida men hozir balki It tashlab yuborgan bolarmidiiim? lekin unday bolmadi shu uztozimga qancha yahshilik qilsamam juda ham kam…..🙂 Rahmat sizga ustoz …..',
+          'Bugun soat 09:00/28-oktabr bitiruv kechamiz edi hali ham ishonmasdim rostanam men fullsatck kursini tugatimi deb ozimga savol bera edim. va juda yahshi kayfiyat bilan bitirib ham oldik.🤩',
+        ],
         blog_image: ['https://i.ibb.co/2nddSnh/0O8A0731.jpg'],
       },
 

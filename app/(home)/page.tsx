@@ -29,11 +29,11 @@ export default function Home() {
           <div className={'space-y-2 group'}>
             <Link href={'/'} className={'flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:text-white group-hover:opacity-60'}>
               <Github size={18} />
-              <CountUp end={256} /> Repository Stars
+              <CountUp end={28} /> Repository Stars
             </Link>
             <Link href={'/'} className={'flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:text-white group-hover:opacity-60'}>
               <TrendingUp size={19} />
-              <CountUp end={10555} /> Total Blog Views
+              <CountUp end={256} /> Total Blog Views
             </Link>
             <Link href={'/'} className={'flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:text-white group-hover:opacity-60'}>
               <Youtube size={19} />
