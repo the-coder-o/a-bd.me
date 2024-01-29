@@ -91,7 +91,7 @@ const SignUpFrom = () => {
         </Button>
       </form>
       <p className="text-sm text-tertiary">
-        Join the <CountUp end={subscribers?.length} /> other readers.
+        Join the <CountUp end={subscribers.length} /> other readers.
       </p>
     </motion.div>
   )
