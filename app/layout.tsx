@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <Head>
-        <script async src="https://us.umami.is/script.js" data-website-id="6e5f2e32-161f-4c12-a241-4d4a4f0e22b3"></script>
+        <script async src="https://us.umami.is/script.js" data-website-id="94cc47c5-56f6-4b2c-b05b-881b076a25de"></script>
       </Head>
       <body className={cn(font.className, 'bg-[#FCFCFC] dark:bg-[#111111]')}>
         <link
