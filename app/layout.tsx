@@ -9,7 +9,7 @@ import { Toaster } from 'sonner'
 
 import { Header } from '@/components/ui/Header'
 import { ThemeProvider } from '@/components/provider/theme-provider'
-import { Analytics } from '@vercel/analytics/dist/react'
+import { Analytics } from '@vercel/analytics/react'
 
 const font = Inter({ subsets: ['latin'] })
 
