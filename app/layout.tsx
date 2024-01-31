@@ -14,6 +14,8 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import { Header } from '@/components/ui/Header'
 import { ThemeProvider } from '@/components/provider/theme-provider'
+import { getOrCreateDataLayer } from '@firebase/analytics/dist/src/helpers'
+
 const font = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -30,6 +32,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <Script src="https://us.umami.is/script.js" data-website-id="94cc47c5-56f6-4b2c-b05b-881b076a25de" />
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-MEK7ECJKW3" />
+      <Script>
+        window.dataLayer = window.dataLayer || []; function gtag(){getOrCreateDataLayer.push(arguments)}
+        gtag('js', new Date()); gtag('config', 'G-MEK7ECJKW3');
+      </Script>
       <body className={cn(font.className, 'bg-[#FCFCFC] dark:bg-[#111111]')}>
         <link
           rel="stylesheet"
