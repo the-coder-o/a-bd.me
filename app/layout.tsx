@@ -4,13 +4,16 @@ import Script from 'next/script'
 import type { Metadata } from 'next'
 
 import { cn } from '@/lib/utils'
+
 import { Inter } from 'next/font/google'
+
 import { Toaster } from 'sonner'
+
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import { Header } from '@/components/ui/Header'
 import { ThemeProvider } from '@/components/provider/theme-provider'
-import { Analytics } from '@vercel/analytics/react'
-
 const font = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -41,6 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Toaster />
         </ThemeProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )

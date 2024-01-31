@@ -17,6 +17,7 @@
     "@radix-ui/react-tooltip": "^1.0.7",
     "@umami/api-client": "^0.56.0",
     "@vercel/analytics": "^1.1.2",
+    "@vercel/speed-insights": "^1.0.9",
     "axios": "^1.6.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
@@ -35,6 +36,7 @@
     "sonner": "^1.2.4",
     "tailwind-merge": "^2.1.0",
     "tailwindcss-animate": "^1.0.7",
+    "umami-api": "^0.7.3",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
