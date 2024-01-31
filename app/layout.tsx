@@ -31,14 +31,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Script src="https://us.umami.is/script.js" data-website-id="94cc47c5-56f6-4b2c-b05b-881b076a25de" />
+      <Script src="https://us.umami.is/script.js" data-website-id={process.env.UMAMI_API_WEB_KEY} />
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-MEK7ECJKW3" />
       <Script>
         {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-MEK7ECJKW3');
+            gtag('config', process.env.GOOGLE__ANALYTICS_KEY);
           `}
       </Script>
       <body className={cn(font.className, 'bg-[#FCFCFC] dark:bg-[#111111]')}>
