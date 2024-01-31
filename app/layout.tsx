@@ -5,7 +5,6 @@ import type { Metadata } from 'next'
 
 import { cn } from '@/lib/utils'
 
-import Head from 'next/head'
 import { Inter } from 'next/font/google'
 
 import { Toaster } from 'sonner'
@@ -38,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', process.env.GOOGLE__ANALYTICS_KEY);
+            gtag('config', process.env.GOOGLE_ANALYTICS_KEY);
           `}
       </Script>
       <body className={cn(font.className, 'bg-[#FCFCFC] dark:bg-[#111111]')}>
