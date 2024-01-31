@@ -7,6 +7,7 @@ import { Toaster } from 'sonner'
 
 import { Header } from '@/components/ui/Header'
 import { ThemeProvider } from '@/components/provider/theme-provider'
+import Head from 'next/head'
 
 const font = Inter({ subsets: ['latin'] })
 
@@ -23,6 +24,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Head>
+        <script async src="https://us.umami.is/script.js" data-website-id="6e5f2e32-161f-4c12-a241-4d4a4f0e22b3"></script>
+      </Head>
       <body className={cn(font.className, 'bg-[#FCFCFC] dark:bg-[#111111]')}>
         <link
           rel="stylesheet"
