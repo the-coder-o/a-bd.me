@@ -1,4 +1,6 @@
 import './globals.css'
+
+import Script from 'next/script'
 import type { Metadata } from 'next'
 
 import { cn } from '@/lib/utils'
@@ -7,7 +9,6 @@ import { Toaster } from 'sonner'
 
 import { Header } from '@/components/ui/Header'
 import { ThemeProvider } from '@/components/provider/theme-provider'
-import Head from 'next/head'
 
 const font = Inter({ subsets: ['latin'] })
 
@@ -24,9 +25,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
-        <script async src="https://us.umami.is/script.js" data-website-id="94cc47c5-56f6-4b2c-b05b-881b076a25de"></script>
-      </Head>
+      <Script src="https://us.umami.is/script.js" data-website-id="94cc47c5-56f6-4b2c-b05b-881b076a25de" />
       <body className={cn(font.className, 'bg-[#FCFCFC] dark:bg-[#111111]')}>
         <link
           rel="stylesheet"
