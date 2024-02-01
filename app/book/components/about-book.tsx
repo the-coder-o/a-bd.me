@@ -3,9 +3,9 @@ import React from 'react'
 
 import Image from 'next/image'
 
-import { motion } from 'framer-motion'
+import { Book } from 'lucide-react'
 
-import { FaBookOpen } from 'react-icons/fa6'
+import { motion } from 'framer-motion'
 
 const AboutBook = () => {
   return (
@@ -23,7 +23,7 @@ const AboutBook = () => {
       <div className="flex w-fit max-w-md flex-col gap-1 md:max-w-sm">
         <div className="inline-flex items-center gap-2">
           <div className="relative z-20 text-2xl text-[#fff]">
-            <FaBookOpen />
+            <Book />
           </div>
           <span className="text-lg font-semibold tracking-tighter">BooksTracker</span>
         </div>
