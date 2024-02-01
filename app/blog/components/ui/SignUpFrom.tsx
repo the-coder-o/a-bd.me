@@ -1,9 +1,14 @@
+'use client'
+
 import axios from 'axios'
 
 import { useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
-import CountUp from 'react-countup'
+
 import { toast } from 'sonner'
+
+import CountUp from 'react-countup'
+
+import { motion } from 'framer-motion'
 
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'

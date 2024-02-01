@@ -1,50 +1,25 @@
-'use client'
+import { Metadata } from 'next'
 
-import { motion } from 'framer-motion'
-
-import AboutMe from '@/app/about/component/about-me'
-import AboutWork from '@/app/about/component/about-work'
+import MyName from '@/app/about/component/my-name'
+import Aboutme from '@/app/about/component/aboutme'
 import AboutImages from '@/app/about/component/about-images'
-import AboutContact from '@/app/about/component/about.contact'
-import AboutLocation from '@/app/about/component/about-location'
+
+export const metadata: Metadata = {
+  title: 'About | Abdul Basit',
+  description: 'I am a full-stack software engineer who basically just enjoys creating things.',
+}
 
 const AboutPage = () => {
   return (
     <div className={'pt-[9rem] max-md:pt-[8rem] pb-28'}>
       <div className={'container'}>
-        <div className="flex flex-col">
-          <motion.h3 initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.4, delay: 0.1 }} className="text-3xl font-bold tracking-tight">
-            About Me
-          </motion.h3>
-          <motion.p initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.4, delay: 2 * 0.1 }} className="dark:text-[#b4b4b4] text-[#646464]">
-            Just a quick glimpse.
-          </motion.p>
-        </div>
+        <MyName />
       </div>
       <div>
-        <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.4, delay: 3 * 0.1 }}>
-          <AboutImages />
-        </motion.div>
+        <AboutImages />
       </div>
       <div className={'container'}>
-        <div className={'flex flex-col gap-[100px] mt-20 max-md:gap-9'}>
-          <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.4, delay: 4 * 0.1 }} className="flex justify-between max-md:flex-col max-md:gap-2">
-            <AboutMe />
-          </motion.div>
-          {/*<motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.4, delay: 5 * 0.1 }} className="flex justify-between  max-md:flex-col max-md:gap-2">*/}
-          {/*  <AboutLocation />*/}
-          {/*</motion.div>*/}
-          <div>
-            <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.4, delay: 2 * 0.1 }} className="flex justify-between max-md:flex-col max-md:gap-2">
-              <AboutContact />
-            </motion.div>
-          </div>
-          <div>
-            <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.4, delay: 6 * 0.1 }} className="flex justify-between max-md:flex-col max-md:gap-2">
-              <AboutWork />
-            </motion.div>
-          </div>
-        </div>
+        <Aboutme />
       </div>
     </div>
   )

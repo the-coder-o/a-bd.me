@@ -1,9 +1,14 @@
+'use client'
+
 import React from 'react'
+
+import { motion } from 'framer-motion'
+
 import Image from 'next/image'
 
 const AboutImages = () => {
   return (
-    <div>
+    <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.4, delay: 3 * 0.1 }}>
       <div className="flex items-center justify-center container-for-slider !mt-[100px] max-md:!mt-[50px]">
         <div className="w-auto hover:scale-75 ease-in-out duration-300 active:scale-0  rotate-[-8deg]">
           <Image width={220} height={220} className="rounded-[18px] !object-cover !w-[220px] !h-[220px] bg-cover bg-no-repeat cursor-pointer" src="https://i.ibb.co/bzCjVtr/person3.jpg" alt={'img'} />
@@ -36,7 +41,7 @@ const AboutImages = () => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
