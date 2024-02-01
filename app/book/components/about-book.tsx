@@ -22,9 +22,8 @@ const AboutBook = () => {
       </div>
       <div className="flex w-fit max-w-md flex-col gap-1 md:max-w-sm">
         <div className="inline-flex items-center gap-2">
-          <div className="relative">
-            {/*// @ts-ignore*/}
-            <FaBookOpen className="relative z-20 text-2xl text-[#fff]" />
+          <div className="relative z-20 text-2xl text-[#fff]">
+            <FaBookOpen />
           </div>
           <span className="text-lg font-semibold tracking-tighter">BooksTracker</span>
         </div>
