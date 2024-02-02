@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import { ArrowUpRight } from 'lucide-react'
 
 import { ContactLinkData } from '@/lib/data/link.data'
@@ -10,8 +12,8 @@ const AboutContact = () => {
         <p>Have a question or just want to chat? Feel free to email me. Try finding me anywhere else at abdulbositsharipovv@gmail.com</p>
         <div className="flex justify-between gap-2 flex-wrap max-md:flex-col group">
           {ContactLinkData.map((link) => (
-            <a
-              className="flex items-center justify-between rounded-[10px] px-[15px] py-[15px] w-[258px] border-styles max-md:w-full transition hover:!opacity-100 group-hover:opacity-50"
+            <Link
+              className="flex items-center justify-between rounded-[10px] bg-[#efefef] dark:bg-[#222222] px-[15px] py-[15px] w-[258px] border-styles max-md:w-full transition hover:!opacity-100 group-hover:opacity-50"
               href={link.url}
               target={'_blank'}
             >
@@ -22,7 +24,7 @@ const AboutContact = () => {
               <div>
                 <ArrowUpRight size={18} />
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
-import MyName from '@/app/about/component/my-name'
-import Aboutme from '@/app/about/component/aboutme'
+import About from '@/app/about/component/about'
+import AboutMain from '@/app/about/component/about-main'
 import AboutImages from '@/app/about/component/about-images'
 
 export const metadata: Metadata = {
@@ -13,13 +13,13 @@ const AboutPage = () => {
   return (
     <div className={'pt-[9rem] max-md:pt-[8rem] pb-28'}>
       <div className={'container'}>
-        <MyName />
+        <AboutMain />
       </div>
       <div>
         <AboutImages />
       </div>
       <div className={'container'}>
-        <Aboutme />
+        <About />
       </div>
     </div>
   )

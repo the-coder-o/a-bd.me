@@ -1,6 +1,6 @@
 {
   "name": "my-blog",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/react": "^18.2.51",
     "@types/react-dom": "^18",
     "@types/react-syntax-highlighter": "^15.5.11",
     "@types/uuid": "^9.0.7",
