@@ -17,17 +17,19 @@ const AboutBook = () => {
       style={{ '--index': 1 } as React.CSSProperties}
     >
       <div className="flex flex-col gap-1">
-        <h3 className="leading-none text-[#b4b4b4]">Books Kit & Analytics</h3>
+        <h3 className="leading-none dark:text-[#b4b4b4] text-[#646464]">Books Kit & Analytics</h3>
         <h2 className="whitespace-nowrap text-4xl font-bold tracking-tight">Abdul Basit</h2>
       </div>
       <div className="flex w-fit max-w-md flex-col gap-1 md:max-w-sm">
         <div className="inline-flex items-center gap-2">
-          <div className="relative z-20 text-2xl text-[#fff]">
+          <div className="relative z-20 text-2xl dark:text-[#fff]">
             <Book />
           </div>
-          <span className="text-lg font-semibold tracking-tighter">BooksTracker</span>
+          <span className="text-lg font-semibold tracking-tighter dark:text-white text-black">BooksTracker</span>
         </div>
-        <p className="z-50 text-sm text-[#b4b4b4]">Creator from Tashkent. Focuses on topics such as consumer technology, software development, design, books for programmers, and lifestyle.</p>
+        <p className="z-50 text-sm dark:text-[#b4b4b4] text-[#646464]">
+          Creator from Tashkent. Focuses on topics such as consumer technology, software development, design, books for programmers, and lifestyle.
+        </p>
       </div>
       <Image src={'https://i.ibb.co/84ZQKWM/person3.jpg'} width={60} height={60} alt="avatar" className="!object-cover rounded-full md:order-last" />
     </motion.div>

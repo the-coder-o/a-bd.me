@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 @layer base {
   :root {
@@ -104,7 +104,11 @@
 }
 
 .border-styles {
-  border: 1px solid #3a3a3a !important;
+  border: 1px solid #3a3a3a;
+}
+
+.light-style {
+  border: 1px solid #d8d9d9;
 }
 
 .project-border {
