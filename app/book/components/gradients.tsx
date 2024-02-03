@@ -3,7 +3,7 @@ import React from 'react'
 export const Gradients = () => {
   return (
     <>
-      <div className="absolute inset-x-0 top-[38%] max-sm:top-[25%] z-0 transform-gpu overflow-hidden blur-3xl" aria-hidden="true">
+      <div className="absolute inset-x-0 top-[40%] max-sm:top-[25%] z-0 transform-gpu overflow-hidden blur-3xl" aria-hidden="true">
         <div
           className="relative aspect-[1155/678] w-[40rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-40 left-[calc(48%)] max-sm:w-[72.1875rem] rotate-[30deg] max-sm:rounded-[90deg] max-md:opacity-20"
           style={{
