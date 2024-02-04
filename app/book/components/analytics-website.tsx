@@ -2,8 +2,13 @@
 
 import React from 'react'
 
+import Image from 'next/image'
+
 import CountUp from 'react-countup'
+
 import { Button } from '@/components/ui/button'
+
+import RocketIcon from '@/public/rocket/rocket.png'
 
 const AnalyticsWebsite = () => {
   return (
@@ -35,7 +40,10 @@ const AnalyticsWebsite = () => {
         </div>
       </div>
       <div className={'flex items-center justify-center mt-[-70px] max-md:mt-[-50px] max-md:mb-[6px]'}>
-        <Button onClick={() => window.open('https://analytics.us.umami.is/share/wxpBXX6WJmlJVWyE/Abdul%20Basit')}>View all Analytics</Button>
+        <Button onClick={() => window.open('https://analytics.us.umami.is/share/wxpBXX6WJmlJVWyE/Abdul%20Basit')} className={'!flex !items-center !gap-1'}>
+          View all Analytics
+          <Image width={18} height={18} src={RocketIcon} alt={'RocketIcon'} />
+        </Button>
       </div>
     </>
   )
