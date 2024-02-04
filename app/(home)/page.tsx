@@ -1,6 +1,8 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
+
 import { ArrowUpRight, Github, TrendingUp, Youtube } from 'lucide-react'
 
 import CountUp from 'react-countup'
@@ -8,6 +10,8 @@ import { motion } from 'framer-motion'
 
 import BlogItem from '@/app/blog/components/blog-item'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+
+import CoffeeIcon from '@/public/coffee/buymeacoffee.svg'
 
 export default function Home() {
   return (
@@ -46,21 +50,20 @@ export default function Home() {
             Hi, I&apos;m Abdul Basit, a fullStack engineer who loves building cool things with code. In addition to coding, I also make YouTube videos, where I focus on tech, creative vlogs, and
             personal development.
           </p>
-          <div className={'group flex gap-10 max-md:flex-col max-md:gap-2 mt-9'}>
-            <iframe
-              src="https://github.com/sponsors/AbdulBacits/button"
-              title="Sponsor AbdulBacits"
-              height="32"
-              width="114"
-              className={'!border-none hover:!opacity-100 rounded-[6px] group-hover:opacity-60'}
-            ></iframe>
-            <a
-              href="mailto:abdulbositsharipovv@gmail.com"
-              className={'flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:text-white group-hover:opacity-60'}
-            >
-              <ArrowUpRight size={19} />
-              Email me
-            </a>
+          <div className={'group flex gap-3 max-md:flex-col max-md:gap-2 mt-9'}>
+            <div className={'flex gap-5 max-md:flex-col'}>
+              <iframe
+                src="https://github.com/sponsors/the-coder-o/button"
+                title="Sponsor the-coder-o"
+                height="32"
+                width="114"
+                className={'!border-none hover:!opacity-100 rounded-[6px] group-hover:opacity-60'}
+              ></iframe>
+              <a href="https://www.buymeacoffee.com/abdulbacit" className={'bg-[#FFDD04] max-md:w-[170px]  font-[500] flex items-center justify-center h-[32px] rounded-[6px] text-black px-3'}>
+                <Image width={0} height={0} src={CoffeeIcon} alt={'Coffee'} className={'!w-[20px]'} />
+                Buy me a coffee
+              </a>
+            </div>
             <Link href={'/link'} className={'flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:text-white group-hover:opacity-60'}>
               <ArrowUpRight size={19} />
               More ways to connect
