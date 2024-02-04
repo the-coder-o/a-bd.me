@@ -173,7 +173,7 @@ export const BlogData = [
     slug: 'how-to-create-discord-app',
     blog_title: 'How to Create Discord App with nextjs14',
     blog_description: 'I did discord app with modern frameworks, in this project you can real time chatting, real time meeting from video,audio. After i tell you about what is the discord?.',
-    blog_publish_date: 'Dec 20, 2023',
+    blog_publish_date: 'Dec 19, 2023',
     blog_main_image_url: 'https://www.videogameschronicle.com/files/2021/05/discord-new-logo.jpg',
     blog_main_description:
       'Discord is a platform for hosting real-time text, video, and voice chat. While other social platforms are oriented around one central community, Discord is divided into servers or many smaller communities. Servers can be public or private spaces.',

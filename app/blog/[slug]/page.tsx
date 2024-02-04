@@ -35,7 +35,7 @@ const SingleBlogPage = () => {
             </div>
             <div className={'flex max-w-none items-center gap-4'}>
               <div className={'flex max-w-none items-center gap-4'}>
-                <img width={40} height={40} src={'https://i.ibb.co/7rGG5Vm/person2.jpg'} alt={blog?.blog_title} className={'rounded-full'} />
+                <img width={40} height={40} src={'https://i.ibb.co/7rGG5Vm/person2.jpg'} alt={blog?.blog_title} className={'!object-cover rounded-full'} />
                 <div className={'leading-tight'}>
                   <p className={'font-medium text-primary'}>Abdul Basit</p>
                   <p className={'text-[#646464] dark:text-[#b4b4b4]'}>
@@ -47,7 +47,7 @@ const SingleBlogPage = () => {
           </div>
           <div className="h-8"></div>
           <div className={'container-for-image'}>
-            <img width={100} height={100} src={blog?.blog_main_image_url} alt={blog?.blog_title} className={'!rounded-lg  !w-[100%]'} />
+            <img width={100} height={100} src={blog?.blog_main_image_url} alt={blog?.blog_title} className={'!object-cover !rounded-lg  !w-[100%]'} />
           </div>
           <div className="h-16"></div>
           <div className={'container prose prose-neutral animate-in'}>
@@ -75,7 +75,7 @@ const SingleBlogPage = () => {
                       <Link href={item?.url_video} target={'_blank'}>
                         <Halo strength={5} className={'flex bg-[#efefef] dark:bg-[#222222] rounded-md overflow-clip p-4 gap-4 md:gap-6 md:p-6 items-center my-8 no-underline border border-secondary'}>
                           <div className={'prose w-full max-w-[12rem]'}>
-                            <img width={600} height={400} src={item?.url_image} alt={item?.blog_title} className={'rounded-md'} />
+                            <img width={600} height={400} src={item?.url_image} alt={item?.blog_title} className={'rounded-md !object-cover'} />
                           </div>
                           <div className="w-full flex flex-col gap-2 leading-tight">
                             <p className="m-0 text-sm font-medium text-[#8d8d8d] flex items-center gap-0.5">youtube.com</p>
@@ -100,7 +100,7 @@ const SingleBlogPage = () => {
                         <div>
                           <div>
                             <figure className={'m-0 flex flex-col gap-2'}>
-                              <img src={image} alt={blog?.blog_title} className={'w-full'} />
+                              <img src={image} alt={blog?.blog_title} className={'w-full !object-cover'} />
                             </figure>
                           </div>
                         </div>
