@@ -18,14 +18,15 @@ const HomeAboutMe = () => {
         development.
       </p>
       <div className={'group flex gap-3 max-md:flex-col max-md:gap-2 mt-9'}>
-        <div className={'flex gap-5 max-md:flex-col'}>
-          <a
+        <div className={'flex gap-5 max-md:flex-col-reverse max-md:gap-2'}>
+          <Link
+            target={'_blank'}
             href="https://www.buymeacoffee.com/abdulbacit"
             className={'bg-[#FFDD04] max-md:w-[170px] hover:!opacity-100 group-hover:opacity-60 font-[500] flex items-center justify-center h-[32px] rounded-[6px] text-black px-3'}
           >
             <Image width={0} height={0} src={CoffeeIcon} alt={'Coffee'} className={'!w-[22px]'} />
             Buy me a coffee
-          </a>
+          </Link>
           <iframe
             src="https://github.com/sponsors/the-coder-o/button"
             title="Sponsor the-coder-o"

@@ -5,8 +5,8 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import CountUp from 'react-countup'
 
-import { Chip } from '@/app/book/components/chip'
-import { ProgressBar } from '@/app/book/components/progress-bar'
+import { Chip } from '@/app/book/components/ui/chip'
+import { ProgressBar } from '@/app/book/components/ui/progress-bar'
 
 const Analytics = () => {
   return (
@@ -33,6 +33,18 @@ const Analytics = () => {
       <div className="col-span-1 flex flex-col justify-center items-center rounded-xl dark:border-styles light-style dark:bg-[#222222] bg-[#EFEFEF] p-6 md:col-span-2 max-md:items-center">
         <p className=" dark:text-[#b4b4b4] text-[#646464] max-sm:text-xs">Yearly reading</p>
         <h2 className="text-2xl font-bold text-primary">18+</h2>
+      </div>
+      <div className="col-span-1 flex flex-col justify-center items-center rounded-xl dark:border-styles light-style dark:bg-[#222222] bg-[#EFEFEF] p-6 md:col-span-2 max-md:items-center">
+        <p className=" dark:text-[#b4b4b4] text-[#646464] max-sm:text-xs">English books</p>
+        <h2 className="text-2xl font-bold text-primary">
+          <CountUp end={3} />+
+        </h2>
+      </div>
+      <div className="col-span-1 flex flex-col justify-center items-center rounded-xl dark:border-styles light-style dark:bg-[#222222] bg-[#EFEFEF] p-6 md:col-span-2 max-md:items-center">
+        <p className=" dark:text-[#b4b4b4] text-[#646464] max-sm:text-xs">Russian Books</p>
+        <h2 className="text-2xl font-bold text-primary">
+          <CountUp end={4} />+
+        </h2>
       </div>
       <h2 className="col-span-2 mt-4  dark:text-[#b4b4b4] text-[#646464] md:col-span-6">Analytics from my website</h2>
       <div className="col-span-2 row-span-1 space-y-2 rounded-xl border dark:border-styles light-style dark:bg-[#222222] bg-[#EFEFEF] p-6 md:col-span-3">

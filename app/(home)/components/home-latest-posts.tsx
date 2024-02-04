@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 import { motion } from 'framer-motion'
 
-import BlogItem from '@/app/blog/components/blog-item'
+import LatestBlogs from '@/app/(home)/latest-blogs'
 
 const HomeLatestPosts = () => {
   return (
@@ -16,7 +16,7 @@ const HomeLatestPosts = () => {
           <p className={'text-[#646464] dark:text-[#b4b4b4]'}>Latest Posts</p>
         </div>
         <div className={'group relative'}>
-          <BlogItem />
+          <LatestBlogs />
         </div>
         <div>
           <Link href="/blog" className={'text-[#646464] dark:text-[#b4b4b4] underline transition hover:text-zinc-900 dark:hover:text-white'}>

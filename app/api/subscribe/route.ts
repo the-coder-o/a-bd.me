@@ -7,7 +7,7 @@ export async function POST(req: Request) {
     // @ts-ignore
     const { user_email } = await req.json()
 
-    const subscribe = await db.subscripbe.create({
+    const subscribe = await db.subscribe.create({
       data: { user_email },
     })
 

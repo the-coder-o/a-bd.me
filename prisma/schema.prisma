@@ -1,14 +1,30 @@
-generator client {
-  provider = "prisma-client-js"
-}
-
 datasource db {
   provider     = "mysql"
   url          = env("DATABASE_URL")
   relationMode = "prisma"
 }
 
-model Subscripbe {
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Subscribe {
   id         String @id @default(uuid())
   user_email String @unique
+}
+
+model User {
+  id       String    @id @default(uuid()) @map("_id")
+  email    String    @unique
+  messages Message[]
+}
+
+model Message {
+  id        String   @id @default(uuid()) @map("_id")
+  text      String
+  createdAt DateTime
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+
+  @@index([userId])
 }

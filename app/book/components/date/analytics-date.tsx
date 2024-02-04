@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AnalyticsData = () => {
+const AnalyticsDate = () => {
   return (
     <p className="text-center text-xs dark:text-[#7C707D] text-[#646464] mt-[-60px]">
       Analytics for the month of&nbsp;
@@ -14,4 +14,4 @@ const AnalyticsData = () => {
   )
 }
 
-export default AnalyticsData
+export default AnalyticsDate

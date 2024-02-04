@@ -40,18 +40,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', process.env.GOOGLE_ANALYTICS_KEY);
           `}
       </Script>
-      <Script
-        data-name="BMC-Widget"
-        data-cfasync="false"
-        src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-        data-id="abdulbacit"
-        data-description="Support me on Buy me a coffee!"
-        data-message="Thank you for visiting. You can know buy me a coffe"
-        data-color="#5F7FFF"
-        data-position="Right"
-        data-x_margin="18"
-        data-y_margin="18"
-      ></Script>
       <body className={cn(font.className, 'bg-[#FCFCFC] dark:bg-[#111111]')}>
         <link
           rel="stylesheet"
