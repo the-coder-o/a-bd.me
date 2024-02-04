@@ -6,7 +6,7 @@ export const ContactLinkData = [
   },
   {
     title: 'GitHub',
-    url: 'https://github.com/Hacker00002',
+    url: 'https://github.com/AbdulBacits',
     icon: 'fa-brands fa-github',
   },
   {
@@ -26,12 +26,12 @@ export const ContactLinkData = [
   },
   {
     title: 'Vk',
-    url: 'https://vk.com/hacker0o0',
+    url: 'https://vk.com/the_coder_o',
     icon: 'fa-brands fa-vk',
   },
   {
     title: 'TikTok',
-    url: 'https://www.tiktok.com/@hacker0o0',
+    url: 'https://www.tiktok.com/@the_coder_o',
     icon: 'fa-brands fa-tiktok',
   },
   {
@@ -46,7 +46,7 @@ export const ContactLinkData = [
   },
   {
     title: 'Twitter',
-    url: 'https://twitter.com/ImHackerMrx',
+    url: 'https://twitter.com/the_coder_o',
     icon: 'fa-brands fa-twitter',
   },
 ]
