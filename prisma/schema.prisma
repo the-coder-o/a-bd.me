@@ -14,21 +14,18 @@ model Subscribe {
 }
 
 model User {
-  id         Int       @id @default(autoincrement())
-  email      String    @unique
-  name       String?
-  provider   String
-  providerId String
-  createdAt  DateTime  @default(now())
-  messages   Message[]
+  id       String    @id @default(uuid()) @map("_id")
+  uid      String
+  email    String
+  name     String
+  messages Message[]
 }
 
 model Message {
-  id        Int      @id @default(autoincrement())
-  text      String
-  userId    Int
-  createdAt DateTime @default(now())
-  user      User     @relation(fields: [userId], references: [id])
+  id      String @id @default(uuid()) @map("_id")
+  content String
+  userId  String
+  user    User   @relation(fields: [userId], references: [id])
 
   @@index([userId])
 }
