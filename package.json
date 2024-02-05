@@ -11,12 +11,14 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@firebase/app-compat": "^0.2.27",
     "@prisma/client": "^5.9.1",
     "@radix-ui/react-avatar": "^1.0.4",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-progress": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tooltip": "^1.0.7",
+    "@reduxjs/toolkit": "^2.1.0",
     "@umami/api-client": "^0.56.0",
     "@vercel/analytics": "^1.1.2",
     "@vercel/speed-insights": "^1.0.9",
@@ -45,6 +47,7 @@
     "uuid": "^9.0.1"
   },
   "devDependencies": {
+    "@types/firebase": "^3.2.1",
     "@types/node": "^20",
     "@types/react": "^18.2.51",
     "@types/react-dom": "^18",
