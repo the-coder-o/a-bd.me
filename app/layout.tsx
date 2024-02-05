@@ -16,7 +16,6 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import { Header } from '@/components/ui/header/Header'
 import { ThemeProvider } from '@/components/provider/theme-provider'
-import { store } from '@/store/store'
 
 const font = Inter({ subsets: ['latin'] })
 
@@ -41,13 +40,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
-        <Provider store={store}>
-          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} storageKey={'my-blog'}>
-            <Header />
-            {children}
-            <Toaster />
-          </ThemeProvider>
-        </Provider>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} storageKey={'my-blog'}>
+          <Header />
+          {children}
+          <Toaster />
+        </ThemeProvider>
         <Analytics />
         <SpeedInsights />
       </body>
