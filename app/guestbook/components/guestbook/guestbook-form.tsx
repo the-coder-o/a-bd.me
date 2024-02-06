@@ -5,12 +5,11 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
 
 import axios from 'axios'
+import { ArrowRight } from 'lucide-react'
 
 import Halo from '@/components/ui/Halo'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
-
-import { FaArrowRight } from 'react-icons/fa'
 
 function GuestBookForm() {
   const router = useRouter()
@@ -55,7 +54,7 @@ function GuestBookForm() {
             <div className={'w-full relative'}>
               <Input id="message" value={message} placeholder={'Your message...'} onChange={(e) => setMessage(e.target.value)} required className={'!bg-[#222222] border-style-input'} />
               <Button size={'xs'} type="submit" className={'absolute right-1.5 top-1.5'}>
-                <FaArrowRight />
+                <ArrowRight size={15.5} />
               </Button>
             </div>
           </div>
