@@ -107,6 +107,10 @@
   border: 1px solid #3a3a3a;
 }
 
+.border-style-input {
+  border: 2px solid #3a3a3a !important;
+}
+
 .light-style {
   border: 1px solid #d8d9d9;
 }

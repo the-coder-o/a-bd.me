@@ -13,19 +13,9 @@ model Subscribe {
   user_email String @unique
 }
 
-model User {
-  id       String    @id @default(uuid()) @map("_id")
-  uid      String
-  email    String
-  name     String
-  messages Message[]
-}
-
-model Message {
-  id      String @id @default(uuid()) @map("_id")
-  content String
-  userId  String
-  user    User   @relation(fields: [userId], references: [id])
-
-  @@index([userId])
+model Entry {
+  id        Int      @id @default(autoincrement())
+  name      String
+  message   String
+  createdAt DateTime @default(now())
 }
