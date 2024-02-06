@@ -5,17 +5,19 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
 
 import axios from 'axios'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Check } from 'lucide-react'
 
 import Halo from '@/components/ui/Halo'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 
 function GuestBookForm() {
   const router = useRouter()
 
   const [name, setName] = useState('')
   const [message, setMessage] = useState('')
+  const [success, setSuccess] = useState(false)
 
   const submitEntry = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -37,6 +39,7 @@ function GuestBookForm() {
 
       setName('')
       setMessage('')
+      setSuccess(true)
     } catch (error) {
       console.error('Failed to submit entry', error)
     }
@@ -48,7 +51,7 @@ function GuestBookForm() {
       <Halo strength={6} className={'p-6'}>
         <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100 md:text-xl">Sign the Guestbook</h2>
         <p className="my-1 text-gray-800 dark:text-gray-200">Share a message for a future visitor of my site.</p>
-        <form onSubmit={submitEntry} className={'py-3'}>
+        <form onSubmit={submitEntry} className={'py-3 mb-10'}>
           <div className={'flex items-center gap-2'}>
             <Input id="name" type="text" value={name} placeholder={'Your name'} onChange={(e) => setName(e.target.value)} required className={'!bg-[#222222] border-style-input w-[150px]'} />
             <div className={'w-full relative'}>
@@ -59,25 +62,13 @@ function GuestBookForm() {
             </div>
           </div>
         </form>
-        <button className="my-3 flex items-center text-sm text-gray-800 dark:text-gray-200" type="button">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            className="lucide lucide-arrow-right ml-1"
-          >
-            <path d="M5 12h14"></path>
-            <path d="m12 5 7 7-7 7"></path>
-          </svg>
-          Sign out
-        </button>
-        <p className="text-sm text-gray-800 dark:text-gray-200">Your information is only used to display your name.</p>
+        <p className={cn('text-sm text-gray-800 dark:text-gray-200', success && 'hidden')}>Your information is only used to display your name.</p>
+        <div className={cn('hidden', success && 'block')}>
+          <p className="text-sm text-gray-800 dark:text-green-500 flex items-center gap-1">
+            <Check size={18} />
+            Your information is only used to display your name.
+          </p>
+        </div>
       </Halo>
     </div>
   )

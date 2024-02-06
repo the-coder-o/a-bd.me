@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation'
 
 import axios from 'axios'
 
-import moment from 'moment'
+import { format } from 'date-fns'
 
 interface Entry {
   id: number
@@ -40,7 +40,7 @@ const GuestbookItem = () => {
               <div className="flex items-center space-x-3">
                 <p className="text-sm text-gray-600 dark:text-[#c2c2c2]">{entry?.name}</p>
                 <span className="text-gray-600 dark:text-[#c2c2c2]">/</span>
-                <p className="text-sm text-gray-600 dark:text-[#c2c2c2]">{moment(new Date(entry.createdAt).toLocaleDateString()).format('MMMM Do YYYY, h:mm:ss a')}</p>
+                <p className="text-sm text-gray-600 dark:text-[#c2c2c2]">{format(new Date(entry.createdAt), 'MMM eeee, yyyy, HH:mm p')}</p>
               </div>
             </div>
           </li>
