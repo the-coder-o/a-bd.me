@@ -23,7 +23,7 @@ export const BlogData = [
       {
         blog_title: 'Looking forward',
         blog_description:
-          "On the bright side, we're starting to see more and more tools prioritizing the developer experience. This is a huge plus for us developers who want to focus on building features and functionality, rather than spending hours trying to figure out how to style a component.",
+          "On the bright side, we're starting to see more and more tools prioritizing the developer experience. This is a huge plus for us developers who want to focus on building slices and functionality, rather than spending hours trying to figure out how to style a component.",
       },
       {
         blog_title: 'Speed and Efficiency',

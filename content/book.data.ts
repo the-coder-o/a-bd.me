@@ -31,7 +31,7 @@ export const BookData = [
     book_image: 'https://i.ytimg.com/vi/bl98dm7vJt0/maxresdefault.jpg',
     book_title: 'Professional JavaScript',
     book_view_url: 'https://www.amazon.com/Professional-JavaScript-Fast-track-development-powerful/dp/1838820213',
-    book_description: 'Fast-track your web development career using the powerful features of advanced JavaScript',
+    book_description: 'Fast-track your web development career using the powerful slices of advanced JavaScript',
     book_tag: 'Book for Programmers',
   },
   {

@@ -157,7 +157,7 @@ export const GearWebsiteData = [
     img: 'https://i.ibb.co/7rv8YyM/stackoverflow.png',
     title: 'Stack Overflow',
     description:
-      'Stack Overflow is a question-and-answer website for computer programmers. It is the flagship site of the Stack Exchange Network. It was created in 2008 by Jeff Atwood and Joel Spolsky. It features questions and answers on certain computer programming topics.',
+      'Stack Overflow is a question-and-answer website for computer programmers. It is the flagship site of the Stack Exchange Network. It was created in 2008 by Jeff Atwood and Joel Spolsky. It slices questions and answers on certain computer programming topics.',
   },
   {
     url: 'https://medium.com/',
