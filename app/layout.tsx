@@ -7,7 +7,10 @@ import Script from 'next/script'
 import { cn } from '@/lib/utils'
 import { Provider } from 'react-redux'
 
+import { store } from '@/redux/store/store'
+
 import { Inter } from 'next/font/google'
+import { Meta } from 'next/dist/lib/metadata/generate/meta'
 
 import { Toaster } from 'sonner'
 
@@ -16,13 +19,13 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import { Header } from '@/components/ui/header/Header'
 import { ThemeProvider } from '@/components/provider/theme-provider'
-import { store } from '@/redux/store/store'
 
 const font = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Meta property="twitter:image" content="Twitter link preview image URL" />
       <Script async src="https://us.umami.is/script.js" data-website-id="94cc47c5-56f6-4b2c-b05b-881b076a25de" />
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-MEK7ECJKW3" />
       <Script>
