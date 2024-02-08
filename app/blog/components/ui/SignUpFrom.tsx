@@ -1,8 +1,9 @@
 'use client'
 
-import axios from 'axios'
-
 import { useEffect, useState } from 'react'
+
+import { useDispatch, useSelector } from 'react-redux'
+import { createSubscribe, fetchSubscribers, selectAllSubscribers } from '@/redux/slice/subscribe-slice'
 
 import { toast } from 'sonner'
 
@@ -14,35 +15,26 @@ import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 
 const SignUpFrom = () => {
+  const dispatch = useDispatch()
+  const subscribers = useSelector(selectAllSubscribers)
+
   const [email, setEmail] = useState<string>('')
   const [success, setSuccess] = useState<boolean | undefined>()
-  const [subscribers, setSubscribers] = useState([{}])
 
-  const onSubmit = async (e: any) => {
-    e.preventDefault()
-    try {
-      await axios.post('/api/subscribe', { user_email: email }).then((res) => {
-        setSuccess(true)
-      })
-      toast.success('Thank you for subscribed to my blog.', { duration: 5000 })
-    } catch (error: any) {
-      setSuccess(false)
-      toast.error(error?.message, { duration: 5000 })
-    }
+  const handleCreate = (event: any) => {
+    event.preventDefault()
+    // @ts-ignore
+    dispatch(createSubscribe({ user_email: email }))
+    setEmail('')
+    setSuccess(true)
+    // @ts-ignore
+    toast.success('You are successfully subscribed', 5000)
   }
 
   useEffect(() => {
-    const getAllSubscribers = async () => {
-      try {
-        await axios.get('/api/subscribers').then((res: any) => {
-          setSubscribers(res.data)
-        })
-      } catch (error) {
-        setSuccess(false)
-      }
-    }
-    getAllSubscribers()
-  }, [])
+    // @ts-ignore
+    dispatch(fetchSubscribers())
+  }, [dispatch])
 
   if (success === false) {
     return (
@@ -72,7 +64,7 @@ const SignUpFrom = () => {
     >
       <p className="font-medium text-primary">Subscribe to my newsletter</p>
       <p className="max-w-md dark:text-[#b4b4b4]">The Modern Blueprint —monthly readings on topics like tech, design, productivity, programming, and more!</p>
-      <form onSubmit={onSubmit} className="mt-2 flex  w-full max-w-md flex-col items-center gap-2 md:flex-row">
+      <form onSubmit={handleCreate} className="mt-2 flex  w-full max-w-md flex-col items-center gap-2 md:flex-row">
         <div className="w-full">
           <label htmlFor="email" className="sr-only">
             Email
@@ -95,7 +87,7 @@ const SignUpFrom = () => {
         </Button>
       </form>
       <p className="text-sm text-tertiary">
-        Join the <CountUp end={subscribers.length} /> other readers.
+        Join the <CountUp end={subscribers?.length} /> other readers.
       </p>
     </motion.div>
   )

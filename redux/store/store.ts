@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import entriesReducer from '../slice/message-slice'
+import subscribeReducer from '../slice/subscribe-slice'
 
 export const store = configureStore({
   reducer: {
     entries: entriesReducer,
+    subscribe: subscribeReducer,
   },
 })
 

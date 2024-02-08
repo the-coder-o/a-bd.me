@@ -40,9 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta property="twitter:image" content="Twitter link preview image URL" />
         <meta property="twitter:title" content="Twitter link preview title" />
         <meta property="twitter:description" content="Twitter link preview description" />
-
         <meta property="og:image" content="Link preview image URL" />
-
         <meta property="og:title" content="Link preview title" />
         <meta property="og:description" content="Link preview description" />
         <meta property="og:url" content="Canonical link preview URL" />

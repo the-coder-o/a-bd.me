@@ -16,3 +16,12 @@ export async function POST(req: Request) {
     return new NextResponse('Internal server', { status: 500 })
   }
 }
+
+export async function GET() {
+  try {
+    const subscribers = await db.subscribe.findMany()
+    return NextResponse.json(subscribers)
+  } catch (error) {
+    return new NextResponse('Internal server', { status: 500 })
+  }
+}
