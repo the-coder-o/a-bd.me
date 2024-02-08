@@ -21,7 +21,7 @@
     "@reduxjs/toolkit": "^2.1.0",
     "@umami/api-client": "^0.56.0",
     "@vercel/analytics": "^1.1.2",
-    "@vercel/speed-insights": "^1.0.9",
+    "@vercel/speed-insights": "1.0.9",
     "axios": "^1.6.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
