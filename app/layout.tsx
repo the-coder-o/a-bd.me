@@ -37,6 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}
       </Script>
       <head>
+        <meta charSet="utf-8" />
         <meta property="twitter:image" content="Twitter link preview image URL" />
         <meta property="twitter:title" content="Twitter link preview title" />
         <meta property="twitter:description" content="Twitter link preview description" />
