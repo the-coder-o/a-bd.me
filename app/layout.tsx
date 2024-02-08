@@ -34,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta property="og:title" content="Link preview title" />
         <meta property="og:description" content="Link preview description" />
         <meta property="og:url" content="Canonical link preview URL" />
+        <meta name="google-site-verification" content="AmY4ge3X_IK5cstwDQKSFQzGH_6vjAAUxArmBV4SduU" />
       </Head>
       <Script async src="https://us.umami.is/script.js" data-website-id="94cc47c5-56f6-4b2c-b05b-881b076a25de" />
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-MEK7ECJKW3" />
