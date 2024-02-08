@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     apple: ['/public/logo.png?v=4'],
     shortcut: ['/public/logo.png'],
   },
+  twitter: {
+    card: 'summary_large_image',
+  },
 }
 
 export default function Home() {
