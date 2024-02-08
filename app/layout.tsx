@@ -26,16 +26,6 @@ const font = Inter({ subsets: ['latin'] })
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
-        <meta property="twitter:image" content="Twitter link preview image URL" />
-        <meta property="twitter:title" content="Twitter link preview title" />
-        <meta property="twitter:description" content="Twitter link preview description" />
-        <meta property="og:image" content="Link preview image URL" />
-        <meta property="og:title" content="Link preview title" />
-        <meta property="og:description" content="Link preview description" />
-        <meta property="og:url" content="Canonical link preview URL" />
-        <meta name="google-site-verification" content="AmY4ge3X_IK5cstwDQKSFQzGH_6vjAAUxArmBV4SduU" />
-      </Head>
       <Script async src="https://us.umami.is/script.js" data-website-id="94cc47c5-56f6-4b2c-b05b-881b076a25de" />
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-MEK7ECJKW3" />
       <Script>
@@ -46,6 +36,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', process.env.GOOGLE_ANALYTICS_KEY);
           `}
       </Script>
+      <head>
+        <meta property="twitter:image" content="Twitter link preview image URL" />
+        <meta property="twitter:title" content="Twitter link preview title" />
+        <meta property="twitter:description" content="Twitter link preview description" />
+        <meta property="og:image" content="Link preview image URL" />
+        <meta property="og:title" content="Link preview title" />
+        <meta property="og:description" content="Link preview description" />
+        <meta property="og:url" content="Canonical link preview URL" />
+        <meta name="google-site-verification" content="AmY4ge3X_IK5cstwDQKSFQzGH_6vjAAUxArmBV4SduU" />
+      </head>
       <body className={cn(font.className, 'bg-[#FCFCFC] dark:bg-[#111111]')}>
         <link
           rel="stylesheet"
