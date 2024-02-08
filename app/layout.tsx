@@ -9,8 +9,6 @@ import { Provider } from 'react-redux'
 
 import { store } from '@/redux/store/store'
 
-import Head from 'next/head'
-
 import { Inter } from 'next/font/google'
 
 import { Toaster } from 'sonner'
@@ -45,6 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta property="og:title" content="Link preview title" />
         <meta property="og:description" content="Link preview description" />
         <meta property="og:url" content="Canonical link preview URL" />
+        <meta property="twitter:card" content="summary_large_image" />
         <meta name="google-site-verification" content="AmY4ge3X_IK5cstwDQKSFQzGH_6vjAAUxArmBV4SduU" />
       </head>
       <body className={cn(font.className, 'bg-[#FCFCFC] dark:bg-[#111111]')}>
