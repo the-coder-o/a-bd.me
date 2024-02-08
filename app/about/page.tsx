@@ -16,8 +16,8 @@ const AboutPage = () => {
         {/*//Facebook Meta Tags */}
         <meta property="og:url" content="https://a-bd.vercel.app/about" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Link preview title" />
-        <meta property="og:description" content="Link preview description" />
+        <meta property="og:title" content="Just a quick glimpse." />
+        <meta property="og:description" content="I am a full-stack software engineer who basically just enjoys creating things." />
         <meta
           property="og:image"
           content="https://opengraph.b-cdn.net/production/documents/0a0926f1-2adc-4cc9-b2ce-82458eea1368.jpg?token=Sth5htvy1OqzIhZfzP5iJ6pPzhbTJEAIMpsqvP5Xj0g&height=640&width=640&expires=33243406322"
@@ -26,8 +26,8 @@ const AboutPage = () => {
         <meta name="twitter:card" content="summary" />
         <meta property="twitter:domain" content="a-bd.vercel.app" />
         <meta property="twitter:url" content="https://a-bd.vercel.app/about" />
-        <meta name="twitter:title" content="Link preview title" />
-        <meta name="twitter:description" content="Link preview description" />
+        <meta name="twitter:title" content="Just a quick glimpse." />
+        <meta name="twitter:description" content="I am a full-stack software engineer who basically just enjoys creating things." />
         <meta name="twitter:image" content="https://a-bd.vercel.appLink preview image URL" />
         <meta
           name="twitter:image"
