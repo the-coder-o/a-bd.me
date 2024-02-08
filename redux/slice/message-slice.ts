@@ -1,7 +1,7 @@
 // entriesSlice.ts
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit'
 import axios from 'axios'
-import { RootState } from './store/store' // make sure to import RootState from your store file
+import { RootState } from '../store/store' // make sure to import RootState from your store file
 
 export interface Entry {
   id: number

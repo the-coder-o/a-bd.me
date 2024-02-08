@@ -21,7 +21,6 @@ const SignUpFrom = () => {
   const onSubmit = async (e: any) => {
     e.preventDefault()
     try {
-      toast.loading('Loading...', { duration: 5000 })
       await axios.post('/api/subscribe', { user_email: email }).then((res) => {
         setSuccess(true)
       })

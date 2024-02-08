@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 
 import { useDispatch } from 'react-redux'
-import { createEntry } from '@/redux/message-slice'
+import { createEntry } from '@/redux/slice/message-slice'
 
 import { cn } from '@/lib/utils'
 import { ArrowRight, Check } from 'lucide-react'

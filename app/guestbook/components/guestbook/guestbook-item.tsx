@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react'
 
-import { fetchEntries, selectAllEntries } from '@/redux/message-slice'
+import { fetchEntries, selectAllEntries } from '@/redux/slice/message-slice'
 
 import { format } from 'date-fns'
 
