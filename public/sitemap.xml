@@ -3,25 +3,25 @@
     <url>
         <loc>https://www.a-bd.me/</loc>
         <lastmod>2024-02-01</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>always</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://www.a-bd.me/about</loc>
         <lastmod>2024-02-03</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>always</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://www.a-bd.me/blog</loc>
         <lastmod>2024-02-04</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>always</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://www.a-bd.me/project</loc>
         <lastmod>2024-02-04</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>always</changefreq>
         <priority>1.0</priority>
     </url>
 </urlset>
