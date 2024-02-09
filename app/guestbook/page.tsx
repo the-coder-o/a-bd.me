@@ -14,7 +14,7 @@ const GuestBook = () => {
     <div className={'container pb-28'}>
       <div className={'pt-[9rem] max-md:pt-[8rem] flex flex-col gap-8'}>
         <div className="flex flex-col">
-          <h3 className="text-3xl font-bold tracking-tight">Guestbook</h3>
+          <h1 className="text-3xl font-bold tracking-tight">Guestbook</h1>
           <p className="dark:text-[#b4b4b4] text-[#646464]">You get to know other people's opinion on this page and write your own opinion.</p>
         </div>
         <div className={'flex flex-col'}>
