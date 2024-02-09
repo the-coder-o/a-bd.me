@@ -19,7 +19,7 @@ const HomeLatestPosts = () => {
           <LatestBlogs />
         </div>
         <div>
-          <Link href="/blog" className={'text-[#646464] dark:text-[#b4b4b4] underline transition hover:text-zinc-900 dark:hover:text-white'}>
+          <Link href={"/blog"} className={'text-[#646464] dark:text-[#b4b4b4] underline transition hover:text-zinc-900 dark:hover:text-white'}>
             See All
           </Link>
         </div>
