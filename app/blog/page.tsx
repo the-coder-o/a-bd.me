@@ -15,9 +15,8 @@ const BlogPage = () => {
   return (
     <>
       <meta charSet="utf-8" />
-      <meta name="robots" content="all" />
-      <meta name="robots" content="noindex,nofollow" />
-      <meta name="google" content="nositelinkssearchbox" />
+      <meta name="google" content="nositelinkssearchbox" key="sitelinks" />
+      <meta name="google" content="notranslate" key="notranslate" />
       <meta property="og:url" content="https://a-bd.me/blog" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Interesting Blogs..." />
