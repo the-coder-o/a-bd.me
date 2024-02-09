@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node generate-sitemap.ts",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "prisma": "prisma",
