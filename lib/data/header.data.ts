@@ -19,4 +19,8 @@ export const HeaderData = [
     linkTitle: 'Book',
     linkPath: '/book',
   },
+  {
+    linkTitle: 'Guestbook',
+    linkPath: '/guestbook',
+  },
 ]
