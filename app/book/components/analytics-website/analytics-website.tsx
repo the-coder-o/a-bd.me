@@ -35,7 +35,8 @@ const AnalyticsWebsite = () => {
         <div className="col-span-1 flex flex-col justify-center items-center rounded-xl dark:border-styles light-style dark:bg-[#222222] bg-[#EFEFEF] p-6 md:col-span-2 max-md:items-center">
           <p className="dark:text-[#b4b4b4] text-[#646464]">Yearly views</p>
           <h2 className="text-2xl font-bold text-primary">
-            <CountUp end={1000} />+
+            <CountUp end={10} />
+            k+
           </h2>
         </div>
       </div>

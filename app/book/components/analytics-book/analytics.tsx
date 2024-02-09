@@ -59,11 +59,14 @@ const Analytics = () => {
         <p className="dark:text-[#b4b4b4] text-[#646464]">Views contribution</p>
         <div className="relative mt-6 flex-grow">
           <img src={'https://i.ibb.co/ZG8W6pL/map.png'} alt="map" className="opacity-75 saturate-0" />
-          <Chip label="🇺🇸 41%" position={[35, 10]} />
-          <Chip label="🇺🇿 48%" position={[30, 57]} />
+          <Chip label="🇺🇸 30%" position={[35, 10]} />
+          <Chip label="🇺🇿 48%" position={[35, 57]} />
           <Chip label="🇨🇳 3%" position={[47, 65]} />
-          <Chip label="🇵🇱 3%" position={[23, 40]} />
-          <Chip label="🇰🇪 3%" position={[53, 50]} />
+          <Chip label="🇵🇱 3%" position={[23, 45]} />
+          <Chip label="🇰🇪 3%" position={[55, 50]} />
+          <Chip label="🇷🇺 5%" position={[20, 65]} />
+          <Chip label="🇳🇪 2%" position={[48, 37]} />
+          <Chip label="🇫🇷 2%" position={[35, 37]} />
         </div>
       </div>
       <div className="col-span-2 row-span-1 space-y-2 rounded-xl border dark:border-styles light-style dark:bg-[#222222] bg-[#efefef] p-6 md:col-span-3">
