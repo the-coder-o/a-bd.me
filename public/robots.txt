@@ -1,5 +1,11 @@
-User-agent: *
+User-agent: Googlebot
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /wp-includes/
 Disallow: /cgi-bin/
 Disallow: /tmp/
-Disallow: /junk/
-Sitemap: http://www.a-bd.me/sitemap.xml
+Disallow: /cache/
+Disallow: /backup/
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://www.a-bd.me/sitemap.xml
