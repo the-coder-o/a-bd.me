@@ -6,6 +6,9 @@ import ProjectItem from '@/app/project/component/project-item'
 export const metadata: Metadata = {
   title: 'Projects | Abdul Basit',
   description: "Here are some of the projects I've worked on.",
+  alternates: {
+    canonical: 'http://www.a-bd.me/project',
+  },
 }
 
 const ProjectPage = () => {

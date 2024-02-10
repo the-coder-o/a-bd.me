@@ -9,6 +9,9 @@ import SignUpFrom from '@/app/blog/components/ui/SignUpFrom'
 export const metadata: Metadata = {
   title: 'Blog | Abdul Basit',
   description: 'I write about programming, design, and occasionally life updates!',
+  alternates: {
+    canonical: 'http://www.a-bd.me/blog',
+  },
 }
 
 const BlogPage = () => {

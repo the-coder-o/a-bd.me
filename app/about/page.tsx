@@ -7,6 +7,9 @@ import AboutImages from '@/app/about/component/about-images'
 export const metadata: Metadata = {
   title: 'About | Abdul Basit',
   description: 'I am a full-stack software engineer who basically just enjoys creating things.',
+  alternates: {
+    canonical: 'http://www.a-bd.me/about',
+  },
 }
 
 const AboutPage = () => {

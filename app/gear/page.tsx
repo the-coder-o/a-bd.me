@@ -6,6 +6,9 @@ import GeneralGearsComponent from '@/app/gear/components/general-gears-component
 export const metadata: Metadata = {
   title: 'Gear | Abdul Basit',
   description: 'My toolbox. This is gear I actually own and recommend.',
+  alternates: {
+    canonical: 'http://www.a-bd.me/gear',
+  },
 }
 
 const GearPage = () => {
