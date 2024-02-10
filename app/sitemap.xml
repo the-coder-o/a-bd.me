@@ -1,26 +1,86 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://www.a-bd.me/</loc>
-        <lastmod>2024-02-01</lastmod>
-        <changefreq>always</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://www.a-bd.me/about</loc>
-        <lastmod>2024-02-03</lastmod>
-        <changefreq>always</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://www.a-bd.me/blog</loc>
-        <lastmod>2024-02-04</lastmod>
-        <changefreq>always</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://www.a-bd.me/project</loc>
-        <lastmod>2024-02-04</lastmod>
-        <changefreq>always</changefreq>
-        <priority>1.0</priority>
-    </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://www.a-bd.me/</loc>
+  <lastmod>2024-02-10T18:15:54+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.a-bd.me/about</loc>
+  <lastmod>2024-02-10T18:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.a-bd.me/blog</loc>
+  <lastmod>2024-02-10T18:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.a-bd.me/gear</loc>
+  <lastmod>2024-02-10T18:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.a-bd.me/project</loc>
+  <lastmod>2024-02-10T18:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.a-bd.me/book</loc>
+  <lastmod>2024-02-10T18:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.a-bd.me/guestbook</loc>
+  <lastmod>2024-02-10T18:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.a-bd.me/link</loc>
+  <lastmod>2024-02-10T18:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.a-bd.me/blog/looking-forward-to-2023</loc>
+  <lastmod>2024-02-10T18:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.a-bd.me/blog/how-to-create-discord-app</loc>
+  <lastmod>2024-02-10T18:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.a-bd.me/blog/itpark-my-new-work-place</loc>
+  <lastmod>2024-02-10T18:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.a-bd.me/blog/tailwind-over-everything</loc>
+  <lastmod>2024-02-10T18:15:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.a-bd.me/project/notion-app</loc>
+  <lastmod>2024-02-10T18:15:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.a-bd.me/project/discord-app</loc>
+  <lastmod>2024-02-10T18:15:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.a-bd.me/project/online-movie-store</loc>
+  <lastmod>2024-02-10T18:15:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
