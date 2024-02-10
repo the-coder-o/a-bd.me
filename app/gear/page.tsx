@@ -12,6 +12,7 @@ const GearPage = () => {
   return (
     <>
       <meta charSet="utf-8" />
+      <meta name="robots" content="index, follow" />
       <meta property="og:url" content="https://a-bd.me/gears" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="My toolbox and i recommend you." />

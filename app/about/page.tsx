@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <>
+      <meta name="robots" content="index, follow" />
       <meta property="og:url" content="https://a-bd.me/about" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Just a quick glimpse." />
