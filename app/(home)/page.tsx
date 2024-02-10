@@ -24,6 +24,9 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className={'container pb-28'}>
+      <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7FF9K85" height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe>
+      </noscript>
       <div className={'pt-[9rem] max-md:pt-[8rem] flex flex-col gap-8'}>
         <HomeMain />
         <HomeLinks />
