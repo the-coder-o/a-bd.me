@@ -36,8 +36,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </Script>
       <head>
         <meta charSet="utf-8" />
-        <meta name="google" content="nositelinkssearchbox" key="sitelinks" />
-        <meta name="google" content="notranslate" key="notranslate" />
         <meta property="og:url" content="https://a-bd.me/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="I write code and make interesting videos." />

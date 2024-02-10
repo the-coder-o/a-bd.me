@@ -12,8 +12,6 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <>
-      <meta name="google" content="nositelinkssearchbox" key="sitelinks" />
-      <meta name="google" content="notranslate" key="notranslate" />
       <meta property="og:url" content="https://a-bd.me/about" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Just a quick glimpse." />
