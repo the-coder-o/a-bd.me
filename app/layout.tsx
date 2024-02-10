@@ -32,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', process.env.GOOGLE_ANALYTICS_KEY);
+            gtag('config', 'G-MEK7ECJKW3);
           `}
       </Script>
       <Script>
