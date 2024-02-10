@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: '/private/',
+      disallow: ['/admin', 'privacy'],
     },
     sitemap: 'https://a-bd.me/sitemap.xml',
   }
