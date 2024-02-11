@@ -8,6 +8,8 @@ import { createEntry } from '@/redux/slice/message-slice'
 import { cn } from '@/lib/utils'
 import { ArrowRight, Check } from 'lucide-react'
 
+import { motion } from 'framer-motion'
+
 import Halo from '@/components/ui/Halo'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
@@ -33,7 +35,7 @@ function GuestBookForm() {
   }, 4000)
 
   return (
-    <div className={'my-4 w-full rounded-lg dark:bg-[#222222] bg-[#EFEFEF]'}>
+    <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.4, delay: 2 * 0.1 }} className={'my-4 w-full rounded-lg dark:bg-[#222222] bg-[#EFEFEF]'}>
       <Halo strength={6} className={'p-6'}>
         <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100 md:text-xl">Join the Guestbook</h2>
         <p className="my-1 text-gray-800 dark:text-gray-200 max-sm:text-sm">Share a message for a future visitor of my site.</p>
@@ -56,7 +58,7 @@ function GuestBookForm() {
           </p>
         </div>
       </Halo>
-    </div>
+    </motion.div>
   )
 }
 

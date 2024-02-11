@@ -6,6 +6,8 @@ import { fetchEntries, selectAllEntries } from '@/redux/slice/message-slice'
 
 import { format } from 'date-fns'
 
+import { motion } from 'framer-motion'
+
 import { useDispatch, useSelector } from 'react-redux'
 
 const GuestbookItem = () => {
@@ -18,7 +20,7 @@ const GuestbookItem = () => {
   }, [dispatch])
 
   return (
-    <div>
+    <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.4, delay: 3 * 0.1 }}>
       <ul className={'space-y-8'}>
         {entries.map((entry: any) => (
           <li key={entry.id} className={'mt-4 space-y-8'}>
@@ -33,7 +35,7 @@ const GuestbookItem = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </motion.div>
   )
 }
 
