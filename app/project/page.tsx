@@ -16,6 +16,7 @@ const ProjectPage = () => {
   return (
     <>
       <meta charSet="utf-8" />
+      <meta name="keywords" content="Abdul Basit Blog's" />
       <meta name="robots" content="index, follow" />
       <meta property="og:url" content="https://a-bd.me/projects" />
       <meta property="og:type" content="website" />
