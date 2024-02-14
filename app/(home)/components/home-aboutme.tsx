@@ -17,8 +17,8 @@ const HomeAboutMe = () => {
         Hi, I&apos;m Abdul Basit, a fullStack engineer who loves building cool things with code. In addition to coding, I also make YouTube videos, where I focus on tech, creative vlogs, and personal
         development.
       </p>
-      <div className={'group flex gap-3 max-md:flex-col max-md:gap-2 mt-9'}>
-        <div className={'flex gap-5 max-md:flex-col-reverse max-md:gap-2'}>
+      <div className={'group flex gap-3 max-md:flex-col-reverse max-md:gap-2 mt-9'}>
+        <div className={'flex gap-5 max-md:gap-2'}>
           <Link
             target={'_blank'}
             href="https://www.buymeacoffee.com/abdulbacit"
