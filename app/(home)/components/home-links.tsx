@@ -10,6 +10,7 @@ import CountUp from 'react-countup'
 import { Github, TrendingUp, Youtube } from 'lucide-react'
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Stats } from '@/app/(home)/components/stats'
 
 const HomeLinks = () => {
   return (
@@ -19,18 +20,19 @@ const HomeLinks = () => {
         <AvatarFallback>Ab</AvatarFallback>
       </Avatar>
       <div className={'space-y-2 group'}>
-        <Link href={'/'} className={'flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:text-white group-hover:opacity-60'}>
-          <Github size={18} />
-          <CountUp end={28} /> Repository Stars
-        </Link>
-        <Link href={'/'} className={'flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:text-white group-hover:opacity-60'}>
-          <TrendingUp size={19} />
-          <CountUp end={256} /> Total Blog Views
-        </Link>
-        <Link href={'/'} className={'flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:text-white group-hover:opacity-60'}>
-          <Youtube size={19} />
-          <CountUp end={52} /> YouTube Subscribers
-        </Link>
+        {/*<Link href={'/'} className={'flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:text-white group-hover:opacity-60'}>*/}
+        {/*  <Github size={18} />*/}
+        {/*  <CountUp end={28} /> Repository Stars*/}
+        {/*</Link>*/}
+        {/*<Link href={'/'} className={'flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:text-white group-hover:opacity-60'}>*/}
+        {/*  <TrendingUp size={19} />*/}
+        {/*  <CountUp end={256} /> Total Blog Views*/}
+        {/*</Link>*/}
+        {/*<Link href={'/'} className={'flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:text-white group-hover:opacity-60'}>*/}
+        {/*  <Youtube size={19} />*/}
+        {/*  <CountUp end={52} /> YouTube Subscribers*/}
+        {/*</Link>*/}
+        <Stats />
       </div>
     </motion.div>
   )

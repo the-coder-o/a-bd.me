@@ -23,7 +23,7 @@ const HomeLatestPosts = dynamic(() => import('@/app/(home)/components/home-lates
 
 export default function Home() {
   return (
-    <main className="container pb-28">
+    <main className="container pb-[180px]">
       <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7FF9K85" height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe>
       </noscript>
