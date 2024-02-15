@@ -1,34 +1,28 @@
-'use client'
-
 import React, { useRef, useState } from 'react'
-
 import Link from 'next/link'
 import Image from 'next/image'
-
 import { motion } from 'framer-motion'
-
 import { BlogData } from '@/content/blog.data'
 
-const LatestBlogs = () => {
-  function getRelativeCoordinates(event: React.MouseEvent<HTMLAnchorElement>, referenceElement: any) {
-    const position = {
-      x: event.pageX,
-      y: event.pageY,
-    }
+interface Coordinate {
+  x: number
+  y: number
+}
 
-    const offset = {
-      left: referenceElement.offsetLeft,
-      top: referenceElement.clientTop,
-      width: referenceElement.clientWidth,
-      height: referenceElement.clientHeight,
-    }
+const LatestBlogs: React.FC = () => {
+  const [mousePosition, setMousePosition] = useState<Coordinate>({ x: 240, y: 0 })
+  const [currentImageUrl, setCurrentImageUrl] = useState<string | null>(null) // Состояние для URL текущего изображения
+  const listRef = useRef<HTMLDivElement>(null)
 
-    let reference = referenceElement.offsetParent
+  const getRelativeCoordinates = (event: MouseEvent, referenceElement: HTMLElement): Coordinate => {
+    const position = { x: event.pageX, y: event.pageY }
+    let offset = { left: referenceElement.offsetLeft, top: referenceElement.clientTop }
 
+    let reference = referenceElement.offsetParent as HTMLElement
     while (reference) {
       offset.left += reference.offsetLeft
       offset.top += reference.offsetTop
-      reference = reference.offsetParent
+      reference = reference.offsetParent as HTMLElement
     }
 
     return {
@@ -37,60 +31,51 @@ const LatestBlogs = () => {
     }
   }
 
-  const [mousePosition, setMousePosition] = useState({
-    x: 240,
-    y: 0,
-  })
-
-  const listRef = useRef(null)
-  const handleMouseMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    setMousePosition(getRelativeCoordinates(e, listRef.current))
+  const handleMouseMove = (imageUrl: string) => (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    if (listRef.current) {
+      setMousePosition(getRelativeCoordinates(e.nativeEvent, listRef.current))
+      setCurrentImageUrl(imageUrl) // Обновление URL изображения при наведении
+    }
   }
 
-  const imageHeight = 150
-  const imageWidth = 300
-  const imageOffset = 22
+  const handleMouseLeave = () => {
+    setCurrentImageUrl(null) // Сброс URL изображения при уходе курсора
+  }
+
+  const imageDimensions = { height: 150, width: 300, offset: 22 }
 
   return (
-    <>
-      <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.4, delay: 3 * 0.1 }} className={'group relative'}>
-        <div className="transition-opacity">
-          {BlogData && mousePosition && (
-            <motion.div
-              animate={{
-                top: mousePosition.y - imageHeight - imageOffset,
-                left: mousePosition.x + imageOffset,
-              }}
-              initial={false}
-              transition={{ ease: 'easeOut' }}
-              style={{ width: imageWidth, height: imageHeight }}
-              className="absolute z-10 hidden overflow-hidden rounded shadow-sm pointer-events-none sm:group-hover:block bg-primary"
-            >
-              <Image src={'https://www.b-r.io/_next/image?url=%2Fblog%2Fdesk%2Fimage.png&w=750&q=100'} alt={'title'} width={imageWidth} height={imageHeight} />
-            </motion.div>
-          )}
-        </div>
-        {BlogData.map((blog, index) => (
-          <Link
-            ref={listRef}
-            onMouseMove={(e) => {
-              handleMouseMove(e)
-            }}
-            key={index}
-            href={'/blog/' + blog?.slug}
-            className={'py-3 flex gap-[60px] max-md:flex-row max-md:justify-between max-md:gap-2 transition hover:!opacity-100 group-hover:opacity-50 '}
-          >
-            <div className={'flex gap-[60px] max-md:flex max-md:flex-col max-md:gap-2'}>
-              <span className={'text-[#646464] dark:text-[#b4b4b4] max-md:w-32'}>{blog?.blog_publish_date}</span>
-              <p className={'font-medium dark:text-[#fff] transition max-md:leading-tight max-sm:text-md'}>{blog?.blog_title}</p>
-            </div>
-            <img src={blog?.blog_main_image_url} width={100} height={100} alt={blog?.blog_title} className={'rounded-lg !object-cover hidden max-md:block !w-[100px] !h-auto'} />
-          </Link>
-        ))
-          .reverse()
-          .slice(0, 3)}
-      </motion.div>
-    </>
+    <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.4, delay: 0.3 }} className="relative transition-opacity">
+      {BlogData.slice(1, 4)
+        .reverse()
+        .map((blog, index) => (
+          <React.Fragment key={blog.slug}>
+            <Link onMouseMove={handleMouseMove(blog.blog_main_image_url)} onMouseLeave={handleMouseLeave} href={`/blog/${blog.slug}`} className="py-3 flex animated-list gap-[60px] max-md:flex-row max-md:justify-between max-md:gap-2 transition hover:!opacity-100 group-hover:opacity-50" passHref>
+              <div ref={index === 0 ? listRef : null} className="flex gap-[60px] max-md:flex max-md:flex-col max-md:gap-2">
+                <span className="text-[#646464] dark:text-[#b4b4b4] max-md:w-32">{blog.blog_publish_date}</span>
+                <p className="font-medium dark:text-[#fff] transition max-md:leading-tight max-sm:text-md">{blog.blog_title}</p>
+              </div>
+              <img src={blog.blog_main_image_url} width={100} height={100} alt={blog.blog_title} className="rounded-lg !object-cover hidden max-md:block !w-[100px] !h-auto" />
+            </Link>
+            {currentImageUrl && (
+              <motion.div
+                animate={{
+                  top: mousePosition.y - imageDimensions.height - imageDimensions.offset,
+                  left: mousePosition.x - imageDimensions.width / 2,
+                  opacity: 1,
+                }}
+                initial={{ opacity: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{ ease: 'easeOut', duration: 0.2 }}
+                style={{ width: imageDimensions.width, height: imageDimensions.height }}
+                className="absolute z-10 overflow-hidden rounded shadow-sm pointer-events-none bg-primary"
+              >
+                <Image src={currentImageUrl} alt="Hovered blog image" layout="fill" objectFit="cover" />
+              </motion.div>
+            )}
+          </React.Fragment>
+        ))}
+    </motion.div>
   )
 }
 
