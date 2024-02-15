@@ -14,26 +14,26 @@ const AnalyticsWebsite = () => {
   return (
     <>
       <div className="grid !grid-cols-4 justify-center items-center gap-3 max-md:!grid-cols-2 max-md:gap-4 mt-[-50px]">
-        <div className="col-span-1 flex flex-col justify-center items-center rounded-xl dark:border-styles light-style dark:bg-[#222222] bg-[#EFEFEF] p-6 md:col-span-2 max-md:items-center">
+        <div className="col-span-1 flex flex-col justify-center items-center rounded-xl dark:border-styles light-style dark:bg-[#121212] bg-[#EFEFEF] p-6 md:col-span-2 max-md:items-center">
           <p className="dark:text-[#b4b4b4] text-[#646464]">Subscribers</p>
           <h2 className="text-2xl font-bold text-primary">
             <CountUp end={32} />+
           </h2>
         </div>
-        <div className="col-span-1 flex flex-col justify-center items-center rounded-xl dark:border-styles light-style dark:bg-[#222222] bg-[#EFEFEF] p-6 md:col-span-2 max-md:items-center">
+        <div className="col-span-1 flex flex-col justify-center items-center rounded-xl dark:border-styles light-style dark:bg-[#121212] bg-[#EFEFEF] p-6 md:col-span-2 max-md:items-center">
           <p className="dark:text-[#b4b4b4] text-[#646464]">Monthly views</p>
           <h2 className="text-2xl font-bold text-primary">
             <CountUp end={2} />
             k+
           </h2>
         </div>
-        <div className="col-span-1 flex flex-col justify-center items-center rounded-xl dark:border-styles light-style dark:bg-[#222222] bg-[#EFEFEF] p-6 md:col-span-2 max-md:items-center">
+        <div className="col-span-1 flex flex-col justify-center items-center rounded-xl dark:border-styles light-style dark:bg-[#121212] bg-[#EFEFEF] p-6 md:col-span-2 max-md:items-center">
           <p className="dark:text-[#b4b4b4] text-[#646464]">Daily views</p>
           <h2 className="text-2xl font-bold text-primary">
             <CountUp end={120} />+
           </h2>
         </div>
-        <div className="col-span-1 flex flex-col justify-center items-center rounded-xl dark:border-styles light-style dark:bg-[#222222] bg-[#EFEFEF] p-6 md:col-span-2 max-md:items-center">
+        <div className="col-span-1 flex flex-col justify-center items-center rounded-xl dark:border-styles light-style dark:bg-[#121212] bg-[#EFEFEF] p-6 md:col-span-2 max-md:items-center">
           <p className="dark:text-[#b4b4b4] text-[#646464]">Yearly views</p>
           <h2 className="text-2xl font-bold text-primary">
             <CountUp end={10} />
