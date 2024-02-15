@@ -9,7 +9,7 @@ const LinkItem = () => {
         <div className="flex flex-col items-center justify-center gap-2 group">
           {ContactLinkData.map((link) => (
             <a
-              className="flex items-center justify-between rounded-[10px] bg-[#efefef] dark:bg-[#222222] px-[15px] py-[15px] w-full max-md:w-full transition hover:!opacity-100 group-hover:opacity-50"
+              className="flex items-center justify-between rounded-[10px] bg-[#efefef] dark:bg-[#121212] px-[15px] py-[15px] w-full max-md:w-full transition hover:!opacity-100 group-hover:opacity-50"
               href={link.url}
               target={'_blank'}
             >
