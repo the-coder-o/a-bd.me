@@ -12,11 +12,7 @@ const AboutContact = () => {
         <p>Have a question or just want to chat? Feel free to email me. Try finding me anywhere else at abdulbositsharipovv@gmail.com</p>
         <div className="flex justify-between gap-2 flex-wrap max-md:flex-col group">
           {ContactLinkData.map((link) => (
-            <Link
-              className="flex items-center justify-between rounded-[10px] bg-[#efefef] dark:bg-[#222222] px-[15px] py-[15px] w-[258px] border-styles max-md:w-full transition hover:!opacity-100 group-hover:opacity-50"
-              href={link.url}
-              target={'_blank'}
-            >
+            <Link className="flex items-center justify-between rounded-[10px] bg-[#efefef] dark:bg-[#121212] px-[15px] py-[15px] w-[258px] border-styles max-md:w-full transition hover:!opacity-100 group-hover:opacity-50" href={link.url} target={'_blank'}>
               <div className="flex items-center gap-2 font-[500]">
                 <i className={`${link.icon}`}></i>
                 <p className={'text-[15px]'}>{link.title}</p>
