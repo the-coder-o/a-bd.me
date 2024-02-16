@@ -29,10 +29,7 @@ export const Header = () => {
     }
   }, [])
   return (
-    <header
-      className={cn('z-[10000] transition-all duration-300 sticky top-0 w-full border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 dark:supports-[backdrop-filter]:bg-[#111111]/10', hasScrolled ? 'header-border-style' : '!border-transparent')}
-      style={{ position: 'fixed', width: '100%' }}
-    >
+    <header className={cn('z-[10000] transition-all duration-300 sticky top-0 w-full dark:bg-[#000] bg-[#fff]', hasScrolled ? 'header-border-style' : '!border-transparent')} style={{ position: 'fixed', width: '100%' }}>
       <div className={'container'}>
         <div>
           <div className={'flex items-center justify-between mt-3 mb-3'}>

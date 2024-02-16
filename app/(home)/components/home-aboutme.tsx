@@ -21,11 +21,11 @@ const HomeAboutMe = () => {
             Buy me a coffee
           </Link>
           <iframe src="https://github.com/sponsors/the-coder-o/button" title="Sponsor the-coder-o" height="32" width="114" className={'!border-none hover:!opacity-100 rounded-[6px] group-hover:opacity-60'}></iframe>
-          <Link href={'/link'} className={'flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:!opacity-100 group-hover:opacity-60'}>
-            <ArrowUpRight size={19} />
-            Contact
-          </Link>
         </div>
+        <Link href={'/link'} className={'flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:!opacity-100 group-hover:opacity-60'}>
+          <ArrowUpRight size={19} />
+          Contact
+        </Link>
       </div>
     </motion.div>
   )

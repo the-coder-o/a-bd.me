@@ -10,7 +10,7 @@ import LatestBlogs from '@/app/(home)/latest-blogs'
 
 const HomeLatestPosts = () => {
   return (
-    <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 6 * 0.1 }} className={'pt-[65px]'}>
+    <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 6 * 0.1 }} className={'pt-[78px]'}>
       <div className={'flex flex-col gap-8'}>
         <div>
           <p className={'text-[#646464] dark:text-[#b4b4b4]'}>Latest Posts</p>

@@ -37,7 +37,7 @@ const AboutPage = () => {
           <AboutMain />
         </div>
         <MobileDesign />
-        <div className="hidden lg:block mt-[50px]">
+        <div className="hidden lg:block mt-[80px]">
           <Gallery />
         </div>
         <div className={'container'}>
