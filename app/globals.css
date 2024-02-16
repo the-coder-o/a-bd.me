@@ -148,3 +148,7 @@
 .header-border-style {
   border-bottom: 1px solid #2a2a2a !important;
 }
+
+.animate-in {
+  animation-delay: calc(var(--index) * 130ms);
+}

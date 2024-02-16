@@ -1,9 +1,11 @@
+import React from 'react'
+
 import { Metadata } from 'next'
 
+import Gallery from '@/components/ui/gallery'
 import About from '@/app/about/component/about'
 import AboutMain from '@/app/about/component/about-main'
-import AboutImages from '@/app/about/component/about-images'
-import React from 'react'
+import MobileDesign from '@/app/about/component/mobile-design'
 
 export const metadata: Metadata = {
   title: 'About | Abdul Basit',
@@ -34,8 +36,9 @@ const AboutPage = () => {
         <div className={'container'}>
           <AboutMain />
         </div>
-        <div>
-          <AboutImages />
+        <MobileDesign />
+        <div className="hidden lg:block mt-[50px]">
+          <Gallery />
         </div>
         <div className={'container'}>
           <About />
