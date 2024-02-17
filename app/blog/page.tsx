@@ -32,6 +32,8 @@ const BlogPage: React.FC = () => {
         }}
         twitter={{
           cardType: 'summary_large_image',
+          handle: '@handle',
+          site: '@site',
           // @ts-ignore
           url: 'https://a-bd.me/blog',
           title: 'Interesting Blogs...',
@@ -48,7 +50,7 @@ const BlogPage: React.FC = () => {
         <meta property="og:title" content="Interesting Blogs..." />
         <meta property="og:description" content="I write about programming, design, and occasionally life updates!" />
         <meta property="og:image" content="https://opengraph.b-cdn.net/production/documents/0a0926f1-2adc-4cc9-b2ce-82458eea1368.jpg?token=Sth5htvy1OqzIhZfzP5iJ6pPzhbTJEAIMpsqvP5Xj0g&height=640&width=640&expires=33243406322" />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary" />
         <meta property="twitter:domain" content="www.a-bd.me" />
         <meta property="twitter:url" content="https://a-bd.me/blog" />
         <meta name="twitter:title" content="Interesting Blogs..." />
