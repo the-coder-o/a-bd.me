@@ -4,6 +4,8 @@ import { cn } from '@/lib/utils'
 import { AlertCircle } from 'lucide-react'
 
 import Link from 'next/link'
+import Image from 'next/image'
+
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 
@@ -15,8 +17,10 @@ import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 
 import Halo from '@/components/ui/Halo'
 import SignUpFrom from '@/app/blog/components/ui/SignUpFrom'
-import { Alert, AlertDescription } from '@/components/ui/alert'
 import BlogLikesBtn from '@/app/blog/components/blog-likes-btn'
+import { Alert, AlertDescription } from '@/components/ui/alert'
+
+import SettingsGif from '@/public/gif/output-onlinegiftools.gif'
 
 const SingleBlogPage = () => {
   const pathname = usePathname()
@@ -57,8 +61,11 @@ const SingleBlogPage = () => {
           <div className="h-16"></div>
           <div className={'container prose prose-neutral animate-in'}>
             {blog?.slug === 'best-websites-to-track-habits-in-your-life' ? (
-              <div>
-                <h3 className={'text-center mt-[70px] mb-[120px] text-3xl'}>This blog coming soon 🕛</h3>
+              <div className={'relative flex items-center justify-center flex-col'}>
+                <div className={'absolute top-[-50px] -z-10'}>
+                  <Image width={300} height={300} src={SettingsGif} alt={'SettingsGif'} />
+                </div>
+                <h3 className={'text-center mt-[120px] mb-[90px] text-[18px]'}>This blog coming soon... 💤 Opening At 22:22 PM 🕛</h3>
               </div>
             ) : (
               ''
