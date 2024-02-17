@@ -50,6 +50,9 @@ const AboutPage: React.FC = () => {
       <meta name="twitter:description" content="I am a full-stack software engineer who basically just enjoys creating things." />
       <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/documents/0a0926f1-2adc-4cc9-b2ce-82458eea1368.jpg?token=Sth5htvy1OqzIhZfzP5iJ6pPzhbTJEAIMpsqvP5Xj0g&height=640&width=640&expires=33243406322" />
       <link rel="canonical" href="https://a-bd.me/about" />
+      <head>
+        <title>About | Abdul Basit</title>
+      </head>
       <main className="pt-[9rem] max-md:pt-[8rem] pb-28">
         <div className="container">
           <AboutMain />
