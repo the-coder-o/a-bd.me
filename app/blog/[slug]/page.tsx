@@ -24,10 +24,12 @@ const SingleBlogPage = () => {
 
   const blog = BlogData.find((item) => item.slug === pathname.split('/')[2])
 
+  const name = ' | Abdul Basit'
+
   return (
     <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.1 }} className={'pt-[9rem] max-md:pt-[8rem] pb-16'}>
       <head>
-        <title>{blog?.blog_title} | Abdul Basit</title>
+        <title>{blog?.blog_title + name}</title>
       </head>
       <div className={'flex flex-col gap-20'}>
         <div>
