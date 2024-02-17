@@ -15,7 +15,7 @@ const AboutPage: React.FC = () => {
       <NextSeo
         title="About | Abdul Basit"
         description="I am a full-stack software engineer who basically just enjoys creating things."
-        canonical="http://www.a-bd.me/about"
+        canonical="https://www.a-bd.me/about"
         openGraph={{
           url: 'http://www.a-bd.me/about',
           title: 'Just a quick glimpse.',

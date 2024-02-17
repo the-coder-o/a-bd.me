@@ -22,7 +22,7 @@ export default function BookPage() {
     <>
       <NextSeo
         title={metadata.title}
-        description={metadata.description}
+        description="https://a-bd.me/book"
         canonical={metadata.canonical}
         openGraph={{
           url: metadata.canonical,
