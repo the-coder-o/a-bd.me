@@ -38,6 +38,7 @@ const GearPage = () => {
       <meta name="keywords" content="Abdul Basit Blog's" />
       <meta name="robots" content="index, follow" />
       <meta property="og:url" content="https://a-bd.me/gears" />
+      <meta name="description" content="This is gear I actually own and recommend." />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="My toolbox and i recommend you." />
       <meta property="og:description" content="My toolbox. This is gear I actually own and recommend." />

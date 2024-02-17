@@ -50,6 +50,7 @@ export default function BookPage() {
       <meta charSet="utf-8" />
       <meta name="keywords" content="Abdul Basit Blog's" />
       <meta name="robots" content="index, follow" />
+      <meta name="description" content="I write about programming, design, and occasionally life updates!" />
       <meta property="og:url" content="https://a-bd.me/book" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Interesting Blogs..." />

@@ -39,6 +39,7 @@ const AboutPage: React.FC = () => {
       <meta name="robots" content="index, follow" />
       <meta property="og:url" content="https://a-bd.me/about" />
       <meta name="keywords" content="Abdul Basit Blog's" />
+      <meta name="description" content="I am a full-stack software engineer who basically just enjoys creating things." />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Just a quick glimpse." />
       <meta property="og:description" content="I am a full-stack software engineer who basically just enjoys creating things." />

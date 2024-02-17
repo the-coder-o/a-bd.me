@@ -40,6 +40,7 @@ const ProjectPage = () => {
       <meta name="keywords" content="Abdul Basit Blog's" />
       <meta name="robots" content="index, follow" />
       <meta property="og:url" content="https://a-bd.me/projects" />
+      <meta name="description" content="Here are some of the projects I've worked on." />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Interesting projects with popular frameworks." />
       <meta property="og:description" content="Here are some of the projects I've worked on." />
