@@ -45,7 +45,7 @@ const LatestBlogs: React.FC = () => {
 
   return (
     <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.4, delay: 0.3 }} className="relative transition-opacity">
-      {BlogData.slice(1, 4)
+      {BlogData.slice(2, 5)
         .reverse()
         .map((blog, index) => (
           <React.Fragment key={blog.slug}>

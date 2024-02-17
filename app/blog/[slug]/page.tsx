@@ -51,6 +51,13 @@ const SingleBlogPage = () => {
           </div>
           <div className="h-16"></div>
           <div className={'container prose prose-neutral animate-in'}>
+            {blog?.slug === 'best-websites-to-track-habits-in-your-life' ? (
+              <div>
+                <h3 className={'text-center mt-[70px] mb-[120px] text-3xl'}>This blog coming soon 🕛</h3>
+              </div>
+            ) : (
+              ''
+            )}
             <p className={'text-[#646464] dark:text-[#b4b4b4] text-[17px]'}>{blog?.blog_main_description}</p>
             {blog?.blogs?.map((blog: any) => (
               <>
@@ -67,9 +74,7 @@ const SingleBlogPage = () => {
                       <p className={'text-[#6e6e6e] text-[.875rem] my-[17px]'}>{paragraph}</p>
                     </div>
                   ))}
-                  <div className={cn('mt-[10px] mb-[10px] flex flex-col !gap-5', blog?.blog_image ? 'block' : 'hidden')}>
-                    {blog?.blog_image?.map((images: string) => <img src={images} alt={images} className={'rounded-lg w-full mt-5'} />)}
-                  </div>
+                  <div className={cn('mt-[10px] mb-[10px] flex flex-col !gap-5', blog?.blog_image ? 'block' : 'hidden')}>{blog?.blog_image?.map((images: string) => <img src={images} alt={images} className={'rounded-lg w-full mt-5'} />)}</div>
                   <div className={cn('', blog?.blog_video_url ? 'block' : 'hidden')}>
                     {blog?.blog_video_url?.map((item: any) => (
                       <Link href={item?.url_video} target={'_blank'}>
@@ -133,11 +138,7 @@ const SingleBlogPage = () => {
         <div className={'container flex flex-col gap-20'}>
           <div className={'flex flex-col gap-6'}>
             <h2>Tags</h2>
-            <div className={'flex flex-wrap gap-3 '}>
-              {blog?.blog_tags?.map((tag) => (
-                <div className={'whitespace-nowrap font-medium rounded-lg bg-[#e8e8e8] dark:bg-[#2a2a2a] dark:text-[#b4b4b4] text-[#646464] px-4 py-1.5 text-sm'}>{tag}</div>
-              ))}
-            </div>
+            <div className={'flex flex-wrap gap-3 '}>{blog?.blog_tags?.map((tag) => <div className={'whitespace-nowrap font-medium rounded-lg bg-[#e8e8e8] dark:bg-[#2a2a2a] dark:text-[#b4b4b4] text-[#646464] px-4 py-1.5 text-sm'}>{tag}</div>)}</div>
           </div>
           <Halo strength={5}>
             <SignUpFrom />

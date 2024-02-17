@@ -22,28 +22,16 @@ export const BlogData = [
       },
       {
         blog_title: 'Looking forward',
-        blog_description:
-          "On the bright side, we're starting to see more and more tools prioritizing the developer experience. This is a huge plus for us developers who want to focus on building slices and functionality, rather than spending hours trying to figure out how to style a component.",
+        blog_description: "On the bright side, we're starting to see more and more tools prioritizing the developer experience. This is a huge plus for us developers who want to focus on building slices and functionality, rather than spending hours trying to figure out how to style a component.",
       },
       {
         blog_title: 'Speed and Efficiency',
-        blog_description:
-          'Check out this iOS weather widget. I was able to create this component in less than 5 minutes, which would have taken me much longer if I had to write the CSS and having to switch between files.',
+        blog_description: 'Check out this iOS weather widget. I was able to create this component in less than 5 minutes, which would have taken me much longer if I had to write the CSS and having to switch between files.',
       },
       {
         blog_title: 'The Power of Reusable Components',
-        blog_description:
-          'One of the key advantages of Tailwind CSS is its promotion of reusable components. Which is now a standard in the front-end world. By using pre-defined classes, Tailwind allows developers to create reusable components that can be easily used throughout the codebase.',
-        blog_code_block:
-          'const WeatherList = () => {\n' +
-          '  return (\n' +
-          '    <div className="my-8 flex flex-col gap-2">\n' +
-          '      {data.map((item, index) => (\n' +
-          '        <CityCard key={index} data={item} />\n' +
-          '      ))}\n' +
-          '    </div>\n' +
-          '  );\n' +
-          '};',
+        blog_description: 'One of the key advantages of Tailwind CSS is its promotion of reusable components. Which is now a standard in the front-end world. By using pre-defined classes, Tailwind allows developers to create reusable components that can be easily used throughout the codebase.',
+        blog_code_block: 'const WeatherList = () => {\n' + '  return (\n' + '    <div className="my-8 flex flex-col gap-2">\n' + '      {data.map((item, index) => (\n' + '        <CityCard key={index} data={item} />\n' + '      ))}\n' + '    </div>\n' + '  );\n' + '};',
       },
       {
         blog_description:
@@ -92,34 +80,26 @@ export const BlogData = [
     blog_description: 'I joined the It park company 2 months ago, and now we are doing various projects together with our team',
     blog_publish_date: 'Dec 18, 2023',
     blog_main_image_url: 'https://i.ibb.co/VvMzGpd/1.jpg',
-    blog_main_description:
-      'IT Park is a complex of facilities, buildings and structures designed to ensure the startup and market access, an extraterritorial free economic zone for IT companies, including integration with scientific and educational organizations.',
+    blog_main_description: 'IT Park is a complex of facilities, buildings and structures designed to ensure the startup and market access, an extraterritorial free economic zone for IT companies, including integration with scientific and educational organizations.',
     blogs: [
       {
         blog_title: 'IT Park Today',
         blog_description:
           'On July 24, 2019 the first IT Park in the Republic of Uzbekistan opened its doors in Tashkent. In a given short amount of time, IT Park has already brought its first fruits in the form of 28 new startups, created dozens of projects in the field of information technology, as well as trainings, workshops and meetings to encourage the youth of our country, their interest in this area and develop computer literacy among the population.',
-        blog_list: [
-          'IT Park is a complex of facilities, buildings and structures designed to ensure the',
-          'startup and market access, an extraterritorial free economic zone for IT',
-          'companies, including integration with scientific and educational organizations.',
-        ],
+        blog_list: ['IT Park is a complex of facilities, buildings and structures designed to ensure the', 'startup and market access, an extraterritorial free economic zone for IT', 'companies, including integration with scientific and educational organizations.'],
         blog_video_url: [
           {
             url_image: 'https://www.spot.uz/media/img/2022/08/dK6J7q16617527520523_l.jpg',
             url_video: 'https://youtu.be/zgFs5IZTHyA',
             video_title: 'How is compensation for international IT certifications?',
-            video_description:
-              'IT Park helped students get internships and covered 70% of their educational expenses. Students covered the rest of their tuition through an international certificate program.',
+            video_description: 'IT Park helped students get internships and covered 70% of their educational expenses. Students covered the rest of their tuition through an international certificate program.',
           },
         ],
-        blog_alert:
-          'We are looking for startup projects in the field of IT, aimed at the global market. If you meet the criteria described above, then join us for a three-month program to gain the skills necessary for entrepreneurs to create and manage their company.',
+        blog_alert: 'We are looking for startup projects in the field of IT, aimed at the global market. If you meet the criteria described above, then join us for a three-month program to gain the skills necessary for entrepreneurs to create and manage their company.',
       },
       {
         blog_title: 'Do you want to become a resident?',
-        blog_description:
-          'Legal entities registered on the territory of the Republic of Uzbekistan can become the resident of IT Park. The status gives an opportunity to be exempted from paying taxes, as well as receive a number of benefits.',
+        blog_description: 'Legal entities registered on the territory of the Republic of Uzbekistan can become the resident of IT Park. The status gives an opportunity to be exempted from paying taxes, as well as receive a number of benefits.',
         blog_paragraph: [
           '1 On November 20, 2019 President Republic of Uzbekistan Shavkat Mirziyoyev visited IT Park and laid the first symbolic stone for the construction of a new stage. “The stability of our economy, high-quality and efficient operation in all sectors, the convenience of life of the population depend on information technologies. Therefore, it is necessary to create more extensive opportunities for this sphere, the necessary infrastructure, to encourage specialists, to educate capable youth”, said Shavkat Mirziyoyev.',
           '2 During the first visit of the President of the Republic of Uzbekistan Shavkat Mirziyoyev to the Republic of India, which was held from September 30 to October 2, 2018, Uzbek and Indian Parties agreed to expand cooperation in the field of IT. The Uzbek side, together with the information and technology companies of India, expressed interest in creating an Information Technology Park in Uzbekistan on basis of their best practices in software development and accelerating startups. Thus, it can be noted that IT Park was created on the initiative of the President of the Republic of Uzbekistan to improve the startup ecosystem and startup projects and their implementation in our country.',
@@ -161,8 +141,7 @@ export const BlogData = [
             url_image: 'https://it-park.uz/storage/images/news/normal/thCTxYemJmikUYL7ZIPZZMOpl6iNx0KqwjXWuIHH.jpg',
             url_video: 'https://youtu.be/T1xG4xYh-u0',
             video_title: 'It park it education',
-            video_description:
-              'IT Park is looking for talented managers and teachers for a Front end and Back end in IT Centers in all regions of the republic for its team. You can submit your resume regardless of the region of residence since we will find you a job in the nearest IT Center!',
+            video_description: 'IT Park is looking for talented managers and teachers for a Front end and Back end in IT Centers in all regions of the republic for its team. You can submit your resume regardless of the region of residence since we will find you a job in the nearest IT Center!',
           },
         ],
       },
@@ -175,13 +154,11 @@ export const BlogData = [
     blog_description: 'I did discord app with modern frameworks, in this project you can real time chatting, real time meeting from video,audio. After i tell you about what is the discord?.',
     blog_publish_date: 'Dec 19, 2023',
     blog_main_image_url: 'https://www.videogameschronicle.com/files/2021/05/discord-new-logo.jpg',
-    blog_main_description:
-      'Discord is a platform for hosting real-time text, video, and voice chat. While other social platforms are oriented around one central community, Discord is divided into servers or many smaller communities. Servers can be public or private spaces.',
+    blog_main_description: 'Discord is a platform for hosting real-time text, video, and voice chat. While other social platforms are oriented around one central community, Discord is divided into servers or many smaller communities. Servers can be public or private spaces.',
     blogs: [
       {
         blog_title: 'Why i start this project?',
-        blog_description:
-          'The purpose of doing this project is that when I did this project I was afraid at the beginning, how do I start? which libraries to use, and I ended up taking a risk, and learned a lot of technology',
+        blog_description: 'The purpose of doing this project is that when I did this project I was afraid at the beginning, how do I start? which libraries to use, and I ended up taking a risk, and learned a lot of technology',
         blog_paragraph: [
           '1 My advice to you is to review what you already know before doing this project',
           '2 Because if you start a chapter with your knowledge, you will have a lot of trouble',
@@ -214,8 +191,7 @@ export const BlogData = [
         ],
       },
       {
-        blog_alert:
-          "To integrate Socket.io with a Next.js 14 application, you can follow these general steps. Note that specific details might change based on updates to Next.js or Socket.io, so it's always a good idea to refer to the official documentation for the most up-to-date information.",
+        blog_alert: "To integrate Socket.io with a Next.js 14 application, you can follow these general steps. Note that specific details might change based on updates to Next.js or Socket.io, so it's always a good idea to refer to the official documentation for the most up-to-date information.",
         blog_description: '1: Set up Socket.io server',
         blog_paragraph: ["In your Next.js application, you can set up a Socket.io server using a custom server. Create a server.js file in your project's root:"],
         blog_code_block:
@@ -242,9 +218,7 @@ export const BlogData = [
       },
       {
         blog_description: '2: Modify your package.json file to start the custom server:',
-        blog_paragraph: [
-          "In your Next.js components or pages, you can connect to the Socket.io server using the socket.io-client library: Make sure to replace the 'http://localhost:3001' with the actual URL of your Socket.io server.",
-        ],
+        blog_paragraph: ["In your Next.js components or pages, you can connect to the Socket.io server using the socket.io-client library: Make sure to replace the 'http://localhost:3001' with the actual URL of your Socket.io server."],
         blog_code_block: '{\n' + '  "scripts": {\n' + '    "dev": "next dev",\n' + '    "start": "node server.js"\n' + '  }\n' + '}\n',
       },
       {
@@ -328,8 +302,7 @@ export const BlogData = [
             url_image: 'https://miro.medium.com/v2/resize:fit:1358/1*2FjKmcVYWfTq27alEWlRkA.png',
             url_video: 'https://youtu.be/B38biBZQJ3A',
             video_title: 'Video about how to connect socket.io with nextjs ?',
-            video_description:
-              "This example demonstrates emitting a 'message' event from the client to the server and listening for a 'reply' event from the server. You can customize these events based on your application's requirements.",
+            video_description: "This example demonstrates emitting a 'message' event from the client to the server and listening for a 'reply' event from the server. You can customize these events based on your application's requirements.",
           },
         ],
       },
@@ -368,8 +341,7 @@ export const BlogData = [
 
       {
         blog_title: 'Aprel oyi',
-        blog_description:
-          'Frontend tugagandan kegin orada ancha uzulishlar boldi lekin bu uzilishlar menga juda ham foyda bergan edi chunki frontendni yahshilab takrollab yangi narsalarni organim olgan edimsherilarim bilan harhir musobaqalarda qatnashdik va koplab tajribalarga ega boldik.',
+        blog_description: 'Frontend tugagandan kegin orada ancha uzulishlar boldi lekin bu uzilishlar menga juda ham foyda bergan edi chunki frontendni yahshilab takrollab yangi narsalarni organim olgan edimsherilarim bilan harhir musobaqalarda qatnashdik va koplab tajribalarga ega boldik.',
       },
 
       {
@@ -382,14 +354,12 @@ export const BlogData = [
         blog_title: 'Iyun oyi',
         blog_description:
           'Men uchun eng qiyin oy boldi chunki backend kursi boshlandi. birinchi dars men huddiki vashe boshqa olamga tushib qolgan edim chunki siz frontend zor bilsangiz ham backend kursini oqiyotganingizda yana noldan boshlashingiz kerak edi. RestApi, expressjs, nodejs, databasa kabi programmalar haqida gapirib berganlarida men oylab qoldim qanday qilib shuncha narsani miyyamizga sigdirib olamiz deb ozimga savol berdimva 1 oy faqat algaritm yechish boldi chunki algaritimni yahshi bilsangzi backend kursida qiynalmaysiz.',
-        blog_alert:
-          'Esingizda tuting Agar eng yahshi daturchi bolaman desangiz siz hayotingizni 80% ni dasturlash yonalishiga bagishlashingiz kerak negaki yahshi dasturchi bolish uchun kop voxt kerak boladi....',
+        blog_alert: 'Esingizda tuting Agar eng yahshi daturchi bolaman desangiz siz hayotingizni 80% ni dasturlash yonalishiga bagishlashingiz kerak negaki yahshi dasturchi bolish uchun kop voxt kerak boladi....',
       },
 
       {
         blog_title: 'Iyul oyi',
-        blog_description:
-          'Mana endi haqeqiy backendga qadam qoydik 2 oy boshlandi server,api,nodejs qanday ishlashini bilib oldik. boshida qiynaldim, hamma kabi harakat qildim intildim niyyat qildim, maqsad qoydim va astalik bilan bu qiyinchiliklarni yengib otdim.',
+        blog_description: 'Mana endi haqeqiy backendga qadam qoydik 2 oy boshlandi server,api,nodejs qanday ishlashini bilib oldik. boshida qiynaldim, hamma kabi harakat qildim intildim niyyat qildim, maqsad qoydim va astalik bilan bu qiyinchiliklarni yengib otdim.',
         blog_paragraph: [
           'Najot Talimda fullstack sohasi boyicha tadbir bolib otdi Googlda ishlidigan bitta undifined brat ozlari haqida gapirib berdila men esa juda ham hafa bolib ketdim negaki men biladigan bilimlar juda ham kam edi men oylardimki kop narsani bilaman deb.',
           'Afsuski organadigan narsalarim judaham kop ekan, hayol surib otirardim qanidi shu oka kabi kotta kompaniyalarda ishlasam exxxx.😞 oylab kayfiyatim kotarilardi bazida yiglab yuborgan payitlarim ham bolgan chunki menham boshqa dasturchilar kabi o’z yolimni topib ketarkinman deb kelajagim haqida qay urar edim  bu oy men uchuin judaham esda qolarli boldi…… ',
@@ -412,8 +382,7 @@ export const BlogData = [
 
       {
         blog_title: 'Oktabr oyi',
-        blog_description:
-          'Bu oy juda ham esta qolarli bolib otdi negaki backend kursini ohirgi oyi edi mem html ni qanchalik onson bolsin backend ham shu kabi onsoz bolib qoldi bunga yordam mening 2-ustozim baxtiyoraka hissa qoshdilar',
+        blog_description: 'Bu oy juda ham esta qolarli bolib otdi negaki backend kursini ohirgi oyi edi mem html ni qanchalik onson bolsin backend ham shu kabi onsoz bolib qoldi bunga yordam mening 2-ustozim baxtiyoraka hissa qoshdilar',
         blog_paragraph: [
           'Agar shu oyinga kirib ketmaganimda haliham backendni yahshi ozlashtira olmas edim qarang hamma narsaning hikmati bor shu oyinga rahmte bu bomagnida men hozir balki It tashlab yuborgan bolarmidiiim? lekin unday bolmadi shu uztozimga qancha yahshilik qilsamam juda ham kam…..🙂 Rahmat sizga ustoz …..',
           'Bugun soat 09:00/28-oktabr bitiruv kechamiz edi hali ham ishonmasdim rostanam men fullsatck kursini tugatimi deb ozimga savol bera edim. va juda yahshi kayfiyat bilan bitirib ham oldik.🤩',
@@ -425,13 +394,18 @@ export const BlogData = [
         blog_title: 'Noyabr oyi',
         blog_description:
           'Mana oqishlani ham tugatib oldim endi qiladigan yahshilab praktika qilib kompaniya ishga kirish edi. 1-oy yahshilab frontendni ham backndni ham takrollab portfolio uchun turli hil proektlar qildim. It park o’zbekistondagi eng katta kompaniya bu kompaniyaga ishga kiraman deb hecham oylamagandim va it parkga keldim meni darrov frontend boyicha ishga olishdi. Ishga kirgandan kegin boshida juda qorqdim negaki katta kompaniyalarda ancha qiyin loyihalar qilishar ekan sheriklarim yoza yotgan kodlarini korib aqldan ozar edim….',
-        blog_image: [
-          'https://embassylife.ru/wp-content/uploads/2023/02/o-CiTtOm5sj3ZL049ls7NciKjG9FqJq3.jpg',
-          'https://i.ibb.co/NrBCf6C/photo-2024-01-10-17-32-16.jpg',
-          'https://i.ibb.co/nCvSB1g/photo-2024-01-10-17-32-18.jpg',
-        ],
+        blog_image: ['https://embassylife.ru/wp-content/uploads/2023/02/o-CiTtOm5sj3ZL049ls7NciKjG9FqJq3.jpg', 'https://i.ibb.co/NrBCf6C/photo-2024-01-10-17-32-16.jpg', 'https://i.ibb.co/nCvSB1g/photo-2024-01-10-17-32-18.jpg'],
       },
     ],
     blog_tags: ['2023', 'Life', 'Difficulties', 'New job', 'Goals'],
+  },
+  {
+    slug: 'best-websites-to-track-habits-in-your-life',
+    blog_title: 'Best websites to track habits in your life',
+    blog_description: 'Transform your daily tasks and goals into a fun, game-like experience with Habitica, an innovative platform that gamifies habit tracking.🧬',
+    blog_publish_date: 'Feb 02, 2024',
+    blog_main_image_url: 'https://i.ibb.co/C8VqBHH/DALL-E-2024-02-17-20-35-23-Illustrate-a-serene-and-productive-home-office-setting-where-a-person-is.webp',
+    blogs: [],
+    blog_tags: ['Life', 'Habit-Tracker', 'Apps', 'Goals'],
   },
 ]
