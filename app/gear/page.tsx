@@ -34,22 +34,22 @@ const GearPage = () => {
   return (
     <>
       <NextSeo {...SEO} />
+      <meta charSet="utf-8" />
+      <meta name="keywords" content="Abdul Basit Blog's" />
+      <meta name="robots" content="index, follow" />
+      <meta property="og:url" content="https://a-bd.me/gears" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="My toolbox and i recommend you." />
+      <meta property="og:description" content="My toolbox. This is gear I actually own and recommend." />
+      <meta property="og:image" content="https://opengraph.b-cdn.net/production/documents/0a0926f1-2adc-4cc9-b2ce-82458eea1368.jpg?token=Sth5htvy1OqzIhZfzP5iJ6pPzhbTJEAIMpsqvP5Xj0g&height=640&width=640&expires=33243406322" />
+      <meta name="twitter:card" content="summary" />
+      <meta property="twitter:domain" content="www.a-bd.me" />
+      <meta property="twitter:url" content="https://a-bd.me/gears" />
+      <meta name="twitter:title" content="My toolbox and i recommend you." />
+      <meta name="twitter:description" content="My toolbox. This is gear I actually own and recommend." />
+      <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/documents/0a0926f1-2adc-4cc9-b2ce-82458eea1368.jpg?token=Sth5htvy1OqzIhZfzP5iJ6pPzhbTJEAIMpsqvP5Xj0g&height=640&width=640&expires=33243406322" />
+      <link rel="canonical" href="https://a-bd.me/gear" />
       <head>
-        <meta charSet="utf-8" />
-        <meta name="keywords" content="Abdul Basit Blog's" />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:url" content="https://a-bd.me/gears" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="My toolbox and i recommend you." />
-        <meta property="og:description" content="My toolbox. This is gear I actually own and recommend." />
-        <meta property="og:image" content="https://opengraph.b-cdn.net/production/documents/0a0926f1-2adc-4cc9-b2ce-82458eea1368.jpg?token=Sth5htvy1OqzIhZfzP5iJ6pPzhbTJEAIMpsqvP5Xj0g&height=640&width=640&expires=33243406322" />
-        <meta name="twitter:card" content="summary" />
-        <meta property="twitter:domain" content="www.a-bd.me" />
-        <meta property="twitter:url" content="https://a-bd.me/gears" />
-        <meta name="twitter:title" content="My toolbox and i recommend you." />
-        <meta name="twitter:description" content="My toolbox. This is gear I actually own and recommend." />
-        <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/documents/0a0926f1-2adc-4cc9-b2ce-82458eea1368.jpg?token=Sth5htvy1OqzIhZfzP5iJ6pPzhbTJEAIMpsqvP5Xj0g&height=640&width=640&expires=33243406322" />
-        <link rel="canonical" href="https://a-bd.me/gear" />
         <title>Gear | Abdul Basit</title>
       </head>
       <main className="container pb-28">
