@@ -80,6 +80,11 @@
   }
 }
 
+img {
+  object-fit: cover;
+  object-position: center;
+}
+
 .container {
   width: 100%;
   max-width: 700px;
