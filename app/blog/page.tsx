@@ -25,20 +25,15 @@ const BlogPage: React.FC = () => {
               url: 'https://opengraph.b-cdn.net/production/documents/0a0926f1-2adc-4cc9-b2ce-82458eea1368.jpg?token=Sth5htvy1OqzIhZfzP5iJ6pPzhbTJEAIMpsqvP5Xj0g&height=640&width=640&expires=33243406322',
               width: 640,
               height: 640,
-              alt: 'Blog Open Graph Image',
+              alt: 'Og Image Alt',
             },
           ],
           site_name: 'Abdul Basit Blog',
         }}
         twitter={{
-          cardType: 'summary_large_image',
           handle: '@handle',
           site: '@site',
-          // @ts-ignore
-          url: 'https://a-bd.me/blog',
-          title: 'Interesting Blogs...',
-          description: 'I write about programming, design, and occasionally life updates!',
-          image: 'https://opengraph.b-cdn.net/production/documents/0a0926f1-2adc-4cc9-b2ce-82458eea1368.jpg?token=Sth5htvy1OqzIhZfzP5iJ6pPzhbTJEAIMpsqvP5Xj0g&height=640&width=640&expires=33243406322',
+          cardType: 'summary_large_image',
         }}
       />
       <head>
@@ -48,6 +43,7 @@ const BlogPage: React.FC = () => {
         <meta property="og:url" content="https://a-bd.me/blog" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Interesting Blogs..." />
+        <meta property="description" content="I write about programming, design, and occasionally life updates!" />
         <meta property="og:description" content="I write about programming, design, and occasionally life updates!" />
         <meta property="og:image" content="https://opengraph.b-cdn.net/production/documents/0a0926f1-2adc-4cc9-b2ce-82458eea1368.jpg?token=Sth5htvy1OqzIhZfzP5iJ6pPzhbTJEAIMpsqvP5Xj0g&height=640&width=640&expires=33243406322" />
         <meta name="twitter:card" content="summary" />
