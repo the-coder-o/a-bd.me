@@ -10,7 +10,7 @@ import { ProgressBar } from '@/app/book/components/ui/progress-bar'
 
 const Analytics = () => {
   return (
-    <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 2 * 0.1 }} className="grid grid-cols-2 gap-3 md:grid-cols-6 md:gap-4">
+    <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 2 * 0.2 }} className="grid grid-cols-2 gap-3 md:grid-cols-6 md:gap-4">
       <h2 className="col-span-2 dark:text-[#b4b4b4] text-[#646464] md:col-span-6">Book Analytics</h2>
       <div className="col-span-1 flex flex-col justify-center items-center rounded-xl dark:border-styles light-style dark:bg-[#121212] bg-[#EFEFEF] p-6 md:col-span-2 max-md:items-center">
         <p className=" dark:text-[#b4b4b4] text-[#646464] max-sm:text-xs">Completed books</p>

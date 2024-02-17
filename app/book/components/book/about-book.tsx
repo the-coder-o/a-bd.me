@@ -9,7 +9,7 @@ import { motion } from 'framer-motion'
 
 const AboutBook = () => {
   return (
-    <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 0.1 }} className="flex animate-in flex-col gap-8 md:flex-row md:items-end md:justify-between" style={{ '--index': 1 } as React.CSSProperties}>
+    <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 0.2 }} className="flex animate-in flex-col gap-8 md:flex-row md:items-end md:justify-between" style={{ '--index': 1 } as React.CSSProperties}>
       <div className="flex flex-col gap-1">
         <h1 className="leading-none dark:text-[#b4b4b4] text-[#646464]">Books Kit & Analytics</h1>
         <h2 className="whitespace-nowrap text-4xl font-bold tracking-tight">Abdul Basit</h2>
