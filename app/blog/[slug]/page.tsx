@@ -58,26 +58,27 @@ const SingleBlogPage = () => {
           <div className={'container-for-image'}>
             <img width={100} height={100} src={blog?.blog_main_image_url} alt={blog?.blog_title} className={'!object-cover !rounded-lg  !w-[100%]'} />
           </div>
-          <div className="h-16"></div>
+          <div className="h-5"></div>
           <div className={'container prose prose-neutral animate-in'}>
-            {blog?.slug === 'best-websites-to-track-habits-in-your-life' ? (
-              <div className={'relative flex items-center justify-center flex-col'}>
-                <div className={'absolute top-[-50px] -z-10'}>
-                  <Image width={300} height={300} src={SettingsGif} alt={'SettingsGif'} />
-                </div>
-                <h3 className={'text-center mt-[120px] mb-[90px] text-[18px]'}>This blog coming soon... 💤 Opening At 22:22 PM 🕛</h3>
-              </div>
-            ) : (
-              ''
-            )}
+            {/*{blog?.slug === 'best-websites-to-track-habits-in-your-life' ? (*/}
+            {/*  <div className={'relative flex items-center justify-center flex-col'}>*/}
+            {/*    <div className={'absolute top-[-50px] -z-10'}>*/}
+            {/*      <Image width={300} height={300} src={SettingsGif} alt={'SettingsGif'} />*/}
+            {/*    </div>*/}
+            {/*    <h3 className={'text-center mt-[120px] mb-[90px] text-[18px]'}>This blog coming soon... 💤 Opening At 22:22 PM 🕛</h3>*/}
+            {/*  </div>*/}
+            {/*) : (*/}
+            {/*  ''*/}
+            {/*)}*/}
             <p className={'text-[#646464] dark:text-[#b4b4b4] text-[17px]'}>{blog?.blog_main_description}</p>
             {blog?.blogs?.map((blog: any) => (
               <>
                 <div>
                   <h2 className={'text-[1.5rem] mt-[48px] mb-[18px]'}>{blog?.blog_title}</h2>
                   <p className={'text-[#646464] mb-[20px] dark:text-[#b4b4b4] text-[17px]'}>{blog?.blog_description}</p>
+                  <div className={cn('mt-[10px] mb-[10px] flex flex-col !gap-5', blog?.blog_image ? 'block' : 'hidden')}>{blog?.blog_image?.map((images: string) => <img src={images} alt={images} className={'rounded-lg w-full mt-5'} />)}</div>
                   {blog?.blog_list?.map((list: any) => (
-                    <ul className={'list-disc my-[20px] pl-8'}>
+                    <ul className={'list-disc my-[20px] pl-4'}>
                       <li className={'text-[#646464] dark:text-[#b4b4b4] text-[17px]'}>{list}</li>
                     </ul>
                   ))}
@@ -86,7 +87,6 @@ const SingleBlogPage = () => {
                       <p className={'text-[#6e6e6e] text-[.875rem] my-[17px]'}>{paragraph}</p>
                     </div>
                   ))}
-                  <div className={cn('mt-[10px] mb-[10px] flex flex-col !gap-5', blog?.blog_image ? 'block' : 'hidden')}>{blog?.blog_image?.map((images: string) => <img src={images} alt={images} className={'rounded-lg w-full mt-5'} />)}</div>
                   <div className={cn('', blog?.blog_video_url ? 'block' : 'hidden')}>
                     {blog?.blog_video_url?.map((item: any) => (
                       <Link href={item?.url_video} target={'_blank'}>

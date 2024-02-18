@@ -405,7 +405,118 @@ export const BlogData = [
     blog_description: 'Transform your daily tasks and goals into a fun, game-like experience with Habitica, an innovative platform that gamifies habit tracking.🧬',
     blog_publish_date: 'Feb 02, 2024',
     blog_main_image_url: 'https://i.ibb.co/C8VqBHH/DALL-E-2024-02-17-20-35-23-Illustrate-a-serene-and-productive-home-office-setting-where-a-person-is.webp',
-    blogs: [],
+    blog_main_description:
+      'Each of these tools offers unique features that can help in the formation and tracking of habits, whether they are related to productivity, health, fitness, or personal growth. Depending on your specific goals and preferences, you might find one or several of these apps useful in your journey towards building lasting habits.⬇️',
+    blogs: [
+      {
+        blog_title: 'Intentional Habit Tracking\n',
+        blog_description:
+          'Once a year, I pull out some of my old notebooks, flip through the pages, and take a short walk down memory lane. I find this is a great way to see my life\'s overall trajectory and make sure I am moving in the direction of my goals. It also involves a nice mixture of nostalgia and the occasional "Oh, I should try this layout again!" But during my last flip through, I noticed an unfortunate pattern emerging in my habit tracking.',
+        blog_image: ['https://bulletjournal.com/cdn/shop/articles/Header_Intentional_Habit_Tracking_1600x.jpg?v=1617571326', 'https://media1-production-mightynetworks.imgix.net/asset/20374452/APC_1478.jpg?ixlib=rails-0.3.0&fm=jpg&q=75&auto=format&w=1400&h=1400&fit=max'],
+        blog_list: [
+          '1: So why was I so bad at keeping up with my habits? Digging a little deeper, I discovered that every time I didn\'t follow through with a habit, there was an "event" that derailed the month. These were things like needing to stay up extra late to finish a work project or feeling sick. This would lead me to skip my daily habits, and once skipped they were often hard to start up again.',
+          "2: The problem was twofold: I didn't have a solid plan for completing the habits each day (when? where? how?). And because of that, I had to use a large amount of mental energy every day to decide what to do and to follow through with it. Inevitably, coming up with a habit plan daily was the first thing dropped when other life challenges got in the way.",
+        ],
+        blog_alert: 'Simply writing down 8 things to do each day is not a sustainable method for building consistent habits.',
+      },
+      {
+        blog_title: 'Method variations\n',
+        blog_description:
+          "One of the aspects of this tracker that I find appealing is how flexible it is. Some months I don't have the time to make an intricate design, so I can fall back to a simple table representation of the habits. The workouts still get planned in advance, and I include columns for the same types of things I included in the box layout.",
+        blog_image: ['https://media1-production-mightynetworks.imgix.net/asset/20374523/APC_1423.jpg?ixlib=rails-0.3.0&fm=jpg&q=75&auto=format&w=1400&h=1400&fit=max'],
+        blog_list: ['Or in months where I have more time, I can go all out and make more elaborate representations of my habits. Artistic designs are by no means essential for this form of habit tracking, but they can be a great outlet if making them is something you enjoy!'],
+      },
+      {
+        blog_title: 'Tips & Takeaways\n',
+        blog_description: 'To wrap up, here are a few tips that I found helpful for sticking to my habit routine:\n' + '\n',
+        blog_image: ['https://mycuprunsover.ca/wp-content/uploads/2022/04/circle-habit-tracker-social.png'],
+        blog_list: [
+          'Plan as much as you can in advance. Things can change as the month goes on, but having a plan up front lowers the resistance to keep up with a habit.',
+          "Expect that you are going to miss days (or 5; or 10). It isn't about being perfect and practicing your habit every day. It's about returning to your practice and coming back after missed days.",
+          'Make the tracker as easy as possible to fill in throughout the month. Each day I am only marking completing habits; no habit planning or intricate designs.',
+          'Be flexible. Plan on changing the tracker as needed to suit your needs while discovering what works best for you. My tracker has never been the same for two months in the row. It is constantly evolving to fit my life.',
+        ],
+        blog_images: [
+          'https://media1-production-mightynetworks.imgix.net/asset/20374523/APC_1423.jpg?ixlib=rails-0.3.0&fm=jpg&q=75&auto=format&w=1400&h=1400&fit=max',
+          'https://media1-production-mightynetworks.imgix.net/asset/20374571/APC_1391.jpg?ixlib=rails-0.3.0&fm=jpg&q=75&auto=format&w=1400&h=1400&fit=max',
+          'https://media1-production-mightynetworks.imgix.net/asset/20373979/APC_1329.jpg?ixlib=rails-0.3.0&fm=jpg&q=75&auto=format&w=1400&h=1400&fit=max',
+          'https://media1-production-mightynetworks.imgix.net/asset/20374143/APC_1347.jpg?ixlib=rails-0.3.0&fm=jpg&q=75&auto=format&w=1400&h=1400&fit=max',
+        ],
+        blog_paragraph: [
+          'This habit tracking method has been a game changer for how I plan and keep up with habits throughout the year. After using this method for a few months, I am no longer dropping off completely from my habits during the month. Sure, there are days (and yes, even sometimes full weeks) that I miss, but I am consistently returning to the habits. By lowering the decision energy required each day, it has become much easier to jump back into the plan and finally start actually forming lifelong habits.',
+        ],
+      },
+      {
+        blog_title: 'Habitica',
+        blog_image: ['https://m.media-amazon.com/images/I/41KXEKTX5zL.png'],
+        blog_description:
+          'Habitica is a free habit-building and productivity app that treats your real life like a game to help you improve real life habits. It "gamifies" your life by turning all your tasks (Habits, Dailies, and To Do\'s) into little monsters you have to conquer. The better you are at this, the more you progress in the game.',
+        blog_list: [
+          'Achievement – Game rewards for doing tasks and completing major goals keep you focused on improving your real-life goals.',
+          'Adventure and Advancement – Continuous positive task performance grants levels and equipment. Advancing in level can unlock extra game skills and level-specific quests.',
+          'Shared Quests – Some types of quests require you to do your Dailies, or cause damage to all your friends, building in a level of co-responsibility. The members in your party will support you!',
+          'Common-Interest Groups and Challenges – Use Habitica to find like-minded individuals, and join in on special challenges that add tasks to your task list that can help you achieve your life goals. You can join guilds and chat with people around the world who share your real-life interests and your real-life issues.',
+        ],
+        blog_video_url: [
+          {
+            url_image: 'https://habitica.com/static/emails/images/meta-image.png',
+            url_video: 'https://youtu.be/5uA3jrmeQsU',
+            video_title: 'What is Habitica?\n',
+            video_description:
+              'Habitica is a game to help you improve real-life habits. It "gamifies" your life by giving you in-game rewards for your real-life tasks. The better you are at accomplishing real-life tasks, the more you progress in the game. If you slip up in life, your character starts backsliding in the game.',
+          },
+        ],
+      },
+      {
+        blog_title: 'Habitify\n',
+        blog_image: ['https://imagedelivery.net/FSmcsqe11_bYnqMwTRB0Xw/6f43461f-9281-4713-9661-73c2b15ad100/public'],
+        blog_description:
+          'Habitify is a free and easy-to-use habit tracker that helps you build a routine of positive, life changing habits. Set personal goals, track your progress, and motivate yourself to achieve new heights! Habitify habit tracker is here to help you make the most of your task management and get things done.',
+        blog_video_url: [
+          {
+            url_image: 'https://images.ctfassets.net/9haz2glq4wt0/1swnEjcjFwjjvmUEcm2a2W/8e32fdbbe43762d186ed41d0fd7d9e21/Habitify_Streaks.png?h=1013&fm=webp&fit=pad&w=1920&q=80',
+            url_video: 'https://youtu.be/3CJLPTh8n-I',
+            video_title: 'What is Habitify\n',
+            video_description: 'Habitify is a free and easy-to-use habit tracker that helps you build a routine of positive, life changing habits. Set personal goals, track your progress, and motivate yourself to achieve new heights!',
+          },
+        ],
+      },
+      {
+        blog_title: 'ClickUp Project Management Software Review',
+        blog_image: ['https://smallbusinessprices.co.uk/wp-content/uploads/ClickUp-project-management-software.png'],
+        blog_description:
+          'ClickUp is a San Diego based software developer that was founded in 2017 and they offer productivity software that can give back up to 20% of your time. Their aim is to have a single app to replace everything which includes tasks, documents, chats and goals. They currently work with over 800,000 teams through their software to help them better manage their projects.',
+        blog_images: ['https://clickup.com/images/v2/views/task/list-view.png', 'https://clickup.com/images/v2/views/task/board-view.png', 'https://clickup.com/blog/wp-content/uploads/2022/03/image1-3-1400x944.png', 'https://clickup.com/images/v2/views/task/activity-view.png'],
+        blog_video_url: [
+          {
+            url_image: 'https://gdm-catalog-fmapi-prod.imgix.net/ProductScreenshot/af44b1ef-39d3-4f32-b9d1-8ff9f30d9263.png',
+            url_video: 'https://youtu.be/HkMcph1d1vU',
+            video_title: 'What is ClickUp\n',
+            video_description: 'Even with the latest push in returning to the office, remote work isn’t going anywhere. In-person or from home, teams will always strive to connect, save time, streamline, and promote visibility across the org.',
+          },
+        ],
+      },
+      {
+        blog_title: 'Notion',
+        blog_description: 'Notion is a single space where you can think, write, and plan. Capture thoughts, manage projects, or even run an entire company — and do it exactly the way you want. Notion offers a calm, clear place to focus on the things that actually matter to you.\n' + '\n',
+        blog_image: ['https://i.vimeocdn.com/video/1485083347-28fa7ec8a4c7cd0514b26212608a98ff176b5a026c71b98fd47167ae6446b8cd-d_750x421.875?q=60'],
+        blog_list: [
+          "Notion gives you both, whether you're working on your own or on a team of thousands.",
+          'Notion provides a single space for organizing everything that matters.',
+          'It offers a clean and open surface for thinking, writing, and planning.',
+          'Customization is key, allowing users to create pages and arrange them as needed.',
+          'Collaboration is seamless, with the ability to share work, make comments, and mention colleagues.',
+        ],
+        blog_video_url: [
+          {
+            url_image: 'https://www.notion.so/cdn-cgi/image/format=webp,width=1920,quality=100/https://img.youtube.com/vi/gp2yhkVw0z4/maxresdefault.jpg',
+            url_video: 'https://youtu.be/T1xG4xYh-u0',
+            video_title: 'What is Notion?\n',
+            video_description: 'Notion is a single space where you can think, write, and plan. Capture thoughts, manage projects, or even run an entire company — and do it exactly the way you want.\n',
+          },
+        ],
+      },
+    ],
     blog_tags: ['Life', 'Habit-Tracker', 'Apps', 'Goals'],
   },
 ]
