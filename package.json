@@ -11,7 +11,6 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
-    "@firebase/app-compat": "^0.2.27",
     "@heroicons/react": "^2.1.1",
     "@mapbox/polyline": "^1.2.1",
     "@prisma/client": "^5.9.1",
@@ -29,7 +28,6 @@
     "clsx": "^2.0.0",
     "countapi-js": "^1.0.2",
     "date-fns": "^3.3.1",
-    "firebase": "^10.8.0",
     "framer-motion": "^10.16.16",
     "lucide-react": "^0.294.0",
     "moment": "^2.30.1",
