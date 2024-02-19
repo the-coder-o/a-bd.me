@@ -4,13 +4,13 @@ import { useEffect, useState } from 'react'
 
 import Link from 'next/link'
 import Image from 'next/image'
+import { cn } from '@/lib/utils'
 
 import HeaderMobile from '@/components/ui/header/components/header-mobile'
 import HeaderDesktop from '@/components/ui/header/components/header-desktop'
 
 import LogoDark from '@/public/logo/logo-dark.svg'
 import LogoLight from '@/public/logo/logo-light.svg'
-import { cn } from '@/lib/utils'
 
 export const Header = () => {
   const [hasScrolled, setHasScrolled] = useState(false)
