@@ -17,11 +17,11 @@ const HeaderMobile = () => {
       <div className={'max-md:block hidden'}>
         <DropdownMenu>
           <DropdownMenuTrigger className={'text-[#646464] dark:text-[#b4b4b4] relative'}>Menu +</DropdownMenuTrigger>
-          <DropdownMenuContent className={'absolute left-[-100px] z-[99999999]'}>
+          <DropdownMenuContent className={'absolute left-[-100px] z-[99999999] dark:bg-[#111111]'}>
             {HeaderData?.map((links: any, index) => (
               <DropdownMenuItem
                 key={index}
-                className={cn('text-[#646464] hover:text-primary dark:text-[#b4b4b4] hover:text-zinc-900 dark:hover:text-white transition-all text-sm px-4 py-1.5 rounded-lg', links?.linkPath === pathName && 'transition-all dark:text-white text-zinc-900 bg-[#ffffff1b]')}
+                className={cn('text-[#646464] hover:text-primary dark:text-[#b4b4b4] !text-[16px] hover:text-zinc-900 dark:hover:text-white transition-all text-sm px-4 py-1.5 rounded-lg', links?.linkPath === pathName && 'transition-all dark:text-white text-zinc-900 bg-[#ffffff1b]')}
                 onClick={() => router.push(links?.linkPath)}
               >
                 {links?.linkTitle}
