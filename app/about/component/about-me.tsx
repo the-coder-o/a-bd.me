@@ -5,7 +5,7 @@ const AboutMe = () => {
     <>
       {AboutMeData.map((about, index) => (
         <>
-          <p className="text-[#646464] dark:text-[#b4b4b4] text-[18px] mt-[-2px]">{about?.title}</p>
+          <p className="text-[#646464] dark:text-[#b4b4b4] w-32 text-secondary shrink-0 mt-[-2px]">{about?.title}</p>
           <div key={index} className="flex flex-col gap-5">
             <p>{about?.description1}</p>
             <div className="flex flex-col gap-5 w-[525px] max-md:w-full">

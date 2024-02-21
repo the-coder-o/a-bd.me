@@ -105,10 +105,10 @@ export default function Gallery() {
   return (
     <>
       <section className="flex gap-4 h-[268px] relative container">
-        <Photo src={'https://www.a-bd.me/_next/image?url=https%3A%2F%2Fi.ibb.co%2FbzCjVtr%2Fperson3.jpg&w=256&q=75'} meta="2022-07-12" alt="Najot Ta'lim t education" width={324} height={239} rotate={-6} left={-86} index={1} />
-        <Photo src={'https://www.a-bd.me/_next/image?url=https%3A%2F%2Fi.ibb.co%2FmvnB5XJ%2Fphoto-2024-01-29-11-01-31.jpg&w=256&q=75'} meta="2024-01-04" alt="My first work" width={230} height={250} rotate={6.3} left={188} index={2} flipDirection="left" />
-        <Photo src={'https://www.a-bd.me/_next/image?url=https%3A%2F%2Fi.ibb.co%2FMPyDVH2%2Fphoto-2024-01-29-11-45-54.jpg&w=256&q=75'} meta="2022-05-20" alt="Coding" width={280} height={235} rotate={-5.4} left={343} index={3} />
-        <Photo src={'https://www.a-bd.me/_next/image?url=https%3A%2F%2Fi.ibb.co%2FBqJJ2qp%2Fphoto-2024-01-24-14-23-40.jpg&w=256&q=75'} meta="2022-09-10" alt={'It Park Company in Uzbekistan'} width={220} height={260} rotate={7.6} left={557} index={4} flipDirection="left" />
+        <Photo src={'https://searchengineland.com/wp-content/seloads/2018/07/google-building-logo-shutterstock_559400386-764x600.jpg'} meta="2022-07-12" alt="Google company" width={324} height={239} rotate={-6} left={-86} index={1} />
+        <Photo src={'https://miro.medium.com/v2/resize:fit:1400/0*0EQzNr2Xm8B-4nF1'} meta="2024-01-04" alt="New Yourk city" width={200} height={260} rotate={6.3} left={188} index={2} flipDirection="left" />
+        <Photo src={'https://www.amirsoy.com/img/services/prima.jpg'} meta="2022-05-20" alt="Amirsoy Mauntine" width={280} height={235} rotate={-5.4} left={343} index={3} />
+        <Photo src={'https://www.amirsoy.com/img/about/about-5.jpg'} meta="2022-09-10" alt={'Chorvog'} width={220} height={260} rotate={7.6} left={557} index={4} flipDirection="left" />
       </section>
     </>
   )

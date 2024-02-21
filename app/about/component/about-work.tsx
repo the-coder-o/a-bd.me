@@ -3,7 +3,7 @@ import { WorkData } from '@/lib/data/about-me.data'
 const AboutWork = () => {
   return (
     <>
-      <p className="text-[#646464] dark:text-[#b4b4b4] text-[18px] mt-[-2px]">Work,Study</p>
+      <p className="text-[#646464] dark:text-[#b4b4b4] w-32 text-secondary shrink-0 mt-[-2px]">Work</p>
       <div className="flex flex-col gap-8  w-[525px] max-md:w-full">
         <p className={'w-full'}>1.2+ years of professional development experience.</p>
         <p className={'w-full'}>
