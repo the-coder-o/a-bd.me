@@ -5,7 +5,7 @@ import { usePathname, useRouter } from 'next/navigation'
 
 import { HeaderData } from '@/lib/data/header.data'
 
-import { ModeToggle } from '@/components/mode-toggle'
+import ThemeSwitcher from '@/components/mode-toggle'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
 
 const HeaderMobile = () => {
@@ -30,7 +30,7 @@ const HeaderMobile = () => {
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
-      <ModeToggle />
+      <ThemeSwitcher />
     </div>
   )
 }

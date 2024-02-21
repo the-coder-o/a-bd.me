@@ -2,6 +2,16 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@import '@radix-ui/colors/gray.css';
+@import '@radix-ui/colors/gray-dark.css';
+@import '@radix-ui/colors/gray-alpha.css';
+@import '@radix-ui/colors/gray-dark-alpha.css';
+
+@import '@radix-ui/colors/blue.css';
+@import '@radix-ui/colors/blue-dark.css';
+@import '@radix-ui/colors/blue-alpha.css';
+@import '@radix-ui/colors/blue-dark-alpha.css';
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -64,6 +74,24 @@
     --input: 12 6.5% 15.1%;
     --ring: 24 5.7% 82.9%;
   }
+
+  .light .prose {
+    --tw-prose-headings: var(--gray-12);
+    --tw-prose-body: var(--gray-12);
+    --tw-prose-bold: var(--gray-12);
+    --tw-prose-links: var(--blue-11);
+    --tw-prose-code: var(--gray-12);
+    --tw-prose-quotes: var(--gray-12);
+  }
+
+  .dark .prose {
+    --tw-prose-headings: var(--gray-12);
+    --tw-prose-body: var(--gray-11);
+    --tw-prose-bold: var(--gray-11);
+    --tw-prose-links: var(--blue-11);
+    --tw-prose-code: var(--gray-11);
+    --tw-prose-quotes: var(--gray-11);
+  }
 }
 
 @layer base {
@@ -77,6 +105,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
   }
 }
 
