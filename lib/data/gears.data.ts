@@ -60,11 +60,17 @@ export const GearHomeDeskSetupData = [
 
 export const GearsAppsData = [
   {
-    url: 'https://play.google.com/store/apps/details?id=ru.foodfox.client&hl=en_US',
+    url: 'https://akiflow.com/',
     img: 'https://clickup.com/assets/brand/clickup-logo-gradient.png',
     title: 'ClickUp',
     description:
       'It replaces all individual workplace productivity tools with a single, unified platform that includes project management, document collaboration, whiteboards, spreadsheets, and goals. Founded in 2017 and based in San Diego, ClickUp is on a mission to make the world more productive.',
+  },
+  {
+    url: 'https://akiflow.com/',
+    img: 'https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/312534275_532670135533056_1106727437984036882_n.png?_nc_cat=104&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=n-bEhE-HlbAAX8zJ-rH&_nc_ht=scontent.ftas9-1.fna&oh=00_AfDY73pa0ULlFk1_S7r7Q9Uos33PLa81VIJr2QFrb9Zmsw&oe=65DAE335',
+    title: 'Akiflow',
+    description: 'From a simple idea to an all in one platform, we are building the ultimate time blocking app. Let’s imagine the future of work together!',
   },
   {
     url: 'https://code.visualstudio.com/learn#:~:text=Visual%20Studio%20Code%20is%20a,%2B%2B%2C%20JavaScript%2C%20and%20more.',
