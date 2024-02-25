@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 
 import React from 'react'
 import dynamic from 'next/dynamic'
+import Link from 'next/link'
 
 const HomeMain = dynamic(() => import('@/app/(home)/components/home-main'))
 const HomeLinks = dynamic(() => import('@/app/(home)/components/home-links'))
@@ -24,6 +25,44 @@ const HomeLatestPosts = dynamic(() => import('@/app/(home)/components/home-lates
 export default function Home() {
   return (
     <main className="container pb-[180px]">
+      <div id="personal-brand" className={'hidden'}>
+        <h1>Abdul Basit Blog lala</h1>
+        <p>Hi, I'm Abdul Basit, a fullStack engineer who loves building cool things with code. In addition to coding, I also make YouTube videos, where I focus on tech, creative vlogs, and personal development.</p>
+        <section id="resources">
+          <h2>Uses</h2>
+          <ul>
+            <li>
+              <Link legacyBehavior href="/about">
+                <a title="Just a quick glimpse.">Just a quick glimpse.</a>
+              </Link>
+            </li>
+          </ul>
+          <h2>Articles</h2>
+          <ul>
+            <li>
+              <Link legacyBehavior href="/blog">
+                <a title="5 posts about code, design, more ...">5 posts about code, design, more ...</a>
+              </Link>
+            </li>
+          </ul>
+          <h2>Latest Posts</h2>
+          <ul>
+            <li>
+              <Link legacyBehavior href="/project">
+                <a title="Here are some of the projects I've worked on.">Here are some of the projects I've worked on.</a>
+              </Link>
+            </li>
+          </ul>
+          <h2>Contact</h2>
+          <ul>
+            <li>
+              <Link legacyBehavior href="/link">
+                <a title="FullStack developer who loves building cool things with code. In addition to coding, Find me elsewhere @imAnonymous0o0">FullStack developer who loves building cool things with code. In addition to coding, Find me elsewhere @imAnonymous0o0</a>
+              </Link>
+            </li>
+          </ul>
+        </section>
+      </div>
       <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7FF9K85" height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe>
       </noscript>

@@ -26,33 +26,8 @@ const font = Inter({ subsets: ['latin'] })
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="df3de505-94f6-4b69-8fec-248a29587502" async></Script>
       <Script async src="https://us.umami.is/script.js" data-website-id="94cc47c5-56f6-4b2c-b05b-881b076a25de" />
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-MEK7ECJKW3" />
-      <Script>
-        {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-MEK7ECJKW3);
-          `}
-      </Script>
-      <Script>
-        {`(function(w, d, s, l, i) {
-        w[l] = w[l] || []
-        w[l].push({
-          'gtm.start':
-            new Date().getTime(), event: 'gtm.js',
-        })
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''
-        j.async = true
-        j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl
-        f.parentNode.insertBefore(j, f)
-      })(window, document, 'script', 'dataLayer', 'GTM-W7FF9K85')`}
-        ;
-      </Script>
       <head>
         <meta charSet="utf-8" />
         <meta name="robots" content="index, follow" />
