@@ -14,7 +14,7 @@
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
     "@mapbox/polyline": "^1.2.1",
-    "@prisma/client": "^5.10.1",
+    "@prisma/client": "^5.10.2",
     "@radix-ui/colors": "^3.0.0",
     "@radix-ui/react-avatar": "^1.0.4",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
