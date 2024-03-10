@@ -1,16 +1,16 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import './globals.css'
 
 import Script from 'next/script'
 
-import { cn } from '@/lib/utils'
 import clsx from 'clsx'
 import { Provider } from 'react-redux'
 
 import { store } from '@/redux/store/store'
 
+import Image from 'next/image'
 import { Inter } from 'next/font/google'
 
 import { Toaster } from 'sonner'
@@ -21,9 +21,23 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Header } from '@/components/ui/header/Header'
 import { ThemeProvider } from '@/components/provider/theme-provider'
 
+import Confetti from 'react-confetti'
+import RamadanImage from '@/images/ramadan.png'
+import RamadanImage2 from '@/images/ramadan2.png'
+
 const font = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const [runConfetti, setRunConfetti] = useState(true)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setRunConfetti(false)
+    }, 10000)
+
+    return () => clearTimeout(timer)
+  }, [])
+
   return (
     <html lang="en" suppressHydrationWarning>
       <Script async src="https://us.umami.is/script.js" data-website-id="94cc47c5-56f6-4b2c-b05b-881b076a25de" />
@@ -48,6 +62,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={clsx(font.className, 'antialiased bg-white dark:bg-black text-primary width-full')}>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <Image src={RamadanImage} alt={'RamadanImage'} width={500} height={500} className={'!w-[150px] bg-cover fixed z-[99999999999] max-sm:hidden'} />
+          <Image src={RamadanImage2} alt={'RamadanImage2'} width={300} height={300} className={'!w-[80px] bg-cover right-3 fixed z-[99999999999] max-sm:hidden'} />
+          {runConfetti && <Confetti className={'!overflow-hidden !z-[99999999999]'} numberOfPieces={300} width={5000} height={1000} />}
           <Provider store={store}>
             <Header />
             {children}
