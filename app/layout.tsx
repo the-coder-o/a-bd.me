@@ -64,7 +64,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Image src={RamadanImage} alt={'RamadanImage'} width={500} height={500} className={'!w-[150px] bg-cover fixed z-[99999999999] max-sm:hidden'} />
           <Image src={RamadanImage2} alt={'RamadanImage2'} width={300} height={300} className={'!w-[80px] bg-cover right-3 fixed z-[99999999999] max-sm:hidden'} />
-          {runConfetti && <Confetti className={'!overflow-hidden !z-[99999999999]'} numberOfPieces={300} width={5000} height={1000} />}
+          <div className={'max-md:hidden'}>{runConfetti && <Confetti className={'!overflow-hidden !z-[99999999999]'} numberOfPieces={300} width={5000} height={1000} />}</div>
           <Provider store={store}>
             <Header />
             {children}
