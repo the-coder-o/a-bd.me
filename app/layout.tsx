@@ -29,8 +29,11 @@ const font = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const [runConfetti, setRunConfetti] = useState(true)
+  const [confettiSize, setConfettiSize] = useState({ width: 0, height: 0 })
 
   useEffect(() => {
+    setConfettiSize({ width: window.innerWidth, height: window.innerHeight })
+
     const timer = setTimeout(() => {
       setRunConfetti(false)
     }, 10000)
@@ -64,7 +67,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Image src={RamadanImage} alt={'RamadanImage'} width={500} height={500} className={'!w-[150px] bg-cover fixed z-[99999999999] max-sm:hidden'} />
           <Image src={RamadanImage2} alt={'RamadanImage2'} width={300} height={300} className={'!w-[80px] bg-cover right-3 fixed z-[99999999999] max-sm:hidden'} />
-          <div className={''}>{runConfetti && <Confetti className={'!overflow-hidden'} numberOfPieces={400} width={window.innerWidth} height={window.innerHeight} />}</div>
+          {runConfetti && <Confetti className="!overflow-hidden" numberOfPieces={400} width={confettiSize.width} height={confettiSize.height} />}
           <Provider store={store}>
             <Header />
             {children}
