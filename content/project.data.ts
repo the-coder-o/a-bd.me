@@ -89,11 +89,33 @@ export const ProjectData = [
       },
       {
         image: 'https://i.ibb.co/MZTL5VB/Discord-Your-place-for-communication-and-relaxation-Google-Chrome-13-12-2023-17-38-49.png',
-        description:
-          'After authentication you get your account settings page. In this page you can change your email or delete email, You can see other providers and delete the providers. You can update your name,email and adding avatar.',
+        description: 'After authentication you get your account settings page. In this page you can change your email or delete email, You can see other providers and delete the providers. You can update your name,email and adding avatar.',
       },
     ],
     tags: ['NextJs 14', 'TypeScript', 'Prisma', 'Clerk', 'Zustand', 'Uploadthing', 'TailwindCss', 'Socket.io', 'Shadcn.ui', 'LiveKit'],
+  },
+  {
+    slug: 'one-place-for-all-your-links',
+    year: '2024',
+    demoUrl: 'https://linkvertex.a-bd.me/',
+    title: 'Linkvertex.io',
+    homeImg: 'https://i.ibb.co/hZd9Nw6/Screenshot-2024-03-16-at-20-17-35.png',
+    description: 'Consolidate countless links into one masterful page, the ultimate link to dominate them all. Simplify your digital life by organizing your myriad connections on a single, aesthetically pleasing webpage with ease.\n',
+    images: [
+      {
+        image: 'https://i.ibb.co/99V23B0/Screenshot-2024-03-16-at-20-17-05.png',
+        description: "A 'Sign in' page with social media sign-in options, an email address entry, a 'Continue' button, and a note stating the site is under development and will be available after completion of UI and backend work.\n" + '\n' + '\n' + '\n' + '\n' + '\n',
+      },
+      {
+        image: 'https://i.ibb.co/zbWcTfD/Screenshot-2024-03-16-at-20-17-43.png',
+        description: "An account dashboard welcomes a user named \"Zohid Saidov\" and provides menu options like 'Your Page,' 'Social Links,' 'Edit Link,' and 'Analytics,' each with an accompanying icon.\n" + '\n',
+      },
+      {
+        image: 'https://i.ibb.co/zGyz0Q8/Screenshot-2024-03-16-at-20-19-13wd.png',
+        description: "The 'Edit Links' page allows users to modify their links' titles, URLs, and descriptions. Options for SEO, themes, and subscribers are visible, along with a preview of how a user's page might appear.\n" + '\n',
+      },
+    ],
+    tags: ['React.js', 'Next.js', 'JavaScript', 'shadcn/ui', 'TypeScript', 'TailwindCss', 'Zustand', 'SEO-optimize', 'redux', 'clerk-authentication', 'prisma', 'redix'],
   },
   {
     slug: 'online-movie-store',
@@ -121,8 +143,7 @@ export const ProjectData = [
       },
       {
         image: 'https://i.ibb.co/VqYD2W5/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-16-00-39.png',
-        description:
-          'You can click all of the cards and you can see single modal,you can watch trailer of the movies,if you liked this movie, you can save movie for your movies list,you can see description about movies...',
+        description: 'You can click all of the cards and you can see single modal,you can watch trailer of the movies,if you liked this movie, you can save movie for your movies list,you can see description about movies...',
       },
       {
         image: 'https://i.ibb.co/CQN9L8Z/VUMOO-Subscription-abdulbosifreferfeferftsharipovv-gmail-com-Google-Chrome-15-12-2023-16-01-18.png',
@@ -139,41 +160,4 @@ export const ProjectData = [
     ],
     tags: ['NextJs 13', 'TypeScript', 'TailwindCss', 'Firebase', 'Formik', 'Joi', 'Yup', 'Zustand'],
   },
-  // {
-  //   slug: 'online-game-store-app',
-  //   year: '2021',
-  //   demoUrl: 'https://gameshops.netlify.app/',
-  //   title: 'Game Store App',
-  //   homeImg: 'https://i.ibb.co/LJXpB3Y/Download-Games-com-Google-Chrome-17-12-2023-22-30-03.png',
-  //   description:
-  //     'I did this project when i started first time. I used these project html,css and javascript. I spent this project creative design and creative slider. In this project you can see some games and you have ability download games',
-  //   images: [
-  //     {
-  //       image: 'https://i.ibb.co/LJXpB3Y/Download-Games-com-Google-Chrome-17-12-2023-22-30-03.png',
-  //       description: 'This is home page,you can see new news about store and you can see top games. and you can also download games.',
-  //     },
-  //     {
-  //       image: 'https://i.ibb.co/D12FCzJ/Download-Games-com-Google-Chrome-17-12-2023-22-30-14.png',
-  //       description: '',
-  //     },
-  //     {
-  //       image: 'https://i.ibb.co/QmT7rRr/Download-Games-com-Google-Chrome-17-12-2023-22-29-39.png',
-  //       description:
-  //         'This is single page of the games, you can watch about the game and you can see screenshots about the game and you can download for windows,ios and android. You can ride about the game.',
-  //     },
-  //     {
-  //       image: 'https://i.ibb.co/YNb5Gyp/Download-Games-com-Google-Chrome-17-12-2023-22-29-45.png',
-  //       description: '',
-  //     },
-  //     {
-  //       image: 'https://i.ibb.co/r7xwBzP/Download-Games-com-Google-Chrome-17-12-2023-22-30-27.png',
-  //       description: '',
-  //     },
-  //     {
-  //       image: 'https://i.ibb.co/BqF0nDk/Download-Games-com-Google-Chrome-17-12-2023-22-30-50.png',
-  //       description: '',
-  //     },
-  //   ],
-  //   tags: ['Html', 'Css', 'JavaScript', 'Swiper', 'BubbleJs'],
-  // },
 ]
