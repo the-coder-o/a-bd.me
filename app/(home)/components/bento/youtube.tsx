@@ -18,16 +18,16 @@ export default async function YouTube() {
       </div>
       <div className="grid w-full grid-cols-2 grid-rows-2 gap-3">
         <Link className="relative col-span-1 row-span-1" href={'https://youtu.be/j68U1wBplk8'}>
-          <Image src={'https://miro.medium.com/v2/resize:fit:1400/1*2adoEiRUwCyLA66ev4mrgg.png'} fill={true} alt="thumbnail" className="rounded-lg border border-secondary object-cover hover:opacity-75" />
+          <Image src={'https://i.ibb.co/nCvSB1g/photo-2024-01-10-17-32-18.jpg'} fill={true} alt="thumbnail" className="rounded-lg border border-secondary object-cover hover:opacity-75" />
         </Link>
         <Link className="relative col-span-1 row-span-1" href={'https://youtu.be/53KFVt2GRkE'}>
-          <Image src={'https://miro.medium.com/v2/resize:fit:1400/1*2adoEiRUwCyLA66ev4mrgg.png'} fill={true} alt="thumbnail" className="rounded-lg border border-secondary object-cover hover:opacity-75" />
+          <Image src={'https://content.gallup.com/origin/gallupinc/GallupSpaces/Production/Cms/POLL/ycxhg2aymuorqsgmitgfhg.jpg'} fill={true} alt="thumbnail" className="rounded-lg border border-secondary object-cover hover:opacity-75" />
         </Link>
         <Link className="relative col-span-1 row-span-1" href={'https://youtu.be/mH4Fs1Pxomo'}>
-          <Image src={'https://miro.medium.com/v2/resize:fit:1400/1*2adoEiRUwCyLA66ev4mrgg.png'} fill={true} alt="thumbnail" className="rounded-lg border border-secondary object-cover hover:opacity-75" />
+          <Image src={'https://i.ibb.co/C8VqBHH/DALL-E-2024-02-17-20-35-23-Illustrate-a-serene-and-productive-home-office-setting-where-a-person-is.webp'} fill={true} alt="thumbnail" className="rounded-lg border border-secondary object-cover hover:opacity-75" />
         </Link>
         <Link className="relative col-span-1 row-span-1" href={'https://youtu.be/BlB5wovFmjc'}>
-          <Image src={'https://miro.medium.com/v2/resize:fit:1400/1*2adoEiRUwCyLA66ev4mrgg.png'} fill={true} alt="thumbnail" className="rounded-lg border border-secondary object-cover hover:opacity-75" />
+          <Image src={'https://www.b-r.io/_next/image?url=%2Fblog%2Ftailwind%2Fimage.png&w=750&q=100'} fill={true} alt="thumbnail" className="rounded-lg border border-secondary object-cover hover:opacity-75" />
         </Link>
       </div>
     </Card>
