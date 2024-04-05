@@ -1,4 +1,14 @@
+import React from 'react'
+
 import { Metadata } from 'next'
+import dynamic from 'next/dynamic'
+
+import Cards from '@/app/(home)/components/bento/card'
+
+const HomeMain = dynamic(() => import('@/app/(home)/components/home-main'))
+const HomeLinks = dynamic(() => import('@/app/(home)/components/home-links'))
+const HomeAboutMe = dynamic(() => import('@/app/(home)/components/home-aboutme'))
+const HomeLatestPosts = dynamic(() => import('@/app/(home)/components/home-latest-posts'))
 
 export const metadata: Metadata = {
   title: 'Home | Abdul Basit',
@@ -13,25 +23,21 @@ export const metadata: Metadata = {
   },
 }
 
-import React from 'react'
-import dynamic from 'next/dynamic'
-import Link from 'next/link'
-
-const HomeMain = dynamic(() => import('@/app/(home)/components/home-main'))
-const HomeLinks = dynamic(() => import('@/app/(home)/components/home-links'))
-const HomeAboutMe = dynamic(() => import('@/app/(home)/components/home-aboutme'))
-const HomeLatestPosts = dynamic(() => import('@/app/(home)/components/home-latest-posts'))
-
 export default function Home() {
   return (
     <main className="container pb-[180px]">
       <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7FF9K85" height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe>
       </noscript>
-      <div className="pt-[9rem] max-md:pt-[8rem] flex flex-col gap-8">
-        <HomeMain />
-        <HomeLinks />
-        <HomeAboutMe />
+      <div className="pt-[9rem] max-md:pt-[8rem] flex flex-col gap-24">
+        <div className={'flex flex-col gap-8'}>
+          <HomeLinks />
+          <div>
+            <HomeMain />
+            <HomeAboutMe />
+          </div>
+        </div>
+        <Cards />
       </div>
       <HomeLatestPosts />
     </main>
