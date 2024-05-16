@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="44dc7595-80b0-45fb-a4de-54111fe5388f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/_hooks/useinterval.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/_hooks/useismount.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/_utils/fetcher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/_utils/formatDate.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/_utils/postFormatting.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/about/components/Gallery.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/about/components/Workplaces.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/github/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/og/route.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/blog/components/Image.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/blog/components/Input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/blog/components/MdxWrapper.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/blog/components/NewsletterSignupForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/blog/components/PageTitle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/blog/components/Post.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/blog/components/PostList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/blog/components/mdx/Alert.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/blog/components/mdx/LinkPreview.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/blog/components/mdx/SeriesCollapsible.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/blog/components/mdx/Weather.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/blog/components/mdx/WeatherList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/community/[topic]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/community/components/Form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/community/components/Post.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/community/components/Topics.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/community/components/User.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/community/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/community/loading.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/community/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/ConnectLinks.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/FlipNumber.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/Navigation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/Section.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/Tags.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/ThemeProvider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/ThemeSwitcher.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/bento/BentoGrid.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/bento/CardTemplate.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/bento/Github.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/bento/Instagram.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/bento/Map.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/bento/Youtube.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/ui/Avatar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/ui/Halo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/ui/Link.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/ui/NavLink.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/craft/[slug]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/craft/components/CreditCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/craft/components/MdxWrapper.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/craft/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/db/actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/db/queries.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mediakit/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/projects/[slug]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/projects/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/blog/covid.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/blog/desk.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/blog/hines.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/blog/maps.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/blog/microsoft-hackathon.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/blog/tailwind.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/craft/card-reveal.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/craft/carousel.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/project/covid.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/project/hines.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/project/medium.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contentlayer.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prettier.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/7-tools/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/7-tools/thumbnail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/covid/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/covid/phones.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/desk/DSC00150.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/desk/DSC00160.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/desk/DSC00166.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/desk/DSC_3253.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/desk/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/desk/thumbnail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/hines/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/maps/nyc-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/maps/nyc-light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/microsoft-hackathon/image-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/microsoft-hackathon/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/microsoft-hackathon/mockup-clear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/microsoft-hackathon/mockup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/microsoft-hackathon/tech.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/tailwind/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/blog/tailwind/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/colorado.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/cowboy-bike.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/me-lily.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gallery/texas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gear/akiflow.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gear/cables.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gear/copilot.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gear/dex.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gear/epidemic-sound.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gear/keeb.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gear/macrofactor.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gear/shelf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gear/superhuman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gear/sway.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo/android-chrome-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo/android-chrome-512x512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo/site.webmanifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/next.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/og-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/prism/one-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/covid/floating.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/covid/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/covid/phones.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/covid/tablet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/hines/cover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/hines/dashboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/hines/design.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/hines/form.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/hines/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/hines/iso.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/hines/list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/hines/login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/hines/nav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/hines/table.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/medium/dark computer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/medium/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/medium/light computer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/medium/og.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/medium/phones.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/projects/medium/tablet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vercel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/work/cams-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/work/hines-logo.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/work/periship-logo.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/work/uhd-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/work/uhd.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/my-blog.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SECURITY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(home)/components/bento/card-template.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(home)/components/bento/card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(home)/components/bento/github.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(home)/components/bento/gumboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/bento/Gumroad.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(home)/components/bento/instagram.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(home)/components/bento/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(home)/components/bento/youtube.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(home)/components/flip-number.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(home)/components/home-aboutme.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(home)/components/home-latest-posts.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(home)/components/home-links.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(home)/components/home-main.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(home)/components/stats.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(home)/latest-blogs.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(home)/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about/component/about-location.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about/component/about-main.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about/component/about-me.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about/component/about-work.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about/component/about.contact.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about/component/about.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about/component/mobile-design.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/entries/route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/site.xml.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/subscribe/route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/[slug]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/components/blog-item.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/components/blog-likes-btn.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/components/blog-main.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/components/ui/SignUpFrom.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/book/components/analytics-book/analytics.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/book/components/analytics-website/analytics-website.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/book/components/book/about-book.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/book/components/book/books.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/book/components/date/analytics-date.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/book/components/ui/chip.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/book/components/ui/gradients.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/book/components/ui/progress-bar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/book/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/gear/components/gear-app.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/gear/components/gear-apple.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/gear/components/gear-camera.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/gear/components/gear-home-desk.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/gear/components/gear-main.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/gear/components/gear-website.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/gear/components/general-gears-component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/gear/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/gear/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/guestbook/components/guestbook.main.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/guestbook/components/guestbook/guestbook-form.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/guestbook/components/guestbook/guestbook-item.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/guestbook/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/link/component/link-item.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/link/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/not-found.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/not-found.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/project/[slug]/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/project/component/project-item.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/project/component/project-main.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/project/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sitemap.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/mode-toggle.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/provider/theme-provider.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/Halo.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/Link.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/alert.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/avatar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/dropdown-menu.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/gallery.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/header/Header.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/header/components/header-desktop.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/header/components/header-mobile.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/input.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/progress.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/textarea.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/tooltip.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/blog-image.data.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/blog.data.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/book.data.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/project.data.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hooks/use-mouse-position.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/_hooks/usemouseposition.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hooks/useismount.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/nestjs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ramadan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ramadan2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/reacts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/about-me.data.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/gears.data.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/header.data.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/link.data.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/db.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/locales/EN/en.local.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/locales/RU/ru.local.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/locales/UZ/uz.local.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/coffee/Buy_me_a_coffee_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/coffee/buymeacoffee.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/coffee/giphy.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/gif/output-onlinegiftools.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo/logo-dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo/logo-light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/rocket/rocket.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/slice/message-slice.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/slice/subscribe-slice.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/store/store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/renovate.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;the-coder-o&quot;
+  }
+}</component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1715842797" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$/b-r.io-main" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Hacker00002/blog-portfolio.git&quot;,
+    &quot;accountId&quot;: &quot;eb4916ca-b5d1-4759-99b4-18e167680bf4&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2gXSXY1r1vFobUlomsgM8fAHRns" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\Abdulbosit\\Desktop\\a-bd.me-main\\b-r.io-main\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-2e7d6887c066-JavaScript-WS-241.15989.47" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="44dc7595-80b0-45fb-a4de-54111fe5388f" name="Changes" comment="" />
+      <created>1715842470427</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715842470427</updated>
+      <workItem from="1715842474262" duration="475000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
