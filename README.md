@@ -7,12 +7,13 @@ My personal portfolio website designed to be simplistic and clean while includin
 ## Tech Stack
 
 backend:
+
 - [Next.js](nextjs.org) / TypeScript
 - [MDX](https://mdxjs.com) / [Contentlayer](https://contentlayer.dev/) (Blog Posts)
-- [PlanetScale](http://planetscale.com) (Database)
-- [Prisma](https://www.prisma.io) (ORM)
+- [Vercel Postgres](https://vercel.com/storage/postgres) (Database)
 
 frontend:
+
 - [Tailwind CSS](https://tailwindcss.com) (Styling)
 - [Radix Primitives](https://www.radix-ui.com/primitives) (Headless UI components)
 - [Radix UI Colors](https://www.radix-ui.com/colors) (Color system)
@@ -25,14 +26,55 @@ Make sure you have Node.js v18.17.0+ installed on your machine.
 1. **Install Dependencies**: `npm install`
 2. **Environment variables**: Copy `.env.example` to a new `.env.local`
 3. **Database Setup**: See [Database Setup](#database-setup)
-4. **Prisma Setup**: `npm install @prisma/client` (if you haven't already), then run `npx prisma generate`.
-5. **Start Developing**: `npm run dev`, this will automatically create the .contentlayer files and start the Next.js development server.
+4. **Start Developing**: `npm run dev`, this will automatically create the .contentlayer files and start the Next.js development server.
 
 ## Database Setup
 
-- Sign up for a PlanetScale account
-- Create a new database in PlanetScale
-- Update the DATABASE_URL environment variable in your project's `.env.local` file with the connection string provided by PlanetScale
+- Vercel Postgres
+  https://vercel.com/docs/storage/vercel-postgres/quickstart
+
+```sql
+-- Create blog views table
+CREATE TABLE IF NOT EXISTS blog_views (
+    slug VARCHAR(255) PRIMARY KEY,
+    count INT DEFAULT 0
+)
+```
+
+```sql
+-- crete topics table
+CREATE TABLE topics (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
+)
+
+-- Create CommunityPosts table
+CREATE TABLE community_posts (
+    id SERIAL PRIMARY KEY,
+    content TEXT NOT NULL,
+    clerk_user_id VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+    topic_id INTEGER REFERENCES Topics(id)
+)
+
+-- Create reactions table
+CREATE TABLE reactions (
+    id SERIAL PRIMARY KEY,
+    post_id INTEGER REFERENCES community_posts(id),
+    clerk_user_id VARCHAR(255) NOT NULL,
+    emoji VARCHAR(255) NOT NULL
+)
+
+-- Create replies table, for community_posts
+CREATE TABLE replies (
+    id SERIAL PRIMARY KEY,
+    content TEXT NOT NULL,
+    clerk_user_id VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+    post_id INTEGER REFERENCES CommunityPosts(id)
+)
+
+```
 
 ## Deployment
 

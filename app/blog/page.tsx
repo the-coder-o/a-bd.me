@@ -1,71 +1,53 @@
-'use client'
+import { Metadata } from "next";
+import { allBlogs } from ".contentlayer/generated";
+import PostList from "./components/PostList";
+import NewsletterSignupForm from "./components/NewsletterSignupForm";
 
-import React from 'react'
+export const metadata: Metadata = {
+  title: "Blog | Brian Ruiz",
+  description:
+    "I write about programming, design, and occasionally life updates!",
+  openGraph: {
+    title: "Blog | Brian Ruiz",
+    description:
+      "I write about programming, design, and occasionally life updates!",
+    type: "website",
+    url: "https://b-r.io/blog/Blog",
+    images: [{ url: "https://b-r.io/api/og?title=Blog", alt: "Blog" }],
+  },
+};
 
-import { NextSeo } from 'next-seo'
+export default function BlogPage() {
+  const blogs = allBlogs.sort(
+    (a, b) =>
+      new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
+  );
 
-import Halo from '@/components/ui/Halo'
-import BlogItem from '@/app/blog/components/blog-item'
-import BlogMain from '@/app/blog/components/blog-main'
-import SignUpFrom from '@/app/blog/components/ui/SignUpFrom'
-
-const BlogPage: React.FC = () => {
   return (
-    <>
-      <NextSeo
-        title="Blog | Abdul Basit"
-        description="I write about programming, design, and occasionally life updates!"
-        canonical="https://a-bd.me/blog"
-        openGraph={{
-          url: 'https://a-bd.me/blog',
-          title: 'Interesting Blogs...',
-          description: 'I write about programming, design, and occasionally life updates!',
-          images: [
-            {
-              url: 'https://opengraph.b-cdn.net/production/documents/0a0926f1-2adc-4cc9-b2ce-82458eea1368.jpg?token=Sth5htvy1OqzIhZfzP5iJ6pPzhbTJEAIMpsqvP5Xj0g&height=640&width=640&expires=33243406322',
-              width: 640,
-              height: 640,
-              alt: 'Og Image Alt',
-            },
-          ],
-          site_name: 'Abdul Basit Blog',
-        }}
-        twitter={{
-          handle: '@handle',
-          site: '@site',
-          cardType: 'summary',
-        }}
-      />
-      <meta charSet="utf-8" />
-      <meta name="keywords" content="Abdul Basit Blog's" />
-      <meta name="robots" content="index, follow" />
-      <meta property="og:url" content="https://a-bd.me/blog" />
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content="Interesting Blogs..." />
-      <meta property="description" content="I write about programming, design, and occasionally life updates!" />
-      <meta property="og:description" content="I write about programming, design, and occasionally life updates!" />
-      <meta property="og:image" content="https://opengraph.b-cdn.net/production/documents/0a0926f1-2adc-4cc9-b2ce-82458eea1368.jpg?token=Sth5htvy1OqzIhZfzP5iJ6pPzhbTJEAIMpsqvP5Xj0g&height=640&width=640&expires=33243406322" />
-      <meta name="twitter:card" content="summary" />
-      <meta property="twitter:domain" content="www.a-bd.me" />
-      <meta property="twitter:url" content="https://a-bd.me/blog" />
-      <meta name="twitter:title" content="Interesting Blogs..." />
-      <meta name="twitter:description" content="I write about programming, design, and occasionally life updates!" />
-      <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/documents/0a0926f1-2adc-4cc9-b2ce-82458eea1368.jpg?token=Sth5htvy1OqzIhZfzP5iJ6pPzhbTJEAIMpsqvP5Xj0g&height=640&width=640&expires=33243406322" />
-      <link rel="canonical" href="https://a-bd.me/blog" />
-      <head>
-        <title>Blog | Abdul Basit</title>
-      </head>
-      <main className="container pt-[9rem] max-md:pt-[8rem] pb-28">
-        <section className="flex flex-col gap-16 md:gap-24">
-          <BlogMain />
-          <BlogItem />
-          <Halo strength={6}>
-            <SignUpFrom />
-          </Halo>
-        </section>
-      </main>
-    </>
-  )
+    <div className="flex flex-col gap-16 md:gap-24">
+      <div className="flex flex-col gap-8">
+        <div>
+          <h1 className="animate-in text-3xl font-bold tracking-tight">Blog</h1>
+          <p
+            className="animate-in text-secondary"
+            style={{ "--index": 1 } as React.CSSProperties}
+          >
+            {blogs.length} posts so far. Stay tuned for more!
+          </p>
+        </div>
+      </div>
+      <div
+        className="animate-in"
+        style={{ "--index": 2 } as React.CSSProperties}
+      >
+        <PostList posts={blogs} />
+      </div>
+      <div
+        className="animate-in"
+        style={{ "--index": 3 } as React.CSSProperties}
+      >
+        <NewsletterSignupForm />
+      </div>
+    </div>
+  );
 }
-
-export default BlogPage

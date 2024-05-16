@@ -1,18 +1,23 @@
-'use client'
+import Link from "@/app/components/ui/Link";
+import { Metadata } from "next";
 
-import Image from 'next/image'
+export const metadata: Metadata = {
+  title: "404 | Brian Ruiz",
+  description: "Uh oh! This page does not exist",
+};
 
-export default function NotFound() {
-  return (
-    <div className={'container pt-28'}>
-      <div className={'flex flex-col items-center justify-center'}>
-        <Image width={350} height={350} className={'!w-[350px]'} src={'https://i.ibb.co/wrs5xq5/97394032381b4f5c5839bac9f4a9553f-removebg-preview.png'} alt={'ComingSoonIcon'} />
-        <div>
-          <p className={'text-center text-[15px] max-md:text-[14px]'}>
-            Uh oh! Page does not exists, This page coming soon, You may see this page soon... Uh oh! This page does not exists, maybe you clicked an old link or misspelled. Please try again… 💤
-          </p>
-        </div>
-      </div>
-    </div>
-  )
-}
+const Custom404 = (): JSX.Element => (
+  <div className="flex flex-col gap-2">
+    <h1 className="text-3xl font-bold tracking-tight text-primary">404</h1>
+    <p className="text-secondary">
+      Uh oh! This page does not exists, maybe you clicked an old link or
+      misspelled. Please try again…
+    </p>
+    <div className="h-2" />
+    <Link href="/" underline>
+      Return home
+    </Link>
+  </div>
+);
+
+export default Custom404;

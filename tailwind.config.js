@@ -2,11 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -16,61 +16,51 @@ module.exports = {
       },
     },
     extend: {
-      colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
+      fontFamily: {
+        sans: ['var(--font-geist-sans)'],
+        mono: ['var(--font-geist-mono)'],
       },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+      textColor: {
+        primary: "var(--gray-12)",
+        secondary: "var(--gray-11)",
+        tertiary: "var(--gray-9)",
+        link: "var(--blue-10)",
+      },
+      backgroundColor: {
+        contrast: "var(--contrast-color)",
+        primary: "var(--gray-1)",
+        secondary: "var(--gray-2)",
+        tertiary: "var(--gray-3)",
+      },
+      borderColor: {
+        primary: "var(--gray-6)",
+        secondary: "var(--gray-3)",
+      },
+      divideColor: {
+        primary: "var(--gray-6)",
+        secondary: "var(--gray-3)",
+      },
+      ringOffsetColor: {
+        primary: "var(--gray-12)",
+      },
+      boxShadow: {
+        soft: "0 15px 30px 0 rgba(0, 0, 0, 0.04)",
       },
       keyframes: {
-        "accordion-down": {
-          from: { height: 0 },
-          to: { height: "var(--radix-accordion-content-height)" },
+        in: {
+          "0%": { transform: "translateY(18px)", opacity: 0 },
+          "100%": { transform: "translateY(0)", opacity: 1 },
         },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
+        "in-reverse": {
+          "0%": { transform: "translateY(-18px)", opacity: 0 },
+          "100%": { transform: "translateY(0px)", opacity: 1 },
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        in: "in .6s both",
+        "in-reverse": "in-reverse .6s both",
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-}
+  plugins: [require("@tailwindcss/typography")],
+};
