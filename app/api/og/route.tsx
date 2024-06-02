@@ -1,22 +1,21 @@
-import { ImageResponse } from 'next/server';
-import { NextRequest } from 'next/server';
+import { ImageResponse } from "next/server";
+import { NextRequest } from "next/server";
 
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl;
-  const postTitle = searchParams.get('title');
- 
+  const postTitle = searchParams.get("title");
 
   return new ImageResponse(
     (
       <div
         style={{
-          height: '100%',
-          width: '100%',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'flex-start',
-          justifyContent: 'center',
-          backgroundImage: 'url(https://b-r.io/og-bg.png)',
+          height: "100%",
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-start",
+          justifyContent: "center",
+          backgroundImage: "url(https://i.ibb.co/9r0VmHw/Abdul-Basit.png)",
         }}
       >
         <div
@@ -24,13 +23,13 @@ export async function GET(req: NextRequest) {
             marginLeft: 205,
             marginRight: 205,
             marginBottom: 205,
-            display: 'flex',
+            display: "flex",
             fontSize: 105,
-            letterSpacing: '-0.025em',
-            fontStyle: 'normal',
-            color: 'white',
-            lineHeight: '110px',
-            whiteSpace: 'pre-wrap',
+            letterSpacing: "-0.025em",
+            fontStyle: "normal",
+            color: "white",
+            lineHeight: "110px",
+            whiteSpace: "pre-wrap",
           }}
         >
           {postTitle}
@@ -40,6 +39,6 @@ export async function GET(req: NextRequest) {
     {
       width: 1920,
       height: 1080,
-    }
+    },
   );
 }
