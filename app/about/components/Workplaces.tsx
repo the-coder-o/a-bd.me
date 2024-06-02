@@ -2,18 +2,17 @@
 import Image, { StaticImageData } from "next/image";
 import clsx from "clsx";
 
-import Link from "@/app/components/ui/Link";
+import Link from "@/app/components/Link";
 
 type Workplace = {
   title: string;
   company: string;
   imageSrc: string | StaticImageData;
-  time?: string;
+  date?: string;
   link?: string;
 };
 
-function Workplace({ title, company, imageSrc, time, link }: Workplace) {
-
+function Workplace({ title, company, imageSrc, date, link }: Workplace) {
   const content = (
     <>
       <div className="flex items-center gap-4">
@@ -24,7 +23,7 @@ function Workplace({ title, company, imageSrc, time, link }: Workplace) {
           height={48}
           className={clsx(
             "rounded-full",
-            company === "University of Houston" && "bg-neutral-50"
+            company === "University of Houston" && "bg-neutral-50",
           )}
         />
         <div className="flex flex-col gap-px">
@@ -32,7 +31,7 @@ function Workplace({ title, company, imageSrc, time, link }: Workplace) {
           <p className="text-secondary">{company}</p>
         </div>
       </div>
-      {time && <time className="text-secondary">{time}</time>}
+      {date && <time className="text-secondary">{date}</time>}
     </>
   );
   return (
@@ -40,7 +39,7 @@ function Workplace({ title, company, imageSrc, time, link }: Workplace) {
       {link ? (
         <Link
           href={link}
-          className="flex justify-between w-full px-3 py-2 -mx-3 -my-2 no-underline"
+          className="-mx-3 -my-2 flex w-full justify-between px-3 py-2 no-underline"
         >
           {content}
         </Link>
@@ -53,7 +52,7 @@ function Workplace({ title, company, imageSrc, time, link }: Workplace) {
 
 export default function Workplaces({ items }: { items: Workplace[] }) {
   return (
-    <ul className="flex flex-col gap-8 animated-list">
+    <ul className="animated-list flex flex-col gap-8">
       {items.map(Workplace)}
     </ul>
   );

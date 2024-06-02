@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     "Tashkent-based Software Engineer and a Content Creator, sharing insights on well-designed products and technology advancements.",
   openGraph: {
     title: "Abdul Basit",
-    url: "https://a-bd.me/",
-    images: [{ url: "https://b-r.io/api/og?title=B-R.io", alt: "a-bd.me" }],
+    url: "https://a-bd-me/",
+    images: [{ url: "https://b-r.io/api/og?title=B-R.io", alt: "b-r.io" }],
   },
 };
 
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
-        <body className="width-full bg-white text-primary antialiased dark:bg-black">
+        <body className="width-full bg-contrast text-primary antialiased dark:bg-primary">
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <Navigation />
             <div className="mx-auto max-w-[700px] px-6 pb-24 pt-16 md:px-6 md:pb-44 md:pt-20">

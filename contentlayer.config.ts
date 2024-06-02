@@ -43,7 +43,7 @@ export const Blog = defineDocumentType(() => ({
   fields: {
     title: { type: "string", required: true },
     summary: { type: "string", required: true },
-    publishedAt: { type: "string", required: true },
+    date: { type: "string", required: true },
     updatedAt: { type: "string", required: false },
     tags: { type: "json", required: false },
   },
@@ -68,7 +68,8 @@ export const Project = defineDocumentType(() => ({
   fields: {
     title: { type: "string", required: true },
     summary: { type: "string", required: true },
-    time: { type: "string", required: true },
+    longSummary: { type: "string", required: false },
+    date: { type: "string", required: true },
     url: { type: "string", required: false },
     tags: { type: "json", required: false },
   },
@@ -80,10 +81,6 @@ const craftComputedFields: ComputedFields = {
     type: "string",
     resolve: (doc) => getSlug(doc),
   },
-  // image: {
-  //   type: "string",
-  //   resolve: (doc) => `/craft/${getSlug(doc)}/image.png`,
-  // },
 };
 
 export const Craft = defineDocumentType(() => ({
@@ -93,7 +90,7 @@ export const Craft = defineDocumentType(() => ({
   fields: {
     title: { type: "string", required: true },
     summary: { type: "string", required: true },
-    publishedAt: { type: "string", required: true },
+    date: { type: "string", required: true },
   },
   computedFields: craftComputedFields,
 }));

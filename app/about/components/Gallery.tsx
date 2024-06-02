@@ -4,14 +4,14 @@ import { ReactNode } from "react";
 import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 import clsx from "clsx";
-import localFont from 'next/font/local'
+import localFont from "next/font/local";
 
 import texas from "public/gallery/texas.jpg";
 import meLily from "public/gallery/me-lily.jpg";
 import colorado from "public/gallery/colorado.jpg";
 import cowboy from "public/gallery/cowboy-bike.webp";
 
-import Halo from "@/app/components/ui/Halo";
+import Halo from "@/app/components/Halo";
 
 const ticketingFont = localFont({
   src: "../../../public/ticketing.woff2",
@@ -52,7 +52,7 @@ function Photo({
   const shared = "absolute h-full w-full rounded-xl overflow-hidden";
   return (
     <motion.div
-      className={`absolute mx-auto cursor-grab hover:before:block hover:before:w-[calc(100%+55px)] hover:before:h-[300px] hover:before:absolute hover:before:-top-8 hover:before:-left-7`}
+      className={`absolute mx-auto cursor-grab hover:before:absolute hover:before:-left-7 hover:before:-top-8 hover:before:block hover:before:h-[300px] hover:before:w-[calc(100%+55px)]`}
       style={{ rotate: `${rotate}deg`, left, width, height, perspective: 1000 }}
       initial={{
         width,
@@ -84,7 +84,7 @@ function Photo({
       whileHover="flipped"
     >
       <motion.div
-        className="relative w-full h-full shadow-md rounded-xl will-change-transform"
+        className="relative h-full w-full rounded-xl shadow-md will-change-transform"
         style={{ transformStyle: "preserve-3d" }}
         transition={{ type: "spring", duration: 0.4 }}
         variants={{
@@ -101,7 +101,7 @@ function Photo({
             alt={alt}
             width={width}
             height={height}
-            className="absolute inset-0 object-cover w-full h-full bg-neutral-400 pointer-events-none rounded-xl"
+            className="pointer-events-none absolute inset-0 h-full w-full rounded-xl bg-neutral-400 object-cover"
             priority
           />
           {children}
@@ -109,7 +109,7 @@ function Photo({
         <div
           className={clsx(
             shared,
-            "bg-[#FFFAF2] flex items-center rounded-xl overflow-hidden"
+            "flex items-center overflow-hidden rounded-xl bg-[#FFFAF2]",
           )}
           style={{
             backfaceVisibility: "hidden",
@@ -117,12 +117,12 @@ function Photo({
           }}
         >
           <Halo strength={50} className="flex items-center">
-            <span className="absolute w-[500px] h-[500px] rotate-[-20deg] bg-repeat bg-[length:280px] bg-[url('/photopaper.png')]" />
+            <span className="absolute h-[500px] w-[500px] rotate-[-20deg] bg-[url('/photopaper.png')] bg-[length:280px] bg-repeat" />
             <div className="z-[1] px-6">
               <div
                 className={clsx(
                   ticketingFont.className,
-                  "flex flex-col gap-1 uppercase"
+                  "flex flex-col gap-1 uppercase",
                 )}
               >
                 <p className="text-secondary">{fileName}</p>
@@ -139,9 +139,11 @@ function Photo({
 export default function Gallery() {
   return (
     <>
-      <section className="flex gap-4 h-[268px] relative">
+      <section className="relative flex h-[268px] gap-4">
         <Photo
-          src={meLily}
+          src={
+            "https://g.foolcdn.com/image/?url=https%3A//g.foolcdn.com/editorial/images/757855/an-image-of-googles-office-headquarters.jpg&w=2000&op=resize"
+          }
           meta="2021-07-12"
           alt="Brian and Lily"
           width={324}
@@ -151,7 +153,9 @@ export default function Gallery() {
           index={1}
         />
         <Photo
-          src={cowboy}
+          src={
+            "https://www.asiaplustj.info/sites/default/files/articles/276225/Dnctx9NXcAEnaeF.jpg"
+          }
           meta="2017-07-04"
           alt="my e-bike"
           width={230}
@@ -161,8 +165,10 @@ export default function Gallery() {
           index={2}
           flipDirection="left"
         />
-         <Photo
-          src={texas}
+        <Photo
+          src={
+            "https://i.pinimg.com/originals/e4/6d/3e/e46d3ef6acb4bacd06c8fe5e008e1cc1.jpg"
+          }
           meta="2021-05-20"
           alt="Texas"
           width={280}
@@ -172,7 +178,9 @@ export default function Gallery() {
           index={3}
         />
         <Photo
-          src={colorado}
+          src={
+            "https://avatars.mds.yandex.net/i?id=58198eb663dce0b9fc339966cdfebe47_l-5089284-images-thumbs&ref=rim&n=13&w=1080&h=1351"
+          }
           meta="2022-09-10"
           alt={"Snowboarding in Colorado"}
           width={220}

@@ -5,7 +5,7 @@ import { useClerk } from "@clerk/clerk-react";
 import { SignInButton } from "@clerk/nextjs";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 
-import Avatar from "@/app/components/ui/Avatar";
+import Avatar from "@/app/components/Avatar";
 
 export default function User() {
   const { isSignedIn, user } = useUser();
@@ -53,11 +53,5 @@ export default function User() {
       </>
     );
   }
-  return (
-    <SignInButton mode="modal" redirectUrl="/community">
-      <button className="rounded-md border border-secondary bg-transparent px-4 py-1.5 text-base">
-        <span>Sign in</span>
-      </button>
-    </SignInButton>
-  );
+  return <SignInButton mode="modal" redirectUrl="/community"></SignInButton>;
 }

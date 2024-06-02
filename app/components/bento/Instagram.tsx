@@ -1,5 +1,5 @@
 import Card from "@/app/components/bento/CardTemplate";
-import Link from "@/app/components/ui/Link";
+import Link from "@/app/components/Link";
 import { FaInstagram } from "react-icons/fa";
 
 export default function Instagram() {
@@ -8,15 +8,15 @@ export default function Instagram() {
       <div className="flex aspect-square h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-bl from-[#7638FA] via-[#FF006A] to-[#FED702]">
         <FaInstagram className="text-2xl text-white" />
       </div>
-      <p className="text-secondary">@bosit.xonn</p>
+      <p className="text-secondary">@brianruizy</p>
       <p className="line-clamp-2">Photos and all</p>
 
       <Link
         className="mt-auto flex w-fit items-center gap-1.5 rounded-full bg-tertiary px-4 py-1.5 text-sm no-underline"
-        href="https://instagram.com/bosit.xonn"
+        href="https://instagram.com/brianruizy"
       >
         <span className="font-medium text-primary">Follow</span>
-        <span className="text-tertiary">1k</span>
+        <span className="text-tertiary">4k</span>
       </Link>
     </Card>
   );

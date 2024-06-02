@@ -1,24 +1,30 @@
 "use client";
 
-import { FormEventHandler, useCallback, useState } from "react";
-import useSWR from "swr";
+import { FormEventHandler, useCallback, useState, useEffect } from "react";
 import clsx from "clsx";
 
-import Halo from "@/app/components/ui/Halo";
+import Halo from "@/app/components/Halo";
 import FlipNumber from "@/app/components/FlipNumber";
-import fetcher from "@/app/_utils/fetcher";
 
 export default function NewsletterSignupForm({
   contained = true,
 }: {
   contained?: boolean;
 }) {
-  const { data: subscribersData, error } = useSWR(
-    `/api/convertkit/subscribers`,
-    fetcher,
-  );
+  const [data, setData] = useState<{ subscribers: number }>();
+
   const name = "email";
   const [success, setSuccess] = useState<boolean | undefined>();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch("/api/convertkit/subscribers");
+      const data = await response.json();
+      setData(data);
+    };
+
+    fetchData();
+  }, []);
 
   const onSubmit: FormEventHandler = useCallback(async (event) => {
     event.preventDefault();
@@ -83,7 +89,7 @@ export default function NewsletterSignupForm({
         productivity, programming, and more!
       </p>
       <form className="mt-2 w-full max-w-md " onSubmit={onSubmit}>
-        <div className="flex w-full rounded-md border border-primary bg-contrast py-1.5 pl-4 pr-1.5">
+        <div className="flex w-full rounded-md border border-primary bg-contrast py-1 pl-3 pr-1">
           <label htmlFor="email" className="sr-only">
             Email
           </label>
@@ -101,7 +107,7 @@ export default function NewsletterSignupForm({
         </div>
       </form>
       <p className="text-sm text-tertiary">
-        Join the <FlipNumber>{subscribersData?.subscribers}</FlipNumber> other
+        Join the <FlipNumber>{data?.subscribers || 0}</FlipNumber> other
         readers.
       </p>
     </Card>

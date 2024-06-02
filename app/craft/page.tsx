@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { allCrafts } from ".contentlayer/generated";
 
-import Link from "@/app/components/ui/Link";
+import Link from "@/app/components/Link";
 import Section from "@/app/components/Section";
 
 export const metadata: Metadata = {
@@ -20,8 +20,7 @@ export const metadata: Metadata = {
 
 export default function CraftPage() {
   const crafts = allCrafts.sort(
-    (a, b) =>
-      new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
   );
 
   return (
@@ -37,24 +36,24 @@ export default function CraftPage() {
           >
             My UI sandbox.
           </p>
-          
         </div>
         <p
-            className="max-w-lg animate-in text-tertiary"
-            style={{ "--index": 1 } as React.CSSProperties}
-          >
-            This is a collection of UI components and designs I&apos;ve created. And really my breakable toy where I can experiment with new things.
-          </p>
+          className="max-w-md animate-in text-tertiary"
+          style={{ "--index": 2 } as React.CSSProperties}
+        >
+          This is where I experiment with UI and interaction design. I use this
+          space to explore new ideas or recreate cool things.
+        </p>
       </div>
       <ul
         className="animated-list flex animate-in flex-col"
-        style={{ "--index": 2 } as React.CSSProperties}
+        style={{ "--index": 3 } as React.CSSProperties}
       >
         {crafts.map((craft, index) => (
-          <li key={index} className="group py-3 transition-opacity">
+          <li key={index} className="group py-3 transition-opacity first:pt-0">
             <Link href={`/craft/${craft.slug}`}>
               <Section heading={craft.title} invert>
-                <p className="text-secondary">{craft.summary}</p>
+                <p className="text-pretty text-secondary">{craft.summary}</p>
               </Section>
             </Link>
           </li>

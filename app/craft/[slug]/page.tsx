@@ -20,12 +20,12 @@ export default async function Blog({ params }: { params: any }) {
             </h1>
             
             <p className="text-secondary">
-              <time dateTime={craft.publishedAt}>{craft.publishedAt}</time>
+              <time dateTime={craft.date}>{craft.date}</time>
             </p>
           </div>
         </div>
 
-        <div className="h-16" />
+        <div className="h-12" />
         <div className="prose prose-neutral text-pretty prose-headings:text-base">
           <Mdx code={craft.body.code} />
         </div>

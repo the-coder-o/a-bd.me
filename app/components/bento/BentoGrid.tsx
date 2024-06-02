@@ -1,4 +1,4 @@
-import Link from "@/app/components/ui/Link";
+import Link from "@/app/components/Link";
 import Card from "@/app/components/bento/CardTemplate";
 import Map from "@/app/components/bento/Map";
 import Gumroad from "@/app/components/bento/Gumroad";
@@ -17,9 +17,9 @@ export default function BentoGrid() {
           disableHalo
           noPadding
         >
-          <Map lng={69.2401} lat={41.2995} />
+          <Map lng={-95.36327} lat={29.76328} />
           <div className="absolute bottom-4 left-4 flex items-center rounded-lg bg-neutral-100/75 px-4 py-1.5 backdrop-blur dark:bg-neutral-900/75 md:bottom-6 md:left-6">
-            <p className="text-sm font-medium text-primary">Tashkent, UZ</p>
+            <p className="text-sm font-medium text-primary">Houston, TX</p>
           </div>
         </Card>
       </div>

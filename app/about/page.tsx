@@ -1,24 +1,16 @@
 import Image from "next/image";
 import { Metadata } from "next";
 
-import Link from "@/app/components/ui/Link";
+import Link from "@/app/components/Link";
 import Section from "@/app/components/Section";
-import ConnectLinks from "../components/ConnectLinks";
-import Workplaces from "./components/Workplaces";
-import Gallery from "./components/Gallery";
-
-import hinesLogo from "public/work/hines-logo.jpeg";
-import perishipLogo from "public/work/periship-logo.jpeg";
-import camsLogo from "public/work/cams-logo.png";
-import uhdLogo from "public/work/uhd.png";
-
-import meLily from "public/gallery/me-lily.jpg";
-import colorado from "public/gallery/colorado.jpg";
+import ConnectLinks from "@/app/components/ConnectLinks";
+import Workplaces from "@/app/about/components/Workplaces";
+import Gallery from "@/app/about/components/Gallery";
 
 export const metadata: Metadata = {
-  title: "About | Brian Ruiz",
+  title: "About | Abdul Basit",
   description:
-    "Houston-based Software Engineer and a Content Creator, sharing insights on well-designed products and technology advancements.",
+    "Tashkent-based Software Engineer and a Content Creator, sharing insights on well-designed products and technology advancements.",
 };
 
 export default function About() {
@@ -41,7 +33,9 @@ export default function About() {
           style={{ "--index": 1 } as React.CSSProperties}
         >
           <Image
-            src={meLily}
+            src={
+              "https://g.foolcdn.com/image/?url=https%3A//g.foolcdn.com/editorial/images/757855/an-image-of-googles-office-headquarters.jpg&w=2000&op=resize"
+            }
             alt={"me and lily"}
             width={324}
             height={139}
@@ -55,7 +49,9 @@ export default function About() {
           style={{ "--index": 2 } as React.CSSProperties}
         >
           <Image
-            src={colorado}
+            src={
+              "https://www.asiaplustj.info/sites/default/files/articles/276225/Dnctx9NXcAEnaeF.jpg"
+            }
             alt={"me and lily"}
             width={220}
             height={260}
@@ -74,16 +70,16 @@ export default function About() {
         <Section heading="About" headingAlignment="left">
           <div className="flex flex-col gap-6">
             <p>
-              Hi, I&apos;m Brian, born in Honduras and raised in
-              Houston, Texas. I have been coding for{" "}
-              {new Date().getFullYear() - 2019} years. As a software engineer, I
+              Hi, I&apos;m AbdulBasit, born in Uzbekistan and raised in
+              Tashkent, Texas. I have been coding for{" "}
+              {new Date().getFullYear() - 2022} years. As a software engineer, I
               specialize in full-stack web development and product design.
             </p>
             <p>
               In addition to coding, I create content on my{" "}
               <Link
                 className="underline"
-                href="https://www.youtube.com/@brianruizy"
+                href="https://www.youtube.com/@the_coder_o"
               >
                 YouTube
               </Link>{" "}
@@ -128,9 +124,9 @@ export default function About() {
         <Section heading="Work" headingAlignment="left">
           <div className="flex w-full flex-col gap-8">
             <p>
-              I specialize in Python, data analytics, React, web development,
-              UI/UX, and product design. But I am always learning new things.
-              Here are some of the places I have worked.
+              I specialize in Next.js, backend, React, web development, UI/UX,
+              and product design. But I am always learning new things. Here are
+              some of the places I have worked and studied.
             </p>
             <Workplaces items={workplaces} />
           </div>
@@ -142,31 +138,26 @@ export default function About() {
 
 const workplaces = [
   {
-    title: "Full Stack Engineer",
-    company: "Hines",
-    time: "2022 -",
-    imageSrc: hinesLogo,
-    link: "https://hines.com",
-  },
-  {
-    title: "Software Engineer",
-    company: "PeriShip",
-    time: "2021 - 2022",
-    imageSrc: perishipLogo,
-    link: "https://peripharma.com/",
-  },
-  {
-    title: "Python Developer",
-    company: "CAMS",
-    time: "2019 - 2020",
-    imageSrc: camsLogo,
+    title: "Frontend Developer",
+    company: "It Park",
+    date: "2023 - 2024",
+    imageSrc:
+      "https://avatars.mds.yandex.net/i?id=c6b360d34b199b2481605b6130c088bad293d351-10346227-images-thumbs&ref=rim&n=33&w=480&h=480",
     link: "https://camstex.com",
   },
   {
-    title: "Coding Camp Instructor",
-    company: "University of Houston",
-    time: "2019",
-    imageSrc: uhdLogo,
-    link: "https://www.uhd.edu/",
+    title: "FullStack Developer",
+    company: "Najot Talim",
+    date: "2022 - 2023",
+    imageSrc:
+      "https://marketing.uz/uploads/works/covers/8bd79c07ebc2619902f950153e9d40d6.jpg",
+    link: "https://camstex.com",
+  },
+  {
+    title: "Frontend Developer",
+    company: "Astrum It academy",
+    date: "2021 - 2022",
+    imageSrc: "https://marketing.uz/uploads/articles/2387/article-original.jpg",
+    link: "https://camstex.com",
   },
 ];

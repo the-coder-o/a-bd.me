@@ -1,14 +1,13 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import type { Metadata, ResolvingMetadata } from "next";
-import Link from "@/app/components/ui/Link";
+import type { Metadata } from "next";
+import Link from "@/app/components/Link";
 import { allBlogs } from ".contentlayer/generated";
 
+import Avatar from "@/app/components/Avatar";
 import Tags from "@/app/components/Tags";
 import Mdx from "@/app/blog/components/MdxWrapper";
-import Avatar from "@/app/components/ui/Avatar";
 import FlipNumber from "@/app/components/FlipNumber";
-import Me from "@/public/avatar.png";
 
 import { formatDate } from "@/app/_utils/formatDate";
 import { getViewsCount } from "@/app/db/queries";
@@ -23,10 +22,7 @@ type Props = {
   searchParams: { [key: string]: string | string[] | undefined };
 };
 
-export async function generateMetadata(
-  { params, searchParams }: Props,
-  parent: ResolvingMetadata,
-): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const blog = allBlogs.find((blog) => blog.slug === params.slug);
 
   if (!blog) {
@@ -35,7 +31,7 @@ export async function generateMetadata(
 
   const {
     title,
-    publishedAt: publishedTime,
+    date: publishedTime,
     summary: description,
     image,
     slug,
@@ -46,15 +42,15 @@ export async function generateMetadata(
     : `https://b-r.io/api/og?title=${title}`;
 
   const metadata: Metadata = {
-    metadataBase: new URL("https://b-r.io"),
-    title: `${title} | Brian Ruiz`,
+    metadataBase: new URL("https://a-bd.me"),
+    title: `${title} | Abdul Basit`,
     description,
     openGraph: {
-      title: `${title} | Brian Ruiz`,
+      title: `${title} | Abdul Basit`,
       description,
       type: "article",
       publishedTime,
-      url: `https://b-r.io/blog/${slug}`,
+      url: `https://a-bd.me/blog/${slug}`,
       images: [{ url: ogImage, alt: title }],
     },
   };
@@ -80,13 +76,15 @@ export default async function Blog({ params }: { params: any }) {
             <p className="text-secondary">{blog.summary}</p>
           </div>
           <div className="flex max-w-none items-center gap-4">
-            <Avatar src={Me} initials="br" size="sm" />
+            <Avatar
+              src={"https://i.ibb.co/th7RCSC/1.jpg"}
+              initials="br"
+              size="sm"
+            />
             <div className="leading-tight">
-              <p>Brian Ruiz</p>
+              <p>Abdul Basit</p>
               <p className="text-secondary">
-                <time dateTime={blog.publishedAt}>
-                  {formatDate(blog.publishedAt)}
-                </time>
+                <time dateTime={blog.date}>{formatDate(blog.date)}</time>
                 {blog.updatedAt
                   ? `(Updated ${formatDate(blog.updatedAt)})`
                   : ""}
@@ -105,7 +103,7 @@ export default async function Blog({ params }: { params: any }) {
               alt={`${blog.title} blog image`}
               width={700}
               height={350}
-              className="-ml-6 w-[calc(100%+48px)] max-w-none md:rounded-lg lg:-ml-16 lg:w-[calc(100%+128px)]"
+              className="-ml-6 w-[calc(100%+48px)] max-w-none md:rounded-lg lg:-ml-20 lg:w-[calc(100%+160px)]"
               priority
             />
           </>
@@ -121,7 +119,6 @@ export default async function Blog({ params }: { params: any }) {
           <h2>Tags</h2>
           <Tags tags={blog.tags} />
         </div>
-
         <div className="flex flex-col gap-6">
           <h2>Contact</h2>
           <p className="max-w-lg text-pretty text-secondary">
@@ -129,14 +126,13 @@ export default async function Blog({ params }: { params: any }) {
             <Link href="/community" underline>
               community
             </Link>{" "}
-            chat or reach out at any of my{" "}
-            <Link href="/links" underline>
-              links
-            </Link>
-            . I&apos;d be happy to connect!
+            chat or reach me at{" "}
+            <Link href="mailto:brian@b-r.io" underline>
+              brian@b-r.io
+            </Link>{" "}
+            I&apos;d be happy to connect!
           </p>
         </div>
-
         <NewsletterSignupForm contained={false} />
       </div>
     </div>
