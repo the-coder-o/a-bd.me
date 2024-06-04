@@ -27,6 +27,7 @@ const nextConfig = {
       "mir-s3-cdn-cf.behance.net",
       "marketing.uz",
       "i.ibb.co",
+      "www.a-bd.me",
     ],
   },
 };

@@ -11,14 +11,14 @@ import Keyboard from "public/gear/keeb.jpeg";
 import Macrofactor from "public/gear/macrofactor.webp";
 
 export const metadata: Metadata = {
-  title: "Gear | Brian Ruiz",
+  title: "Gear | Abdul Basit",
   description: "My toolbox. This is gear I actually own and recommend.",
   openGraph: {
-    title: "Gear | Brian Ruiz",
+    title: "Gear | Abdul Basit",
     description: "My toolbox. This is gear I actually own and recommend.",
     type: "website",
-    url: "https://b-r.io/blog/gear",
-    images: [{ url: "https://b-r.io/api/og?title=Gear", alt: "gear" }],
+    url: "https://a-bd.me/blog/gear",
+    images: [{ url: "https://i.ibb.co/9r0VmHw/Abdul-Basit.png", alt: "gear" }],
   },
 };
 
@@ -33,7 +33,7 @@ interface ItemProps {
 const Item = ({ title, description, image, link, sponsored }: ItemProps) => (
   <li className="flex items-center gap-4 transition-opacity">
     <a
-      className="relative aspect-square h-[4rem] w-[4rem] min-w-[4rem] overflow-hidden rounded-xl bg-tertiary shadow-sm border border-secondary"
+      className="relative aspect-square h-[4rem] w-[4rem] min-w-[4rem] overflow-hidden rounded-xl border border-secondary bg-tertiary shadow-sm"
       href={link}
       target="_blank"
     >
@@ -226,7 +226,8 @@ const gear = [
   {
     name: "MacroFactor",
     category: "Apps",
-    description: "code 'brianruiz' for extended trial. I use this to stay on top of my diet.",
+    description:
+      "code 'brianruiz' for extended trial. I use this to stay on top of my diet.",
     image: Macrofactor,
     link: "https://macrofactorapp.com/",
   },

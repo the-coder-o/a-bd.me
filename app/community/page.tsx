@@ -4,15 +4,15 @@ import { getCommunityPosts } from "@/app/db/queries";
 import Post from "@/app/community/components/Post";
 
 export const metadata: Metadata = {
-  title: "Community | Brian Ruiz",
+  title: "Community | Abdul Basit",
   description: "Join the community and share your thoughts.",
   openGraph: {
-    title: "Community | Brian Ruiz",
+    title: "Community | Abdul Basit",
     description: "Join the community and share your thoughts.",
     type: "website",
-    url: "https://b-r.io/blog/community",
+    url: "https://a-bd.me/blog/community",
     images: [
-      { url: "https://b-r.io/api/og?title=Community", alt: "community" },
+      { url: "https://i.ibb.co/9r0VmHw/Abdul-Basit.png", alt: "community" },
     ],
   },
 };

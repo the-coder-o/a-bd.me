@@ -95,7 +95,6 @@ export const Craft = defineDocumentType(() => ({
   computedFields: craftComputedFields,
 }));
 
-
 export default makeSource({
   contentDirPath: "content",
   documentTypes: [Blog, Project, Craft],

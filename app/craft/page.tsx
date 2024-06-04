@@ -5,16 +5,16 @@ import Link from "@/app/components/Link";
 import Section from "@/app/components/Section";
 
 export const metadata: Metadata = {
-  title: "Craft | Brian Ruiz",
+  title: "Craft | Abdul Basit",
   description:
     "I write about programming, design, and occasionally life updates!",
   openGraph: {
-    title: "Craft | Brian Ruiz",
+    title: "Craft | Abdul Basit",
     description:
       "I write about programming, design, and occasionally life updates!",
     type: "website",
-    url: "https://b-r.io/craft/",
-    images: [{ url: "https://b-r.io/api/og?title=Craft", alt: "Craft" }],
+    url: "https://a-bd.me/craft/",
+    images: [{ url: "https://i.ibb.co/9r0VmHw/Abdul-Basit.png", alt: "Craft" }],
   },
 };
 

@@ -5,7 +5,6 @@ import Avatar from "@/app/components/Avatar";
 import Link from "@/app/components/Link";
 import Mdx from "@/app/blog/components/MdxWrapper";
 import NewsletterSignupForm from "@/app/blog/components/NewsletterSignupForm";
-import Me from "@/public/avatar.png";
 
 export default function Project({ params }: { params: any }) {
   const project = allProjects.find((project) => project.slug === params.slug);
@@ -27,9 +26,13 @@ export default function Project({ params }: { params: any }) {
             </p>
           </div>
           <div className="flex max-w-none items-center gap-4">
-            <Avatar src={Me} initials="br" size="sm" />
+            <Avatar
+              src={"https://i.ibb.co/th7RCSC/1.jpg"}
+              initials="br"
+              size="sm"
+            />
             <div className="leading-tight">
-              <p>Brian Ruiz</p>
+              <p>Abdul Basit</p>
               <p className="text-secondary">
                 <time dateTime={project.date}>{project.date}</time>
                 {" · "}
@@ -56,8 +59,8 @@ export default function Project({ params }: { params: any }) {
               community
             </Link>{" "}
             chat or reach me at{" "}
-            <Link href="mailto:brian@b-r.io" underline>
-              brian@b-r.io
+            <Link href="mailto:abdulbositsharipovv@gmail.com" underline>
+              basit@a-bd.me
             </Link>{" "}
             I&apos;d be happy to connect!
           </p>

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "Abdul Basit",
     url: "https://a-bd-me/",
     images: [
-      { url: "https://i.ibb.co/9r0VmHw/Abdul-Basit.png", alt: "b-r.io" },
+      { url: "https://i.ibb.co/9r0VmHw/Abdul-Basit.png", alt: "a-bd.me" },
     ],
   },
 };

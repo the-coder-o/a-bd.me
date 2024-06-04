@@ -4,16 +4,16 @@ import PostList from "@/app/blog/components/PostList";
 import NewsletterSignupForm from "@/app/blog/components/NewsletterSignupForm";
 
 export const metadata: Metadata = {
-  title: "Blog | Brian Ruiz",
+  title: "Blog | Abdul Basit",
   description:
     "I write about programming, design, and occasionally life updates!",
   openGraph: {
-    title: "Blog | Brian Ruiz",
+    title: "Blog | Abdul Basit",
     description:
       "I write about programming, design, and occasionally life updates!",
     type: "website",
-    url: "https://b-r.io/blog/Blog",
-    images: [{ url: "https://b-r.io/api/og?title=Blog", alt: "Blog" }],
+    url: "https://a-bd.me/blog/Blog",
+    images: [{ url: "https://i.ibb.co/9r0VmHw/Abdul-Basit.png", alt: "Blog" }],
   },
 };
 
