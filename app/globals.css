@@ -2,91 +2,192 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "@radix-ui/colors/gray.css";
+@import "@radix-ui/colors/gray-dark.css";
+@import "@radix-ui/colors/gray-alpha.css";
+@import "@radix-ui/colors/gray-dark-alpha.css";
 
-@media (prefers-color-scheme: dark) {
+@import "@radix-ui/colors/blue.css";
+@import "@radix-ui/colors/blue-dark.css";
+@import "@radix-ui/colors/blue-alpha.css";
+@import "@radix-ui/colors/blue-dark-alpha.css";
+
+@import "@/public/prism/one-dark.css";
+
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg: var(--gray-1);
+    --boxBg: var(--gray-4);
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  .light {
+    --contrast-color: #fff;
+    .prose {
+      --tw-prose-headings: var(--gray-12);
+      --tw-prose-body: var(--gray-12);
+      --tw-prose-bold: var(--gray-12);
+      --tw-prose-links: var(--blue-11);
+      --tw-prose-code: var(--gray-12);
+      --tw-prose-quotes: var(--gray-12);
+    }
+  }
+
+  .dark {
+    --contrast-color: #0a0a0a;
+    .prose {
+      --tw-prose-headings: var(--gray-12);
+      --tw-prose-body: var(--gray-11);
+      --tw-prose-bold: var(--gray-11);
+      --tw-prose-links: var(--blue-11);
+      --tw-prose-code: var(--gray-11);
+      --tw-prose-quotes: var(--gray-11);
+    }
+  }
+
+  .main-header {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: var(--bg);
+  }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
 
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
-    --radius: 0.5rem;
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@media (hover: hover) {
+  .animated-list:hover li {
+    opacity: 0.5;
   }
-  .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+
+  .animated-list:hover li:hover {
+    opacity: 1;
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+.animate-in {
+  animation-delay: calc(var(--index) * 130ms);
+}
+
+.overflow-x-scroll.snap-x::-webkit-scrollbar {
+  /* hide scrollbars with webkit scrollbar */
+  display: none;
+}
+
+/* blog prose styles overrides */
+.prose hr {
+  @apply border-primary;
+}
+
+.prose blockquote {
+  @apply border-l-2 border-primary font-serif text-lg font-light;
+}
+
+/*.prose figcaption {*/
+/*  @apply mx-auto mb-8 mt-2 max-w-md text-center text-sm text-tertiary;*/
+/*}*/
+
+.prose h3 {
+  @apply mb-2 mt-[48px] text-base;
+}
+
+.prose p code {
+  @apply whitespace-pre-line rounded border border-primary bg-primary px-1 font-normal text-primary;
+}
+
+.prose
+p
+:where(code):not(
+    :where([class~="not-prose"], [class~="not-prose"] *)
+  )::before,
+.prose
+p
+:where(code):not(
+    :where([class~="not-prose"], [class~="not-prose"] *)
+  )::after {
+  content: "";
+}
+
+/* syntax highlighting */
+pre[class*="language-"] {
+  @apply rounded-md border border-secondary bg-white text-[13px] text-xs text-primary dark:bg-contrast;
+}
+
+.code-highlight {
+  float: left; /* 1 */
+  min-width: 100%; /* 2 */
+}
+
+.code-line {
+  display: block;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: -16px;
+  margin-right: -16px;
+  border-left: 4px solid rgba(0, 0, 0, 0); /* Set placeholder for highlight accent border color to transparent */
+}
+
+.code-line.inserted {
+  background-color: rgba(16, 185, 129, 0.2); /* Set inserted line (+) color */
+}
+
+.code-line.deleted {
+  background-color: rgba(239, 68, 68, 0.2); /* Set deleted line (-) color */
+}
+
+.highlight-line {
+  margin-left: -24px;
+  margin-right: -24px;
+  padding-left: 26px;
+  background-color: var(--blue-a3); /* Set highlight bg color */
+  border-left: 2px solid var(--blue-10); /* Set highlight accent border color */
+}
+
+.line-number::before {
+  @apply hidden md:inline-block;
+}
+
+.line-number::before {
+  width: 1rem;
+  text-align: right;
+  margin-right: 24px;
+  margin-left: -8px;
+  color: var(--gray-8); /* Line number color */
+  content: attr(line);
+}
+
+/* map styles */
+.mapboxgl-control-container {
+  display: none;
+}
+
+.map-marker {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--blue-10);
+  transform: translate(-50%, -50%);
+  border: 3px solid rgba(255, 255, 255, 0.95);
 }
