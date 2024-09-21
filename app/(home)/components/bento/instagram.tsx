@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@radix-ui/react-avatar'
 
 export default function Instagram() {
   return (
-    <Card className="col-span-1 row-span-1 flex aspect-square flex-col gap-1.5 md:hidden block">
+    <Card className="col-span-1 row-span-1 flex aspect-square flex-col gap-1.5 md:hidden block h-[180px]">
       <div className="flex items-center justify-between">
         <div className="flex aspect-square h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-bl from-[#7638FA] via-[#FF006A] to-[#FED702]">
           <FaInstagram className="text-2xl text-white" />

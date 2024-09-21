@@ -1,11 +1,11 @@
 import React from 'react'
 
 import { Metadata } from 'next'
+import { Locate } from 'lucide-react'
 
 import Cards from '@/app/(home)/components/bento/card'
-
-import PinnedProjects from './pinned-projects'
 import HomeMain from '@/app/(home)/components/home-main'
+import PinnedProjects from '@/app/(home)/pinned-projects'
 import HomeLatestPosts from '@/app/(home)/components/home-latest-posts'
 
 export const metadata: Metadata = {
@@ -34,6 +34,15 @@ export default function Home() {
           </div>
         </div>
         <Cards />
+      </div>
+      <div className="relative">
+        <img src="https://i.ibb.co/25pf844/Screenshot-2024-09-21-162603.png" alt="map" className="w-full mt-2 h-[150px] rounded-lg object-cover bg-cover" />
+        <div className="absolute bottom-2 left-2 flex flex-col rounded-lg bg-neutral-100/75 p-1.5 leading-none backdrop-blur dark:bg-neutral-900/75">
+          <p className="m-0 text-sm font-medium flex items-center gap-1">
+            Location <Locate size={12} />
+          </p>
+          <p className="m-0 text-xs font-semibold text-primary">Tashkent,Uzbekistan</p>
+        </div>
       </div>
       <PinnedProjects />
       <HomeLatestPosts />

@@ -56,7 +56,7 @@ const BlogPage: React.FC = () => {
         <title>Blog | Abdul Basit</title>
       </head>
       <main className="container pt-[5rem] pb-28">
-        <section className="flex flex-col gap-16 md:gap-24">
+        <section className="flex flex-col gap-16 md:gap-20">
           <BlogMain />
           <BlogItem />
           <Halo strength={6}>

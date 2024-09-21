@@ -20,7 +20,7 @@ export const WorkData = [
   {
     img: 'https://i.ibb.co/XLkNvmK/k-BYm-FMOh-400x400.jpg',
     workTitle: 'Frontend',
-    year: '2023-',
+    year: '2023-2024',
     companyName: 'It Park of Uzbekistan',
     url: 'https://it-park.uz/',
   },

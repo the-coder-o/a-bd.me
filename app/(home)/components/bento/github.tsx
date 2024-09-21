@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@radix-ui/react-avatar'
 
 export default function Github() {
   return (
-    <Card className="flex aspect-square flex-col gap-1.5">
+    <Card className="flex aspect-square flex-col gap-1.5 h-[180px]">
       <div className="flex items-center justify-between">
         <div className="flex aspect-square h-8 w-8 items-center justify-center rounded-md bg-gradient-to-bl from-[#7638FA] via-[#FF006A] to-[#FED702]">
           <FaGithub className="text-2xl text-white" />

@@ -41,7 +41,7 @@ export default function ThemeSwitcher() {
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.9 }}
                     transition={{ type: 'spring', bounce: 0.3, duration: 0.3 }}
-                    className="absolute right-0 p-2 mt-2 overflow-auto text-base origin-top-right shadow-lg max-h-60 w-42 rounded-xl dark:bg-[#111111] focus:outline-none sm:text-sm capitalize"
+                    className="absolute right-0 p-2 mt-2 overflow-auto text-base origin-top-right shadow-lg max-h-60 w-42 rounded-xl dark:bg-[#000] focus:outline-none sm:text-sm capitalize"
                   >
                     {themes.map((theme) => (
                       <Listbox.Option key={theme} className={({ active }) => clsx('relative cursor-default select-none py-2 pl-10 pr-4 rounded-md', active ? 'bg-secondary' : '')} value={theme}>

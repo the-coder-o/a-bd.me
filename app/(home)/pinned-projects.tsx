@@ -10,7 +10,7 @@ import HomePinnedProjects from './components/home-pinned-projects'
 
 const PinnedProjects = () => {
   return (
-    <div className={'pt-[78px]'}>
+    <div className={'pt-[50px]'}>
       <div className={'flex flex-col gap-8'}>
         <div>
           <Link href={'/projects'} className={'underline-offset-4 group flex items-center gap-2 text-xl font-semibold tracking-tight text-primary'}>
