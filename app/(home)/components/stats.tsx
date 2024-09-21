@@ -14,7 +14,6 @@ export function Stats() {
     <ul className={clsx('space-y-2 animated-list')}>
       <li className="flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:!opacity-100 group-hover:opacity-60">
         <Link className="flex gap-3 items-center no-underline" href={'https://github.com/the-coder-o'}>
-          {/*// @ts-ignore*/}
           <FaGithub className="text-xl" />
           <div>
             <FlipNumber>{'000' && addCommas(120)}</FlipNumber>
@@ -33,7 +32,6 @@ export function Stats() {
       </li>
       <li className="flex items-center gap-2 text-[#646464] dark:text-[#b4b4b4] transition hover:text-zinc-900 dark:hover:!opacity-100 group-hover:opacity-60">
         <Link className="flex gap-3 items-center no-underline" href={'https://www.youtube.com/@'}>
-          {/*// @ts-ignore*/}
           <FaYoutube className="text-xl" />
           <div>
             <FlipNumber>{1000 ? addCommas(1000) : '0,000'}</FlipNumber>
