@@ -16,34 +16,36 @@ export default function Map() {
   const [zoom, setZoom] = useState(10)
   const [pitch, setPitch] = useState(15)
 
-  const { theme, resolvedTheme } = useTheme()
-  let mapTheme
-  if (resolvedTheme === 'dark') {
-    mapTheme = 'night'
-  } else if (resolvedTheme === 'light') {
-    mapTheme = 'light'
-  }
+  const { resolvedTheme } = useTheme()
+  let mapTheme = resolvedTheme === 'dark' ? 'night' : 'light'
 
   useEffect(() => {
-    if (map.current) return
-    map.current = new mapboxgl.Map({
-      container: mapContainer.current,
-      center: [lng, lat],
-      zoom: zoom,
-      pitch: pitch,
-      attributionControl: false,
-    })
+    if (map.current) return // Only initialize the map once
 
-    map.current.on('style.load', () => {
-      map.current.setConfigProperty('basemap', 'lightPreset', mapTheme)
-      map.current.setPadding({ left: 150 })
+    if (mapContainer.current) {
+      map.current = new mapboxgl.Map({
+        container: mapContainer.current,
+        center: [lng, lat],
+        zoom: zoom,
+        pitch: pitch,
+        attributionControl: false,
+        style: `mapbox://styles/mapbox/${mapTheme}-v10`,
+      })
 
-      const el = document.createElement('span')
-      el.className = 'map-marker'
+      map.current.on('load', () => {
+        map.current.setPadding({ left: 150 })
 
-      new mapboxgl.Marker({ element: el }).setLngLat([lng, lat]).addTo(map.current)
-    })
-  })
+        const el = document.createElement('span')
+        el.className = 'map-marker'
 
-  return <div ref={mapContainer} className="map-container h-[180px] w-[250px] select-none rounded-2xl" />
+        new mapboxgl.Marker({ element: el }).setLngLat([lng, lat]).addTo(map.current)
+      })
+    }
+  }, [lng, lat, zoom, pitch, mapTheme]) // Re-run if map settings change
+
+  return (
+    <div className="map-wrapper grid grid-cols-1">
+      <div ref={mapContainer} className="map-container h-[180px] w-[250px] select-none rounded-2xl" />
+    </div>
+  )
 }

@@ -27,7 +27,7 @@ export default function Home() {
       <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7FF9K85" height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe>
       </noscript>
-      <div className="pt-[5rem] max-md:pt-[8rem] flex flex-col gap-10">
+      <div className="pt-[5rem] max-md:pt-[4rem] flex flex-col gap-10">
         <div className={'flex flex-col gap-8'}>
           <div>
             <HomeMain />

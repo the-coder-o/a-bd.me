@@ -26,8 +26,8 @@ const GearPage = () => {
     },
     twitter: {
       cardType: 'summary',
-      handle: '@username', // Replace with actual Twitter handle
-      site: '@site', // Replace with actual Twitter site
+      handle: '@username',
+      site: '@site',
     },
   }
 
@@ -53,12 +53,12 @@ const GearPage = () => {
       <head>
         <title>Gear | Abdul Basit</title>
       </head>
-      <main className="container pb-28">
-        <section className="flex flex-col gap-16 md:gap-24">
+      <div className="container pb-28">
+        <div className="flex flex-col gap-16 md:gap-24">
           <GearMain />
           <GeneralGearsComponent />
-        </section>
-      </main>
+        </div>
+      </div>
     </>
   )
 }

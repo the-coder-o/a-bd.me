@@ -56,12 +56,12 @@ const ProjectPage = () => {
       <head>
         <title>Project | Abdul Basit</title>
       </head>
-      <main className="container pb-24">
-        <section className="pt-[9rem] max-md:pt-[8rem] flex flex-col gap-16 md:gap-24">
+      <div className="container pb-24">
+        <div className="pt-[5rem] max-md:pt-[4rem] flex flex-col gap-16 md:gap-24">
           <ProjectMain />
           <ProjectItem />
-        </section>
-      </main>
+        </div>
+      </div>
     </>
   )
 }

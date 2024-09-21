@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 const GearMain = () => {
   return (
-    <div className="flex gap-8 flex-col pt-[9rem] max-md:pt-[8rem]">
+    <div className="flex gap-8 flex-col pt-[5rem] max-md:pt-[5rem]">
       <div>
         <motion.h1 initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 0.1 }} className="text-3xl font-bold tracking-tight">
           Gear
