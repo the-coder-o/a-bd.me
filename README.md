@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FBrianRuizy%2Fb-r.io)
+
+# My Personal Website
+
+My personal portfolio website designed to be simplistic and clean while including features like MDX blog posts with view counts, a dark mode toggle, gear list, an about page, and more.
+
+## Tech Stack
+
+backend:
+- [Next.js](nextjs.org) / TypeScript
+- [MDX](https://mdxjs.com) / [Contentlayer](https://contentlayer.dev/) (Blog Posts)
+- [PlanetScale](http://planetscale.com) (Database)
+- [Prisma](https://www.prisma.io) (ORM)
+
+frontend:
+- [Tailwind CSS](https://tailwindcss.com) (Styling)
+- [Radix Primitives](https://www.radix-ui.com/primitives) (Headless UI components)
+- [Radix UI Colors](https://www.radix-ui.com/colors) (Color system)
+- [Framer Motion](https://www.framer.com/motion/) (Animations)
 
 ## Getting Started
 
-First, run the development server:
+Make sure you have Node.js v18.17.0+ installed on your machine.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Install Dependencies**: `npm install`
+2. **Environment variables**: Copy `.env.example` to a new `.env.local`
+3. **Database Setup**: See [Database Setup](#database-setup)
+4. **Prisma Setup**: `npm install @prisma/client` (if you haven't already), then run `npx prisma generate`.
+5. **Start Developing**: `npm run dev`, this will automatically create the .contentlayer files and start the Next.js development server.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Database Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Sign up for a PlanetScale account
+- Create a new database in PlanetScale
+- Update the DATABASE_URL environment variable in your project's `.env.local` file with the connection string provided by PlanetScale
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Deployment
 
-## Learn More
+This project can be [quickly deployed to Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FBrianRuizy%2Fb-r.io). Simply connect your Vercel account to your GitHub repository, and Vercel will automatically build and deploy your application with each new push to the main branch.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Add the project .env variables to your Vercel project settings.

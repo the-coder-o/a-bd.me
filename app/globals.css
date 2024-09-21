@@ -1,0 +1,181 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import '@radix-ui/colors/gray.css';
+@import '@radix-ui/colors/gray-dark.css';
+@import '@radix-ui/colors/gray-alpha.css';
+@import '@radix-ui/colors/gray-dark-alpha.css';
+
+@import '@radix-ui/colors/blue.css';
+@import '@radix-ui/colors/blue-dark.css';
+@import '@radix-ui/colors/blue-alpha.css';
+@import '@radix-ui/colors/blue-dark-alpha.css';
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+
+    --primary: 24 9.8% 10%;
+    --primary-foreground: 60 9.1% 97.8%;
+
+    --secondary: 60 4.8% 95.9%;
+    --secondary-foreground: 24 9.8% 10%;
+
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+
+    --accent: 60 4.8% 95.9%;
+    --accent-foreground: 24 9.8% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 20 14.3% 4.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 60 9.1% 97.8%;
+
+    --card: 20 14.3% 4.1%;
+    --card-foreground: 60 9.1% 97.8%;
+
+    --popover: 20 14.3% 4.1%;
+    --popover-foreground: 60 9.1% 97.8%;
+
+    --primary: 60 9.1% 97.8%;
+    --primary-foreground: 24 9.8% 10%;
+
+    --secondary: 12 6.5% 15.1%;
+    --secondary-foreground: 60 9.1% 97.8%;
+
+    --muted: 12 6.5% 15.1%;
+    --muted-foreground: 24 5.4% 63.9%;
+
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 60 9.1% 97.8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 60 9.1% 97.8%;
+
+    --border: 12 6.5% 15.1%;
+    --input: 12 6.5% 15.1%;
+    --ring: 24 5.7% 82.9%;
+  }
+
+  .light .prose {
+    --tw-prose-headings: var(--gray-12);
+    --tw-prose-body: var(--gray-12);
+    --tw-prose-bold: var(--gray-12);
+    --tw-prose-links: var(--blue-11);
+    --tw-prose-code: var(--gray-12);
+    --tw-prose-quotes: var(--gray-12);
+  }
+
+  .dark .prose {
+    --tw-prose-headings: var(--gray-12);
+    --tw-prose-body: var(--gray-11);
+    --tw-prose-bold: var(--gray-11);
+    --tw-prose-links: var(--blue-11);
+    --tw-prose-code: var(--gray-11);
+    --tw-prose-quotes: var(--gray-11);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none !important;
+    outline: none !important;
+  }
+  body {
+    @apply bg-background text-foreground;
+    overflow-x: hidden;
+  }
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container-for-image {
+  width: 100%;
+  max-width: 850px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.border-styles {
+  border: 1px solid #3a3a3a;
+}
+
+.border-style-input {
+  border: 2px solid #3a3a3a !important;
+}
+
+.light-style {
+  border: 1px solid #d8d9d9;
+}
+
+.project-border {
+  border: 1px solid #2a2a2a !important;
+}
+
+.img-style {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  color: transparent;
+}
+
+@media (hover: hover) {
+  .animated-list:hover link {
+    opacity: 0.5;
+  }
+
+  .animated-list:hover link:hover {
+    opacity: 1;
+  }
+}
+
+.input-border-style {
+  border: 1px solid #3a3a3a !important;
+}
+
+.header-border-style {
+  border-bottom: 1px solid #2a2a2a !important;
+}
+
+.animate-in {
+  animation-delay: calc(var(--index) * 130ms);
+}
