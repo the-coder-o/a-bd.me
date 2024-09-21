@@ -53,7 +53,7 @@ export default function Gear() {
 
   return (
     <div className="container">
-      <div className="flex flex-col gap-16 md:gap-24 mt-[5rem]">
+      <div className="flex flex-col gap-16 md:gap-24 mt-[5rem] pb-28">
         <div className="flex animate-in flex-col gap-8">
           <div>
             <h1 className="animate-in text-3xl font-bold tracking-tight">Gear</h1>
