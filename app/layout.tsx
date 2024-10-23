@@ -19,6 +19,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Header } from '@/components/ui/header/Header'
 import { ThemeProvider } from '@/components/provider/theme-provider'
 import { NextSeo } from 'next-seo'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const font = Inter({ subsets: ['latin'] })
 
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning>
       <Script async src="https://us.umami.is/script.js" data-website-id="94cc47c5-56f6-4b2c-b05b-881b076a25de" />
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-MEK7ECJKW3" />
+      <GoogleTagManager gtmId="G-3Q08HFK5RG" />
       <head>
         <NextSeo
           title="Home | Abdul Basit"
